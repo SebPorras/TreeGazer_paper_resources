@@ -1,0 +1,701 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    bioinfr (AVX2, FMA3, 216 GB RAM)
+Command: iqtree2 -T 20 -m MFP -s adk.aln -B 1000 --rate
+Seed:    861420 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Dec 16 11:00:15 2024
+Kernel:  AVX+FMA - 20 threads (56 CPU cores detected)
+
+Reading alignment file adk.aln ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 175 sequences with 339 columns, 329 distinct patterns
+235 parsimony-informative, 50 singleton sites, 54 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  azorhizobium_caulinodans                42.77%    passed     30.28%
+   2  methylocella_silvestris                 43.07%    passed     11.00%
+   3  bartonella_henselae                     43.36%    passed     90.20%
+   4  bartonella_quintana                     43.36%    passed     36.21%
+   5  brucella_vulpis                         39.82%    passed     78.89%
+   6  paramagnetospirillum_magneticum         35.99%    passed     27.64%
+   7  gluconacetobacter_diazotrophicus        35.40%    passed     36.24%
+   8  pseudoroseomonas_rhizosphaerae          36.58%    passed     44.96%
+   9  falsiroseomonas_stagni                  36.28%    passed      7.63%
+  10  rubritepida_flocculans                  35.99%    failed      0.57%
+  11  gemmobacter_aquatilis                   32.74%    failed      2.78%
+  12  salipiger_mucosus                       33.04%    failed      0.03%
+  13  sphingopyxis_alaskensis                 35.40%    passed     63.64%
+  14  xanthomonas_campestris                  44.84%    passed     30.25%
+  15  rhodanobacter_fulvus                    42.77%    passed      8.89%
+  16  leptospira_interrogans                  44.84%    passed     81.64%
+  17  corynebacterium_urealyticum             46.61%    passed     86.39%
+  18  dietzia_alimentaria                     46.61%    passed     46.08%
+  19  salinispora_arenicola                   35.99%    passed     24.36%
+  20  micromonospora_viridifaciens            35.99%    passed     47.60%
+  21  actinocatenispora_sera                  43.07%    passed     13.00%
+  22  streptomyces_coelicolor                 35.99%    passed     95.62%
+  23  streptomyces_subrutilus                 36.58%    passed     96.51%
+  24  streptomonospora_alba                   44.54%    passed      9.77%
+  25  desulfurobacterium_atlanticum           44.84%    passed     91.57%
+  26  desulfurobacterium_thermolithotrophum   44.84%    passed     87.79%
+  27  synechococcus_elongatus                 45.13%    failed      2.59%
+  28  thermotoga_neapolitana                  35.10%    passed     36.37%
+  29  thermotoga_maritima                     35.10%    passed     37.25%
+  30  pseudothermotoga_lettingae              35.99%    passed     65.08%
+  31  fervidobacterium_nodosum                35.69%    passed     47.20%
+  32  fervidobacterium_islandicum             35.69%    passed     84.94%
+  33  thermosipho_melanesiensis               36.87%    passed      6.89%
+  34  thermosipho_africanus                   36.87%    passed     17.32%
+  35  kosmotoga_olearia                       36.58%    passed     91.67%
+  36  petrotoga_mobilis                       36.58%    passed     47.14%
+  37  lactobacillus_delbrueckii               35.99%    passed     54.92%
+  38  lactobacillus_crispatus                 35.69%    passed     57.40%
+  39  streptococcus_pneumoniae                37.46%    passed     72.66%
+  40  streptococcus_thermophilus              35.69%    passed     95.40%
+  41  lactococcus_lactis                      36.58%    passed     64.23%
+  42  enterococcus_faecalis                   36.28%    passed     73.37%
+  43  limosilactobacillus_reuteri             35.40%    passed     13.16%
+  44  bacillus_cereus                         36.28%    passed     96.64%
+  45  geobacillus_kaustophilus                35.99%    passed     73.00%
+  46  geobacillus_thermodenitrificans         35.99%    passed     87.03%
+  47  geobacillus_stearothermophilus          35.99%    passed     67.20%
+  48  bacillus_subtilis                       35.99%    passed     90.20%
+  49  bacillus_licheniformis                  35.99%    passed     87.88%
+  50  lysinibacillus_sphaericus               35.99%    passed     99.21%
+  51  jeotgalibacillus_marinus                36.28%    passed     57.13%
+  52  effusibacillus_pohliae                  36.28%    passed     81.04%
+  53  virgibacillus_dokdonensis               36.87%    passed     83.93%
+  54  heliomicrobium_modesticaldum            35.99%    passed     69.43%
+  55  desulfitobacterium_hafniense            35.99%    passed     87.29%
+  56  megasphaera_paucivorans                 35.99%    passed     68.99%
+  57  veillonella_seminalis                   44.84%    passed     99.58%
+  58  sporolituus_thermophilus                35.99%    passed     83.15%
+  59  symbiobacterium_thermophilum            36.28%    passed     60.57%
+  60  acetohalobium_arabaticum                37.17%    passed     89.23%
+  61  alkaliphilus_oremlandii                 36.28%    passed     97.21%
+  62  paenibacillus_bovis                     36.87%    passed     99.80%
+  63  caldanaerobacter_subterraneus           34.81%    passed     61.86%
+  64  methanosarcina_acetivorans              36.58%    passed     79.45%
+  65  methanococcoides_burtonii               36.58%    passed     52.52%
+  66  methanocella_arvoryzae                  36.28%    passed     68.80%
+  67  thermodesulfovibrio_yellowstonii        36.58%    passed     45.11%
+  68  archaeoglobus_fulgidus                  35.99%    passed      9.69%
+  69  thermodesulfatator_atlanticus           36.87%    passed      5.81%
+  70  thermodesulfobacterium_commune          36.58%    passed     54.45%
+  71  methylophaga_frappieri                  36.58%    passed      6.19%
+  72  geotalea_daltonii                       36.87%    passed     83.29%
+  73  trichlorobacter_lovleyi                 36.87%    passed     19.60%
+  74  natranaerobius_thermophilus             36.87%    passed     98.67%
+  75  clostridium_botulinum                   36.58%    passed     47.44%
+  76  moorella_thermoacetica                  35.99%    failed      3.18%
+  77  chrysiogenes_arsenatis                  36.58%    passed     69.05%
+  78  adlercreutzia_mucosicola                38.64%    passed     37.97%
+  79  parafannyhessea_umbonata                38.64%    passed     57.19%
+  80  syntrophomonas_wolfei                   36.58%    passed     30.05%
+  81  desulfurella_acetivorans                36.58%    passed     14.37%
+  82  acetomicrobium_flavidum                 35.40%    passed     93.67%
+  83  hydrogenobacter_thermophilus            37.17%    passed     94.58%
+  84  persephonella_hydrogeniphila            38.94%    passed     13.52%
+  85  erwinia_tasmaniensis                    36.87%    passed     93.77%
+  86  escherichia_coli                        36.87%    passed     99.18%
+  87  pseudoalteromonas_atlantica             36.87%    passed     94.25%
+  88  alteromonas_mediterranea                36.87%    passed     98.64%
+  89  glaciecola_punicea                      36.87%    passed     96.62%
+  90  vibrio_cholerae                         36.87%    passed     94.11%
+  91  vibrio_parahaemolyticus                 36.87%    passed     81.86%
+  92  photobacterium_profundum                36.87%    passed     92.35%
+  93  aliivibrio_salmonicida                  36.58%    passed     98.38%
+  94  histophilus_somni                       36.87%    passed     99.51%
+  95  actinobacillus_pleuropneumoniae         36.87%    passed     99.57%
+  96  shewanella_halifaxensis                 36.87%    passed     87.04%
+  97  shewanella_loihica                      36.87%    passed     87.92%
+  98  shewanella_frigidimarina                36.87%    passed     97.96%
+  99  psychromonas_ingrahamii                 36.87%    passed     95.01%
+ 100  polaromonas_naphthalenivorans           35.69%    passed     89.54%
+ 101  verminephrobacter_aporrectodeae         33.04%    passed      9.82%
+ 102  bordetella_petrii                       35.69%    passed     49.99%
+ 103  dissulfuribacter_thermophilus           35.69%    passed     33.44%
+ 104  pseudomonas_syringae                    36.58%    passed     97.64%
+ 105  pseudomonas_entomophila                 36.28%    passed     93.93%
+ 106  neisseria_gonorrhoeae                   36.58%    passed     84.89%
+ 107  alkalilimnicola_ehrlichii               35.40%    passed     78.64%
+ 108  halorhodospira_halophila                35.40%    passed     29.58%
+ 109  methylococcus_capsulatus                36.87%    passed     91.57%
+ 110  cellvibrio_japonicus                    35.99%    passed     18.57%
+ 111  marinobacter_nauticus                   35.99%    passed     61.87%
+ 112  oleiphilus_messinensis                  34.22%    passed     78.86%
+ 113  chlorobaculum_parvum                    35.69%    passed     93.18%
+ 114  kushneria_avicenniae                    35.69%    passed     24.72%
+ 115  acinetobacter_baylyi                    35.40%    passed     98.90%
+ 116  legionella_pneumophila                  35.69%    passed     86.16%
+ 117  legionella_erythra                      33.33%    passed     64.58%
+ 118  rickettsiella_massiliensis              33.33%    failed      0.00%
+ 119  allofrancisella_guangzhouensis          36.28%    failed      1.45%
+ 120  salinispira_pacifica                    38.64%    passed     79.58%
+ 121  sphaerochaeta_pleomorpha                38.35%    passed     98.12%
+ 122  treponema_putidum                       38.35%    failed      0.40%
+ 123  pseudarthrobacter_chlorophenolicus      43.36%    passed     98.48%
+ 124  agromyces_subbeticus                    36.58%    failed      0.45%
+ 125  microbacterium_chocolatum               41.59%    passed      5.12%
+ 126  bombiscardovia_coagulans                43.66%    passed     78.24%
+ 127  bdellovibrio_bacteriovorus              37.76%    passed     64.49%
+ 128  pseudobdellovibrio_exovorus             36.58%    passed     81.09%
+ 129  patulibacter_medicamentivorans          34.22%    passed     43.92%
+ 130  eggerthia_catenaformis                  35.69%    passed     25.65%
+ 131  anaeromyxobacter_dehalogenans           36.87%    passed     79.53%
+ 132  acidimicrobium_ferrooxidans             33.63%    failed      0.05%
+ 133  ferrimicrobium_acidiphilum              33.33%    passed     10.73%
+ 134  brachyspira_pilosicoli                  44.25%    failed      0.05%
+ 135  acaryochloris_marina                    44.84%    failed      0.09%
+ 136  chitinophaga_pinensis                   42.48%    passed     43.07%
+ 137  flavobacterium_hydatis                  43.95%    passed     58.75%
+ 138  mesonia_phycicola                       43.95%    passed     77.17%
+ 139  nonlabens_ulvanivorans                  34.22%    passed     63.83%
+ 140  porphyromonas_macacae                   43.66%    passed     60.98%
+ 141  pedobacter_hartonius                    44.25%    passed     72.59%
+ 142  rubrobacter_radiotolerans               38.05%    passed     48.97%
+ 143  salinibacter_ruber                      37.46%    passed      6.50%
+ 144  prochlorococcus_marinus                 46.31%    passed      9.23%
+ 145  spirulina_subsalsa                      43.07%    passed      7.65%
+ 146  oenococcus_oeni                         44.54%    passed     17.47%
+ 147  deinococcus_deserti                     41.89%    passed     29.22%
+ 148  deinococcus_proteolyticus               41.00%    failed      1.67%
+ 149  thermomicrobium_roseum                  31.27%    failed      0.04%
+ 150  elusimicrobium_minutum                  36.87%    failed      1.70%
+ 151  thermococcus_sibiricus                  33.92%    failed      0.00%
+ 152  pyrococcus_furiosus                     35.10%    failed      0.36%
+ 153  bryobacter_aggregatus                   31.56%    passed     44.30%
+ 154  pyrinomonas_methylaliphatogenes         35.69%    passed     47.08%
+ 155  sorangium_cellulosum                    36.58%    passed     50.14%
+ 156  chondromyces_apiculatus                 33.63%    passed     49.33%
+ 157  haloarcula_marismortui                  36.28%    failed      1.34%
+ 158  halobacterium_salinarum                 36.28%    failed      0.14%
+ 159  mycoplasma_mycoides                     37.17%    failed      0.01%
+ 160  mycoplasmopsis_arginini                 31.86%    failed      0.00%
+ 161  mycoplasma_mobile                       35.99%    failed      0.00%
+ 162  mesomycoplasma_hyorhinis                34.51%    failed      0.00%
+ 163  mesomycoplasma_flocculare               37.46%    failed      0.02%
+ 164  asanoa_hainanensis                      33.04%    failed      0.00%
+ 165  dactylosporangium_aurantiacum           37.76%    failed      0.00%
+ 166  chlamydia_trachomatis                   27.73%    failed      0.00%
+ 167  mycoplasmoides_pneumoniae               36.58%    failed      0.00%
+ 168  desulfatibacillum_alkenivorans          33.63%    passed     46.20%
+ 169  fibrobacter_intestinalis                41.89%    passed     25.38%
+ 170  prosthecobacter_debontii                38.35%    passed     28.84%
+ 171  helicobacter_acinonychis                43.66%    passed      6.75%
+ 172  helicobacter_rodentium                  43.95%    failed      3.01%
+ 173  lachnospira_multipara                   50.74%    failed      0.00%
+ 174  capnocytophaga_ochracea                 49.85%    failed      0.00%
+ 175  faecalibaculum_rodentium                46.90%    failed      0.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   37.73%  32 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.059 seconds
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -47971.150
+2. Current log-likelihood: -47969.955
+Optimal log-likelihood: -47969.738
+Proportion of invariable sites: 0.017
+Gamma shape alpha: 0.936
+Parameters optimization took 2 rounds (0.138 sec)
+Time for fast ML tree search: 1.337 seconds
+
+NOTE: ModelFinder requires 96 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 339) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  1  LG            51033.509    347 102761.018   344273.018   104088.640
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  2  LG+I          50835.468    348 102366.936   345270.936   103698.384
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  3  LG+G4         47986.909    348 96669.818    339573.818   98001.266
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  4  LG+I+G4       47969.640    349 96637.280    340937.280   97972.554
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  5  LG+R2         48614.233    349 97926.467    342226.467   99261.741
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  6  LG+R3         48126.098    351 96954.196    344058.196   98297.123
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  7  LG+R4         47930.805    353 96567.610    346491.610   97918.188
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  8  LG+R5         47867.363    355 96444.725    349204.725   97802.955
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  9  LG+R6         47827.421    357 96368.842    351980.842   97734.724
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 10  LG+R7         47798.245    359 96314.490    354794.490   97688.025
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 11  LG+R8         47791.469    361 96304.939    357668.939   97686.125
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 12  LG+R9         47791.549    363 96309.099    360573.099   97697.937
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 23  LG+F+R7       47993.757    378 96743.514    383267.514   98189.742
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 24  LG+F+R8       47988.481    380 96736.961    386296.961   98190.841
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 36  WAG+R7        47920.497    359 96558.994    355038.994   97932.528
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 37  WAG+R8        47918.225    361 96558.451    357922.451   97939.637
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 49  WAG+F+R7      47955.820    378 96667.640    383191.640   98113.868
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 50  WAG+F+R8      47953.342    380 96666.684    386226.684   98120.564
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 62  JTT+R7        48594.193    359 97906.387    356386.387   99279.921
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 63  JTT+R8        48588.017    361 97898.033    359262.033   99279.219
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 75  JTT+F+R7      48706.505    378 98169.010    384693.010   99615.238
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 76  JTT+F+R8      48700.497    380 98160.994    387720.994   99614.874
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 88  JTTDCMut+R7   48575.878    359 97869.756    356349.756   99243.290
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 89  JTTDCMut+R8   48569.395    361 97860.789    359224.789   99241.975
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+101  JTTDCMut+F+R7 48687.076    378 98130.153    384654.153   99576.381
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+102  JTTDCMut+F+R8 48679.988    380 98119.975    387679.975   99573.856
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+114  DCMut+R7      48738.547    359 98195.095    356675.095   99568.629
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+115  DCMut+R8      48733.471    361 98188.943    359552.943   99570.129
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+127  DCMut+F+R7    48716.604    378 98189.208    384713.208   99635.436
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+128  DCMut+F+R8    48712.488    380 98184.977    387744.977   99638.857
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+140  VT+R7         48101.318    359 96920.636    355400.636   98294.170
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+141  VT+R8         48095.009    361 96912.019    358276.019   98293.205
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+153  VT+F+R7       48213.369    378 97182.738    383706.738   98628.966
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+154  VT+F+R8       48207.243    380 97174.487    386734.487   98628.367
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+166  PMB+R7        48488.033    359 97694.065    356174.065   99067.599
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+167  PMB+R8        48485.675    361 97693.349    359057.349   99074.535
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+179  PMB+F+R7      48366.876    378 97489.752    384013.752   98935.980
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+180  PMB+F+R8      48363.949    380 97487.899    387047.899   98941.779
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+192  Blosum62+R7   48331.925    359 97381.851    355861.851   98755.385
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+193  Blosum62+R8   48328.889    361 97379.779    358743.779   98760.965
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+205  Blosum62+F+R7 48308.933    378 97373.866    383897.866   98820.094
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+206  Blosum62+F+R8 48306.666    380 97373.332    386933.332   98827.212
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+218  Dayhoff+R7    48738.236    359 98194.471    356674.471   99568.005
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+219  Dayhoff+R8    48733.113    361 98188.226    359552.226   99569.412
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+231  Dayhoff+F+R7  48718.272    378 98192.544    384716.544   99638.773
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+232  Dayhoff+F+R8  48714.358    380 98188.715    387748.715   99642.595
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+244  mtREV+R7      51498.635    359 103715.269   362195.269   105088.803
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+245  mtREV+R8      51493.449    361 103708.898   365072.898   105090.084
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+257  mtREV+F+R7    49388.379    378 99532.757    386056.757   100978.985
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+258  mtREV+F+R8    49381.468    380 99522.936    389082.936   100976.816
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+270  mtART+R7      52075.412    359 104868.825   363348.825   106242.359
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+271  mtART+R8      52071.833    361 104865.666   366229.666   106246.852
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+283  mtART+F+R7    50097.154    378 100950.307   387474.307   102396.535
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+284  mtART+F+R8    50086.374    380 100932.747   390492.747   102386.627
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+296  mtZOA+R7      50809.265    359 102336.530   360816.530   103710.064
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+297  mtZOA+R8      50805.221    361 102332.442   363696.442   103713.628
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+309  mtZOA+F+R7    49526.324    378 99808.648    386332.648   101254.876
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+310  mtZOA+F+R8    49513.442    380 99786.885    389346.885   101240.765
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+322  mtMet+R7      51869.289    359 104456.579   362936.579   105830.113
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+323  mtMet+R8      51866.743    361 104455.486   365819.486   105836.672
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+335  mtMet+F+R7    49772.678    378 100301.355   386825.355   101747.583
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+336  mtMet+F+R8    49770.099    380 100300.197   389860.197   101754.077
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+348  mtVer+R7      52158.903    359 105035.805   363515.805   106409.339
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+349  mtVer+R8      52144.488    361 105010.976   366374.976   106392.162
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+361  mtVer+F+R7    50536.077    378 101828.154   388352.154   103274.382
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+362  mtVer+F+R8    50529.970    380 101819.941   391379.941   103273.821
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+374  mtInv+R7      51986.899    359 104691.798   363171.798   106065.332
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+375  mtInv+R8      51984.284    361 104690.567   366054.567   106071.754
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+387  mtInv+F+R7    49321.612    378 99399.224    385923.224   100845.452
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+388  mtInv+F+R8    49315.247    380 99390.494    388950.494   100844.374
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+400  mtMAM+R7      52760.468    359 106238.936   364718.936   107612.470
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+401  mtMAM+R8      52752.170    361 106226.340   367590.340   107607.526
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+413  mtMAM+F+R7    50879.159    378 102514.317   389038.317   103960.545
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+414  mtMAM+F+R8    50865.228    380 102490.456   392050.456   103944.336
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+426  HIVb+R7       49942.758    359 100603.516   359083.516   101977.050
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+427  HIVb+R8       49925.550    361 100573.099   361937.099   101954.285
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+439  HIVb+F+R7     49981.741    378 100719.483   387243.483   102165.711
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+440  HIVb+F+R8     49968.980    380 100697.960   390257.960   102151.840
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+452  HIVw+R7       52058.667    359 104835.334   363315.334   106208.868
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+453  HIVw+R8       52049.701    361 104821.402   366185.402   106202.588
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+465  HIVw+F+R7     51447.578    378 103651.156   390175.156   105097.384
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+466  HIVw+F+R8     51435.093    380 103630.185   393190.185   105084.065
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+478  FLU+R7        49447.092    359 99612.183    358092.183   100985.717
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+479  FLU+R8        49438.418    361 99598.837    360962.837   100980.023
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+491  FLU+F+R7      49252.066    378 99260.133    385784.133   100706.361
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+492  FLU+F+R8      49243.040    380 99246.081    388806.081   100699.961
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+504  rtREV+R7      48261.422    359 97240.844    355720.844   98614.378
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+505  rtREV+R8      48253.496    361 97228.993    358592.993   98610.179
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+517  rtREV+F+R7    48172.991    378 97101.981    383625.981   98548.209
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+518  rtREV+F+R8    48167.828    380 97095.655    386655.655   98549.535
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+530  cpREV+R7      48474.794    359 97667.588    356147.588   99041.122
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+531  cpREV+R8      48468.147    361 97658.294    359022.294   99039.481
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+543  cpREV+F+R7    48515.176    378 97786.352    384310.352   99232.580
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+544  cpREV+F+R8    48508.982    380 97777.964    387337.964   99231.844
+Akaike Information Criterion:           LG+R8
+Corrected Akaike Information Criterion: LG+G4
+Bayesian Information Criterion:         LG+R8
+Best-fit model: LG+R8 chosen according to BIC
+
+All model information printed to adk.aln.model.gz
+CPU time for ModelFinder: 4466.783 seconds (1h:14m:26s)
+Wall-clock time for ModelFinder: 237.031 seconds (0h:3m:57s)
+Generating 1000 samples for ultrafast bootstrap (seed: 861420)...
+
+NOTE: 77 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -47791.469
+Optimal log-likelihood: -47791.452
+Site proportion and rates:  (0.077,0.019) (0.062,0.113) (0.074,0.241) (0.177,0.399) (0.114,0.678) (0.189,1.062) (0.173,1.581) (0.133,2.637)
+Parameters optimization took 1 rounds (0.549 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.495437 sec (of wall-clock time) 9.565228 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.026684 sec (of wall-clock time) 0.518817 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -47858.450
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 5.514 second
+Computing log-likelihood of 98 initial trees ... 5.567 seconds
+Current best score: -47791.452
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -47783.318
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -47652.367
+Iteration 10 / LogL: -47798.297 / Time: 0h:0m:34s
+Iteration 20 / LogL: -47788.045 / Time: 0h:0m:56s
+Finish initializing candidate tree set (20)
+Current best tree score: -47652.367 / CPU time: 55.027
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -47648.873
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -47645.816
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 30: -47636.331
+Iteration 30 / LogL: -47636.331 / Time: 0h:1m:13s (0h:4m:14s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 40: -47627.539
+Iteration 40 / LogL: -47627.539 / Time: 0h:1m:28s (0h:3m:46s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 42: -47626.053
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 43: -47625.765
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 48: -47619.893
+Iteration 50 / LogL: -47622.799 / Time: 0h:1m:44s (0h:3m:28s left)
+Log-likelihood cutoff on original alignment: -47790.340
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 53: -47619.153
+Iteration 60 / LogL: -47633.370 / Time: 0h:1m:59s (0h:3m:8s left)
+Iteration 70 / LogL: -47650.664 / Time: 0h:2m:13s (0h:2m:40s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 72: -47607.488
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 79: -47606.912
+Iteration 80 / LogL: -47618.703 / Time: 0h:2m:28s (0h:3m:6s left)
+Iteration 90 / LogL: -47648.677 / Time: 0h:2m:42s (0h:2m:42s left)
+Iteration 100 / LogL: -47612.120 / Time: 0h:2m:57s (0h:2m:21s left)
+Log-likelihood cutoff on original alignment: -47782.191
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.955
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -47608.664 / Time: 0h:3m:11s (0h:2m:38s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 112: -47606.597
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 119: -47605.036
+Iteration 120 / LogL: -47612.973 / Time: 0h:3m:26s (0h:2m:51s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 129: -47601.104
+Iteration 130 / LogL: -47609.514 / Time: 0h:3m:41s (0h:2m:50s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 138: -47599.252
+Iteration 140 / LogL: -47605.626 / Time: 0h:3m:56s (0h:2m:46s left)
+Iteration 150 / LogL: -47608.531 / Time: 0h:4m:10s (0h:2m:28s left)
+Log-likelihood cutoff on original alignment: -47782.191
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 153: -47596.905
+Iteration 160 / LogL: -47610.887 / Time: 0h:4m:25s (0h:2m:35s left)
+Iteration 170 / LogL: -47634.328 / Time: 0h:4m:39s (0h:2m:17s left)
+Iteration 180 / LogL: -47616.704 / Time: 0h:4m:53s (0h:1m:59s left)
+Iteration 190 / LogL: -47613.286 / Time: 0h:5m:7s (0h:1m:42s left)
+Iteration 200 / LogL: -47615.435 / Time: 0h:5m:20s (0h:1m:25s left)
+Log-likelihood cutoff on original alignment: -47782.191
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.987
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 210 / LogL: -47609.794 / Time: 0h:5m:36s (0h:2m:24s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 215: -47596.122
+Iteration 220 / LogL: -47621.036 / Time: 0h:5m:50s (0h:2m:32s left)
+Iteration 230 / LogL: -47610.897 / Time: 0h:6m:4s (0h:2m:15s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 232: -47593.884
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 237: -47592.189
+Iteration 240 / LogL: -47604.702 / Time: 0h:6m:21s (0h:2m:34s left)
+Iteration 250 / LogL: -47597.346 / Time: 0h:6m:35s (0h:2m:18s left)
+Log-likelihood cutoff on original alignment: -47782.191
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 253: -47591.947
+Iteration 260 / LogL: -47594.408 / Time: 0h:6m:51s (0h:2m:27s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 262: -47588.401
+Iteration 270 / LogL: -47598.665 / Time: 0h:7m:5s (0h:2m:25s left)
+Iteration 280 / LogL: -47594.568 / Time: 0h:7m:19s (0h:2m:9s left)
+Iteration 290 / LogL: -47589.677 / Time: 0h:7m:33s (0h:1m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 294: -47587.473
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 300: -47587.246
+Iteration 300 / LogL: -47587.246 / Time: 0h:7m:48s (0h:2m:36s left)
+Log-likelihood cutoff on original alignment: -47775.815
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.982
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 310 / LogL: -47592.986 / Time: 0h:8m:3s (0h:2m:20s left)
+Iteration 320 / LogL: -47607.721 / Time: 0h:8m:18s (0h:2m:4s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 328: -47582.616
+Iteration 330 / LogL: -47592.759 / Time: 0h:8m:33s (0h:2m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 340: -47582.479
+Iteration 340 / LogL: -47582.479 / Time: 0h:8m:49s (0h:2m:36s left)
+Iteration 350 / LogL: -47589.335 / Time: 0h:9m:3s (0h:2m:20s left)
+Log-likelihood cutoff on original alignment: -47775.815
+Iteration 360 / LogL: -47603.100 / Time: 0h:9m:18s (0h:2m:4s left)
+Iteration 370 / LogL: -47583.570 / Time: 0h:9m:32s (0h:1m:48s left)
+Iteration 380 / LogL: -47584.548 / Time: 0h:9m:47s (0h:1m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 388: -47582.103
+Iteration 390 / LogL: -47596.636 / Time: 0h:10m:1s (0h:2m:31s left)
+Iteration 400 / LogL: -47598.043 / Time: 0h:10m:15s (0h:2m:15s left)
+Log-likelihood cutoff on original alignment: -47775.815
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.961
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 402: -47580.203
+Iteration 410 / LogL: -47592.376 / Time: 0h:10m:31s (0h:2m:22s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 413: -47578.855
+Iteration 420 / LogL: -47585.895 / Time: 0h:10m:47s (0h:2m:23s left)
+Iteration 430 / LogL: -47588.872 / Time: 0h:11m:1s (0h:2m:8s left)
+Iteration 440 / LogL: -47581.261 / Time: 0h:11m:17s (0h:1m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 448: -47571.253
+Iteration 450 / LogL: -47594.881 / Time: 0h:11m:35s (0h:2m:31s left)
+Log-likelihood cutoff on original alignment: -47677.001
+Iteration 460 / LogL: -47576.871 / Time: 0h:11m:51s (0h:2m:16s left)
+Iteration 470 / LogL: -47575.597 / Time: 0h:12m:6s (0h:2m:0s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 474: -47569.624
+Iteration 480 / LogL: -47578.106 / Time: 0h:12m:22s (0h:2m:25s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 485: -47567.907
+Iteration 490 / LogL: -47581.531 / Time: 0h:12m:38s (0h:2m:27s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 491: -47566.492
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 495: -47565.261
+Iteration 500 / LogL: -47574.561 / Time: 0h:12m:55s (0h:2m:27s left)
+Log-likelihood cutoff on original alignment: -47677.001
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.896
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 501: -47562.102
+Iteration 510 / LogL: -47578.029 / Time: 0h:13m:11s (0h:2m:21s left)
+Iteration 520 / LogL: -47565.790 / Time: 0h:13m:25s (0h:2m:5s left)
+Iteration 530 / LogL: -47562.425 / Time: 0h:13m:41s (0h:1m:50s left)
+Iteration 540 / LogL: -47575.775 / Time: 0h:13m:56s (0h:1m:34s left)
+Iteration 550 / LogL: -47595.592 / Time: 0h:14m:11s (0h:1m:19s left)
+Log-likelihood cutoff on original alignment: -47677.001
+Iteration 560 / LogL: -47584.774 / Time: 0h:14m:27s (0h:1m:3s left)
+Iteration 570 / LogL: -47566.190 / Time: 0h:14m:41s (0h:0m:48s left)
+Iteration 580 / LogL: -47567.778 / Time: 0h:14m:56s (0h:0m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 581: -47560.764
+Iteration 590 / LogL: -47569.149 / Time: 0h:15m:12s (0h:2m:21s left)
+Iteration 600 / LogL: -47564.314 / Time: 0h:15m:27s (0h:2m:5s left)
+Log-likelihood cutoff on original alignment: -47677.001
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.899
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 608: -47559.506
+Iteration 610 / LogL: -47574.640 / Time: 0h:15m:42s (0h:2m:31s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 617: -47558.611
+Iteration 620 / LogL: -47562.365 / Time: 0h:15m:57s (0h:2m:30s left)
+Iteration 630 / LogL: -47564.498 / Time: 0h:16m:11s (0h:2m:14s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 631: -47557.195
+Iteration 640 / LogL: -47560.343 / Time: 0h:16m:26s (0h:2m:20s left)
+Iteration 650 / LogL: -47603.036 / Time: 0h:16m:40s (0h:2m:4s left)
+Log-likelihood cutoff on original alignment: -47677.001
+Iteration 660 / LogL: -47559.352 / Time: 0h:16m:55s (0h:1m:49s left)
+Iteration 670 / LogL: -47574.056 / Time: 0h:17m:9s (0h:1m:33s left)
+Iteration 680 / LogL: -47562.743 / Time: 0h:17m:24s (0h:1m:18s left)
+Iteration 690 / LogL: -47562.130 / Time: 0h:17m:39s (0h:1m:3s left)
+Iteration 700 / LogL: -47571.280 / Time: 0h:17m:55s (0h:0m:47s left)
+Log-likelihood cutoff on original alignment: -47677.001
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.900
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 704: -47556.895
+Iteration 710 / LogL: -47563.967 / Time: 0h:18m:10s (0h:2m:24s left)
+Iteration 720 / LogL: -47561.245 / Time: 0h:18m:25s (0h:2m:9s left)
+Iteration 730 / LogL: -47564.797 / Time: 0h:18m:40s (0h:1m:53s left)
+Iteration 740 / LogL: -47571.831 / Time: 0h:18m:54s (0h:1m:38s left)
+Iteration 750 / LogL: -47571.682 / Time: 0h:19m:9s (0h:1m:22s left)
+Log-likelihood cutoff on original alignment: -47677.001
+Iteration 760 / LogL: -47561.923 / Time: 0h:19m:25s (0h:1m:7s left)
+Iteration 770 / LogL: -47564.349 / Time: 0h:19m:40s (0h:0m:52s left)
+Iteration 780 / LogL: -47606.313 / Time: 0h:19m:54s (0h:0m:36s left)
+Iteration 790 / LogL: -47567.291 / Time: 0h:20m:9s (0h:0m:21s left)
+Iteration 800 / LogL: -47566.765 / Time: 0h:20m:24s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -47677.001
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.904
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 810 / LogL: -47568.508 / Time: 0h:20m:39s (0h:2m:17s left)
+Iteration 820 / LogL: -47559.156 / Time: 0h:20m:54s (0h:2m:2s left)
+Iteration 830 / LogL: -47563.626 / Time: 0h:21m:10s (0h:1m:47s left)
+Iteration 840 / LogL: -47560.845 / Time: 0h:21m:24s (0h:1m:31s left)
+Iteration 850 / LogL: -47558.525 / Time: 0h:21m:40s (0h:1m:16s left)
+Log-likelihood cutoff on original alignment: -47677.001
+Iteration 860 / LogL: -47572.080 / Time: 0h:21m:56s (0h:1m:1s left)
+Iteration 870 / LogL: -47563.237 / Time: 0h:22m:12s (0h:0m:46s left)
+Iteration 880 / LogL: -47566.346 / Time: 0h:22m:28s (0h:0m:30s left)
+Iteration 890 / LogL: -47564.718 / Time: 0h:22m:43s (0h:0m:15s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 899: -47556.650
+Iteration 900 / LogL: -47577.513 / Time: 0h:22m:59s (0h:2m:31s left)
+Log-likelihood cutoff on original alignment: -47677.001
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.948
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 910 / LogL: -47559.544 / Time: 0h:23m:15s (0h:2m:18s left)
+Iteration 920 / LogL: -47570.776 / Time: 0h:23m:30s (0h:2m:2s left)
+Iteration 930 / LogL: -47580.473 / Time: 0h:23m:45s (0h:1m:47s left)
+Iteration 940 / LogL: -47576.519 / Time: 0h:24m:0s (0h:1m:32s left)
+Iteration 950 / LogL: -47557.831 / Time: 0h:24m:16s (0h:1m:16s left)
+Log-likelihood cutoff on original alignment: -47677.001
+Iteration 960 / LogL: -47559.702 / Time: 0h:24m:32s (0h:1m:1s left)
+Iteration 970 / LogL: -47561.466 / Time: 0h:24m:46s (0h:0m:46s left)
+Iteration 980 / LogL: -47582.311 / Time: 0h:25m:2s (0h:0m:30s left)
+Iteration 990 / LogL: -47562.469 / Time: 0h:25m:18s (0h:0m:15s left)
+Iteration 1000 / LogL: -47574.142 / Time: 0h:25m:34s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -47677.001
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.974
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+WARNING: bootstrap analysis did not converge. You should rerun with higher number of iterations (-nm option)
+TREE SEARCH COMPLETED AFTER 1001 ITERATIONS / Time: 0h:25m:36s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -47556.650
+Optimal log-likelihood: -47556.650
+Site proportion and rates:  (0.078,0.018) (0.061,0.112) (0.094,0.251) (0.156,0.406) (0.116,0.651) (0.212,1.084) (0.179,1.663) (0.104,2.894)
+Parameters optimization took 1 rounds (0.130 sec)
+BEST SCORE FOUND : -47556.650
+Empirical proportions for each category: 0.071 0.050 0.068 0.139 0.077 0.357 0.162 0.077
+Site rates printed to adk.aln.rate
+Creating bootstrap support values...
+Split supports printed to NEXUS file adk.aln.splits.nex
+Total tree length: 115.904
+
+Total number of iterations: 1001
+CPU time used for tree search: 28855.370 sec (8h:0m:55s)
+Wall-clock time used for tree search: 1534.929 sec (0h:25m:34s)
+Total CPU time used: 28895.053 sec (8h:1m:35s)
+Total wall-clock time used: 1537.306 sec (0h:25m:37s)
+
+Computing bootstrap consensus tree...
+Reading input file adk.aln.splits.nex...
+175 taxa and 1624 splits.
+Consensus tree written to adk.aln.contree
+Reading input trees file adk.aln.contree
+Log-likelihood of consensus tree: -47557.070
+
+Analysis results written to: 
+  IQ-TREE report:                adk.aln.iqtree
+  Maximum-likelihood tree:       adk.aln.treefile
+  Likelihood distances:          adk.aln.mldist
+  Site-specific rates:           adk.aln.rate
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          adk.aln.splits.nex
+  Consensus tree:                adk.aln.contree
+  Screen log file:               adk.aln.log
+
+Date and Time: Mon Dec 16 11:29:51 2024

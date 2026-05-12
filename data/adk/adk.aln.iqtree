@@ -1,0 +1,947 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: adk.aln
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 861420
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 175 sequences with 339 amino-acid sites
+Number of constant sites: 54 (= 15.9292% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 54 (= 15.9292% of all sites)
+Number of parsimony informative sites: 235
+Number of distinct site patterns: 329
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+R8
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+R8            -47791.469   96304.939 +    0.882  357668.939 -        0   97686.125 +     0.72
+LG+R7            -47798.245   96314.490 -  0.00744  354794.490 -        0   97688.025 +    0.278
+LG+R9            -47791.549   96309.099 +     0.11  360573.099 -        0   97697.937 -  0.00196
+LG+R6            -47827.421   96368.842 - 1.17e-14  351980.842 -        0   97734.724 - 2.01e-11
+LG+R5            -47867.363   96444.725 -  3.9e-31  349204.725 -        0   97802.955 - 3.07e-26
+LG+R4            -47930.805   96567.610 - 8.08e-58  346491.610 -        0   97918.188 - 2.92e-51
+WAG+R7           -47920.497   96558.994 -    6e-56  355038.994 -        0   97932.528 - 2.25e-54
+WAG+R8           -47918.225   96558.451 - 7.87e-56  357922.451 -        0   97939.637 - 6.42e-56
+LG+I+G4          -47969.640   96637.280 - 6.01e-73  340937.280 - 8.47e-297   97972.554 - 4.57e-63
+LG+G4            -47986.909   96669.818 - 5.16e-80  339573.818 +        1   98001.266 - 2.66e-69
+WAG+F+R7         -47955.820   96667.640 - 1.53e-79  383191.640 -        0   98113.868 - 9.42e-94
+WAG+F+R8         -47953.342   96666.684 - 2.48e-79  386226.684 -        0   98120.564 - 3.31e-95
+LG+F+R7          -47993.757   96743.514 - 5.13e-96  383267.514 -        0   98189.742 - 3.15e-110
+LG+F+R8          -47988.481   96736.961 - 1.36e-94  386296.961 -        0   98190.841 - 1.82e-110
+VT+R8            -48095.009   96912.019 - 1.32e-132  358276.019 -        0   98293.205 - 1.08e-132
+VT+R7            -48101.318   96920.636 - 1.77e-134  355400.636 -        0   98294.170 - 6.63e-133
+LG+R3            -48126.098   96954.197 - 9.14e-142  344058.197 -        0   98297.123 - 1.52e-133
+rtREV+F+R7       -48172.991   97101.981 - 7.42e-174  383625.981 -        0   98548.209 - 4.55e-188
+rtREV+F+R8       -48167.828   97095.655 - 1.75e-172  386655.655 -        0   98549.535 - 2.34e-188
+rtREV+R8         -48253.496   97228.993 - 1.95e-201  358592.993 -        0   98610.179 - 1.59e-201
+rtREV+R7         -48261.422   97240.844 - 5.21e-204  355720.844 -        0   98614.378 - 1.95e-202
+VT+F+R8          -48207.243   97174.487 - 1.34e-189  386734.487 -        0   98628.367 - 1.79e-205
+VT+F+R7          -48213.369   97182.738 - 2.16e-191  383706.738 -        0   98628.966 - 1.32e-205
+Blosum62+R7      -48331.925   97381.851 - 1.25e-234  355861.851 -        0   98755.385 - 4.68e-233
+Blosum62+R8      -48328.889   97379.779 - 3.53e-234  358743.779 -        0   98760.965 - 2.88e-234
+Blosum62+F+R7    -48308.933   97373.866 - 6.78e-233  383897.866 -        0   98820.094 - 4.16e-247
+Blosum62+F+R8    -48306.666   97373.332 - 8.85e-233  386933.332 -        0   98827.212 - 1.18e-248
+PMB+F+R7         -48366.876   97489.752 - 4.64e-258  384013.752 -        0   98935.980 - 2.85e-272
+PMB+F+R8         -48363.949   97487.899 - 1.17e-257  387047.899 -        0   98941.779 - 1.57e-273
+cpREV+R8         -48468.147   97658.294 - 1.17e-294  359022.294 -        0   99039.481 - 9.54e-295
+cpREV+R7         -48474.794   97667.588 - 1.12e-296  356147.588 -        0   99041.122 - 4.2e-295
+PMB+R7           -48488.033   97694.065 -   2e-302  356174.065 -        0   99067.599 - 7.48e-301
+PMB+R8           -48485.675   97693.349 - 2.86e-302  359057.349 -        0   99074.535 - 2.33e-302
+cpREV+F+R8       -48508.982   97777.964 - 1.21e-320  387337.964 -        0   99231.844 -        0
+cpREV+F+R7       -48515.176   97786.352 - 1.83e-322  384310.352 -        0   99232.580 -        0
+JTTDCMut+R8      -48569.395   97860.789 -        0  359224.789 -        0   99241.975 -        0
+JTTDCMut+R7      -48575.878   97869.756 -        0  356349.756 -        0   99243.290 -        0
+LG+R2            -48614.233   97926.467 -        0  342226.467 -        0   99261.741 -        0
+JTT+R8           -48588.017   97898.033 -        0  359262.033 -        0   99279.219 -        0
+JTT+R7           -48594.193   97906.387 -        0  356386.387 -        0   99279.921 -        0
+Dayhoff+R7       -48738.236   98194.471 -        0  356674.471 -        0   99568.005 -        0
+DCMut+R7         -48738.547   98195.095 -        0  356675.095 -        0   99568.629 -        0
+Dayhoff+R8       -48733.113   98188.226 -        0  359552.226 -        0   99569.412 -        0
+DCMut+R8         -48733.471   98188.943 -        0  359552.943 -        0   99570.129 -        0
+JTTDCMut+F+R8    -48679.988   98119.975 -        0  387679.975 -        0   99573.856 -        0
+JTTDCMut+F+R7    -48687.076   98130.153 -        0  384654.153 -        0   99576.381 -        0
+JTT+F+R8         -48700.497   98160.994 -        0  387720.994 -        0   99614.874 -        0
+JTT+F+R7         -48706.505   98169.010 -        0  384693.010 -        0   99615.238 -        0
+DCMut+F+R7       -48716.604   98189.208 -        0  384713.208 -        0   99635.436 -        0
+Dayhoff+F+R7     -48718.272   98192.545 -        0  384716.545 -        0   99638.773 -        0
+DCMut+F+R8       -48712.488   98184.977 -        0  387744.977 -        0   99638.857 -        0
+Dayhoff+F+R8     -48714.358   98188.715 -        0  387748.715 -        0   99642.595 -        0
+FLU+F+R8         -49243.040   99246.081 -        0  388806.081 -        0  100699.961 -        0
+FLU+F+R7         -49252.066   99260.133 -        0  385784.133 -        0  100706.361 -        0
+mtInv+F+R8       -49315.247   99390.494 -        0  388950.494 -        0  100844.374 -        0
+mtInv+F+R7       -49321.612   99399.224 -        0  385923.224 -        0  100845.452 -        0
+mtREV+F+R8       -49381.468   99522.936 -        0  389082.936 -        0  100976.816 -        0
+mtREV+F+R7       -49388.379   99532.757 -        0  386056.757 -        0  100978.985 -        0
+FLU+R8           -49438.418   99598.837 -        0  360962.836 -        0  100980.023 -        0
+FLU+R7           -49447.092   99612.183 -        0  358092.183 -        0  100985.717 -        0
+mtZOA+F+R8       -49513.442   99786.885 -        0  389346.885 -        0  101240.765 -        0
+mtZOA+F+R7       -49526.324   99808.648 -        0  386332.648 -        0  101254.876 -        0
+mtMet+F+R7       -49772.678  100301.355 -        0  386825.355 -        0  101747.583 -        0
+mtMet+F+R8       -49770.099  100300.197 -        0  389860.197 -        0  101754.077 -        0
+HIVb+R8          -49925.550  100573.099 -        0  361937.099 -        0  101954.285 -        0
+HIVb+R7          -49942.758  100603.516 -        0  359083.516 -        0  101977.050 -        0
+HIVb+F+R8        -49968.980  100697.960 -        0  390257.960 -        0  102151.840 -        0
+HIVb+F+R7        -49981.741  100719.483 -        0  387243.483 -        0  102165.711 -        0
+mtART+F+R8       -50086.374  100932.747 -        0  390492.747 -        0  102386.627 -        0
+mtART+F+R7       -50097.154  100950.307 -        0  387474.307 -        0  102396.535 -        0
+mtVer+F+R8       -50529.970  101819.941 -        0  391379.941 -        0  103273.821 -        0
+mtVer+F+R7       -50536.077  101828.154 -        0  388352.154 -        0  103274.382 -        0
+LG+I             -50835.468  102366.936 -        0  345270.936 -        0  103698.384 -        0
+mtZOA+R7         -50809.265  102336.530 -        0  360816.530 -        0  103710.064 -        0
+mtZOA+R8         -50805.221  102332.442 -        0  363696.442 -        0  103713.628 -        0
+mtMAM+F+R8       -50865.228  102490.456 -        0  392050.456 -        0  103944.336 -        0
+mtMAM+F+R7       -50879.159  102514.317 -        0  389038.317 -        0  103960.545 -        0
+LG               -51033.509  102761.018 -        0  344273.018 -        0  104088.640 -        0
+HIVw+F+R8        -51435.093  103630.185 -        0  393190.185 -        0  105084.065 -        0
+mtREV+R7         -51498.635  103715.269 -        0  362195.269 -        0  105088.803 -        0
+mtREV+R8         -51493.449  103708.898 -        0  365072.898 -        0  105090.084 -        0
+HIVw+F+R7        -51447.578  103651.156 -        0  390175.156 -        0  105097.384 -        0
+mtMet+R7         -51869.289  104456.579 -        0  362936.579 -        0  105830.113 -        0
+mtMet+R8         -51866.743  104455.486 -        0  365819.486 -        0  105836.672 -        0
+mtInv+R7         -51986.899  104691.798 -        0  363171.798 -        0  106065.332 -        0
+mtInv+R8         -51984.284  104690.567 -        0  366054.567 -        0  106071.753 -        0
+HIVw+R8          -52049.701  104821.402 -        0  366185.402 -        0  106202.588 -        0
+HIVw+R7          -52058.667  104835.334 -        0  363315.334 -        0  106208.868 -        0
+mtART+R7         -52075.412  104868.825 -        0  363348.824 -        0  106242.359 -        0
+mtART+R8         -52071.833  104865.666 -        0  366229.666 -        0  106246.852 -        0
+mtVer+R8         -52144.488  105010.976 -        0  366374.976 -        0  106392.162 -        0
+mtVer+R7         -52158.903  105035.805 -        0  363515.805 -        0  106409.339 -        0
+mtMAM+R8         -52752.170  106226.340 -        0  367590.340 -        0  107607.526 -        0
+mtMAM+R7         -52760.468  106238.936 -        0  364718.936 -        0  107612.470 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+R8
+
+State frequencies: (model)
+
+Model of rate heterogeneity: FreeRate with 8 categories
+Site proportion and rates:  (0.0777,0.0177) (0.0610,0.1124) (0.0937,0.2513) (0.1564,0.4061) (0.1159,0.6510) (0.2118,1.0841) (0.1794,1.6635) (0.1041,2.8939)
+
+ Category  Relative_rate  Proportion
+  1         0.0177         0.0777
+  2         0.1124         0.0610
+  3         0.2513         0.0937
+  4         0.4061         0.1564
+  5         0.6510         0.1159
+  6         1.0841         0.2118
+  7         1.6635         0.1794
+  8         2.8939         0.1041
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -47556.6502 (s.e. 2461.8196)
+Unconstrained log-likelihood (without tree): -1960.1046
+Number of free parameters (#branches + #model parameters): 361
+Akaike information criterion (AIC) score: 95835.3003
+Corrected Akaike information criterion (AICc) score: 357199.3003
+Bayesian information criterion (BIC) score: 97216.4863
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 361
+Sample size (n, alignment length): 339
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 115.9040
+Sum of internal branch lengths: 35.9292 (30.9991% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0029) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'azorhizobium_caulinodans' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--azorhizobium_caulinodans
+|
++--methylocella_silvestris
+|
+|        +--bartonella_henselae
+|     +--| (100)
+|     |  +--bartonella_quintana
+|  +--| (100)
+|  |  +--brucella_vulpis
++--| (81)
+   |        +--paramagnetospirillum_magneticum
+   |     +--| (98)
+   |     |  |  +--gemmobacter_aquatilis
+   |     |  +--| (100)
+   |     |     +--salipiger_mucosus
+   |  +--| (94)
+   |  |  +---sphingopyxis_alaskensis
+   +--| (100)
+      |     +--gluconacetobacter_diazotrophicus
+      |  +--| (99)
+      |  |  |  +--pseudoroseomonas_rhizosphaerae
+      |  |  +--| (89)
+      |  |     |  +--falsiroseomonas_stagni
+      |  |     +--| (77)
+      |  |        +--rubritepida_flocculans
+      +--| (90)
+         |                       +--xanthomonas_campestris
+         |                    +--| (100)
+         |                    |  +--rhodanobacter_fulvus
+         |                 +--| (68)
+         |                 |  |  +---pseudarthrobacter_chlorophenolicus
+         |                 |  +--| (99)
+         |                 |     |     +--agromyces_subbeticus
+         |                 |     |  +--| (100)
+         |                 |     |  |  +--microbacterium_chocolatum
+         |                 |     +--| (99)
+         |                 |        +---bombiscardovia_coagulans
+         |              +--| (75)
+         |              |  |        +----leptospira_interrogans
+         |              |  |     +--| (18)
+         |              |  |     |  |        +--synechococcus_elongatus
+         |              |  |     |  |     +--| (100)
+         |              |  |     |  |     |  +-----acaryochloris_marina
+         |              |  |     |  |  +--| (94)
+         |              |  |     |  |  |  +-----spirulina_subsalsa
+         |              |  |     |  +--| (50)
+         |              |  |     |     +-------------desulfatibacillum_alkenivorans
+         |              |  |  +--| (15)
+         |              |  |  |  |  +--desulfurobacterium_atlanticum
+         |              |  |  |  +--| (100)
+         |              |  |  |     +--desulfurobacterium_thermolithotrophum
+         |              |  +--| (47)
+         |              |     |           +---chitinophaga_pinensis
+         |              |     |        +--| (72)
+         |              |     |        |  +---porphyromonas_macacae
+         |              |     |     +--| (100)
+         |              |     |     |  |     +--flavobacterium_hydatis
+         |              |     |     |  |  +--| (97)
+         |              |     |     |  |  |  |  +--mesonia_phycicola
+         |              |     |     |  |  |  +--| (100)
+         |              |     |     |  |  |     +--nonlabens_ulvanivorans
+         |              |     |     |  +--| (100)
+         |              |     |     |     +----pedobacter_hartonius
+         |              |     |  +--| (98)
+         |              |     |  |  |   +--deinococcus_deserti
+         |              |     |  |  +---| (100)
+         |              |     |  |      +--deinococcus_proteolyticus
+         |              |     +--| (32)
+         |              |        |      +--asanoa_hainanensis
+         |              |        +------| (100)
+         |              |               +--dactylosporangium_aurantiacum
+         |           +--| (76)
+         |           |  |  +--acidimicrobium_ferrooxidans
+         |           |  +--| (100)
+         |           |     +--ferrimicrobium_acidiphilum
+         |        +--| (71)
+         |        |  |           +--corynebacterium_urealyticum
+         |        |  |        +--| (100)
+         |        |  |        |  +--dietzia_alimentaria
+         |        |  |     +--| (86)
+         |        |  |     |  |        +--salinispora_arenicola
+         |        |  |     |  |     +--| (100)
+         |        |  |     |  |     |  +--micromonospora_viridifaciens
+         |        |  |     |  |  +--| (100)
+         |        |  |     |  |  |  +--actinocatenispora_sera
+         |        |  |     |  +--| (86)
+         |        |  |     |     |     +--streptomyces_coelicolor
+         |        |  |     |     |  +--| (100)
+         |        |  |     |     |  |  +--streptomyces_subrutilus
+         |        |  |     |     +--| (94)
+         |        |  |     |        +--streptomonospora_alba
+         |        |  |  +--| (83)
+         |        |  |  |  |     +--salinispira_pacifica
+         |        |  |  |  |  +--| (100)
+         |        |  |  |  |  |  +--sphaerochaeta_pleomorpha
+         |        |  |  |  +--| (100)
+         |        |  |  |     +---treponema_putidum
+         |        |  +--| (60)
+         |        |     |  +----patulibacter_medicamentivorans
+         |        |     +--| (95)
+         |        |        |  +----rubrobacter_radiotolerans
+         |        |        +--| (97)
+         |        |           +-----salinibacter_ruber
+         |     +--| (51)
+         |     |  |                                    +--thermotoga_neapolitana
+         |     |  |                                +---| (100)
+         |     |  |                                |   +--thermotoga_maritima
+         |     |  |                             +--| (97)
+         |     |  |                             |  |     +---pseudothermotoga_lettingae
+         |     |  |                             |  |  +--| (62)
+         |     |  |                             |  |  |  |  +--thermosipho_melanesiensis
+         |     |  |                             |  |  |  +--| (100)
+         |     |  |                             |  |  |     +--thermosipho_africanus
+         |     |  |                             |  +--| (98)
+         |     |  |                             |     |  +--fervidobacterium_nodosum
+         |     |  |                             |     +--| (100)
+         |     |  |                             |        +--fervidobacterium_islandicum
+         |     |  |                          +--| (98)
+         |     |  |                          |  +--kosmotoga_olearia
+         |     |  |                       +--| (100)
+         |     |  |                       |  +--petrotoga_mobilis
+         |     |  |                    +--| (99)
+         |     |  |                    |  |      +--thermococcus_sibiricus
+         |     |  |                    |  +------| (100)
+         |     |  |                    |         +--pyrococcus_furiosus
+         |     |  |                 +--| (93)
+         |     |  |                 |  +--archaeoglobus_fulgidus
+         |     |  |              +--| (90)
+         |     |  |              |  |     +--thermodesulfatator_atlanticus
+         |     |  |              |  |  +--| (99)
+         |     |  |              |  |  |  +--thermodesulfobacterium_commune
+         |     |  |              |  +--| (94)
+         |     |  |              |     |  +----brachyspira_pilosicoli
+         |     |  |              |     +--| (99)
+         |     |  |              |        +-----elusimicrobium_minutum
+         |     |  |           +--| (78)
+         |     |  |           |  |              +---desulfurella_acetivorans
+         |     |  |           |  |           +--| (90)
+         |     |  |           |  |           |  |  +---bdellovibrio_bacteriovorus
+         |     |  |           |  |           |  +--| (97)
+         |     |  |           |  |           |     +------pseudobdellovibrio_exovorus
+         |     |  |           |  |        +--| (79)
+         |     |  |           |  |        |  |        +------prochlorococcus_marinus
+         |     |  |           |  |        |  |     +--| (81)
+         |     |  |           |  |        |  |     |  |      +-------fibrobacter_intestinalis
+         |     |  |           |  |        |  |     |  |  +---| (100)
+         |     |  |           |  |        |  |     |  |  |   +-------prosthecobacter_debontii
+         |     |  |           |  |        |  |     |  +--| (91)
+         |     |  |           |  |        |  |     |     |           +--helicobacter_acinonychis
+         |     |  |           |  |        |  |     |     +-----------| (100)
+         |     |  |           |  |        |  |     |                 +--helicobacter_rodentium
+         |     |  |           |  |        |  |  +--| (99)
+         |     |  |           |  |        |  |  |  |  +------mycoplasma_mycoides
+         |     |  |           |  |        |  |  |  +--| (84)
+         |     |  |           |  |        |  |  |     |           +---mycoplasmopsis_arginini
+         |     |  |           |  |        |  |  |     |        +--| (97)
+         |     |  |           |  |        |  |  |     |        |  +-----mycoplasma_mobile
+         |     |  |           |  |        |  |  |     |     +--| (81)
+         |     |  |           |  |        |  |  |     |     |  +-----mesomycoplasma_hyorhinis
+         |     |  |           |  |        |  |  |     |  +--| (57)
+         |     |  |           |  |        |  |  |     |  |  |  +---------mesomycoplasma_flocculare
+         |     |  |           |  |        |  |  |     |  |  +--| (80)
+         |     |  |           |  |        |  |  |     |  |     +--------mycoplasmoides_pneumoniae
+         |     |  |           |  |        |  |  |     +--| (90)
+         |     |  |           |  |        |  |  |        |      +------------------------lachnospira_multipara
+         |     |  |           |  |        |  |  |        +------| (90)
+         |     |  |           |  |        |  |  |               |                             +--capnocytophaga_ochracea
+         |     |  |           |  |        |  |  |               +-----------------------------| (100)
+         |     |  |           |  |        |  |  |                                             +-----faecalibaculum_rodentium
+         |     |  |           |  |        |  +--| (95)
+         |     |  |           |  |        |     +---------chlamydia_trachomatis
+         |     |  |           |  |     +--| (80)
+         |     |  |           |  |     |  +--hydrogenobacter_thermophilus
+         |     |  |           |  |  +--| (83)
+         |     |  |           |  |  |  +---persephonella_hydrogeniphila
+         |     |  |           |  +--| (80)
+         |     |  |           |     +-----acetomicrobium_flavidum
+         |     |  |        +--| (50)
+         |     |  |        |  |     +--methanosarcina_acetivorans
+         |     |  |        |  |  +--| (100)
+         |     |  |        |  |  |  +--methanococcoides_burtonii
+         |     |  |        |  +--| (100)
+         |     |  |        |     +--methanocella_arvoryzae
+         |     |  |     +--| (42)
+         |     |  |     |  |                          +--lactobacillus_delbrueckii
+         |     |  |     |  |                       +--| (100)
+         |     |  |     |  |                       |  +--lactobacillus_crispatus
+         |     |  |     |  |                    +**| (31)
+         |     |  |     |  |                    |  +--enterococcus_faecalis
+         |     |  |     |  |                 +--| (90)
+         |     |  |     |  |                 |  |        +--streptococcus_pneumoniae
+         |     |  |     |  |                 |  |     +--| (100)
+         |     |  |     |  |                 |  |     |  +--streptococcus_thermophilus
+         |     |  |     |  |                 |  |  +--| (100)
+         |     |  |     |  |                 |  |  |  +--lactococcus_lactis
+         |     |  |     |  |                 |  +--| (62)
+         |     |  |     |  |                 |     +--limosilactobacillus_reuteri
+         |     |  |     |  |              +--| (94)
+         |     |  |     |  |              |  +-------oenococcus_oeni
+         |     |  |     |  |           +--| (93)
+         |     |  |     |  |           |  |              +--bacillus_cereus
+         |     |  |     |  |           |  |           +--| (98)
+         |     |  |     |  |           |  |           |  |  +--bacillus_subtilis
+         |     |  |     |  |           |  |           |  +--| (100)
+         |     |  |     |  |           |  |           |     +--bacillus_licheniformis
+         |     |  |     |  |           |  |        +--| (74)
+         |     |  |     |  |           |  |        |  |  +--lysinibacillus_sphaericus
+         |     |  |     |  |           |  |        |  +--| (100)
+         |     |  |     |  |           |  |        |     +--jeotgalibacillus_marinus
+         |     |  |     |  |           |  |     +--| (91)
+         |     |  |     |  |           |  |     |  |     +--geobacillus_kaustophilus
+         |     |  |     |  |           |  |     |  |  +--| (100)
+         |     |  |     |  |           |  |     |  |  |  +--geobacillus_thermodenitrificans
+         |     |  |     |  |           |  |     |  +--| (100)
+         |     |  |     |  |           |  |     |     +--geobacillus_stearothermophilus
+         |     |  |     |  |           |  |  +--| (92)
+         |     |  |     |  |           |  |  |  +--effusibacillus_pohliae
+         |     |  |     |  |           |  +--| (83)
+         |     |  |     |  |           |     +--virgibacillus_dokdonensis
+         |     |  |     |  |        +--| (82)
+         |     |  |     |  |        |  |  +--paenibacillus_bovis
+         |     |  |     |  |        |  +--| (82)
+         |     |  |     |  |        |     +-----eggerthia_catenaformis
+         |     |  |     |  |     +--| (72)
+         |     |  |     |  |     |  |  +--symbiobacterium_thermophilum
+         |     |  |     |  |     |  +--| (82)
+         |     |  |     |  |     |     +----syntrophomonas_wolfei
+         |     |  |     |  |  +--| (62)
+         |     |  |     |  |  |  |     +--heliomicrobium_modesticaldum
+         |     |  |     |  |  |  |  +--| (98)
+         |     |  |     |  |  |  |  |  +--desulfitobacterium_hafniense
+         |     |  |     |  |  |  +--| (56)
+         |     |  |     |  |  |     |     +---alkaliphilus_oremlandii
+         |     |  |     |  |  |     |  +--| (70)
+         |     |  |     |  |  |     |  |  |     +--caldanaerobacter_subterraneus
+         |     |  |     |  |  |     |  |  |  +--| (100)
+         |     |  |     |  |  |     |  |  |  |  +------thermomicrobium_roseum
+         |     |  |     |  |  |     |  |  +--| (64)
+         |     |  |     |  |  |     |  |     +---clostridium_botulinum
+         |     |  |     |  |  |     +--| (93)
+         |     |  |     |  |  |        +--moorella_thermoacetica
+         |     |  |     |  +--| (78)
+         |     |  |     |     |        +--megasphaera_paucivorans
+         |     |  |     |     |     +--| (100)
+         |     |  |     |     |     |  +--veillonella_seminalis
+         |     |  |     |     |  +--| (99)
+         |     |  |     |     |  |  +--sporolituus_thermophilus
+         |     |  |     |     +--| (60)
+         |     |  |     |        |  +--acetohalobium_arabaticum
+         |     |  |     |        +--| (72)
+         |     |  |     |           +--natranaerobius_thermophilus
+         |     |  |  +--| (44)
+         |     |  |  |  |     +--adlercreutzia_mucosicola
+         |     |  |  |  |  +--| (100)
+         |     |  |  |  |  |  +--parafannyhessea_umbonata
+         |     |  |  |  +--| (92)
+         |     |  |  |     |  +--haloarcula_marismortui
+         |     |  |  |     +--| (100)
+         |     |  |  |        +--halobacterium_salinarum
+         |     |  +--| (66)
+         |     |     +---chrysiogenes_arsenatis
+         |  +--| (76)
+         |  |  |  +--thermodesulfovibrio_yellowstonii
+         |  |  +--| (99)
+         |  |     +---methylophaga_frappieri
+         +--| (100)
+            |     +--geotalea_daltonii
+            |  +--| (47)
+            |  |  |  +--trichlorobacter_lovleyi
+            |  |  +--| (48)
+            |  |     |                                   +--erwinia_tasmaniensis
+            |  |     |                                +--| (100)
+            |  |     |                                |  +--escherichia_coli
+            |  |     |                             +--| (73)
+            |  |     |                             |  +----allofrancisella_guangzhouensis
+            |  |     |                          +--| (75)
+            |  |     |                          |  |           +--vibrio_cholerae
+            |  |     |                          |  |        +--| (100)
+            |  |     |                          |  |        |  +--vibrio_parahaemolyticus
+            |  |     |                          |  |     +--| (94)
+            |  |     |                          |  |     |  +--photobacterium_profundum
+            |  |     |                          |  |  +--| (99)
+            |  |     |                          |  |  |  +--aliivibrio_salmonicida
+            |  |     |                          |  +--| (96)
+            |  |     |                          |     |  +--histophilus_somni
+            |  |     |                          |     +--| (100)
+            |  |     |                          |        +--actinobacillus_pleuropneumoniae
+            |  |     |                       +--| (75)
+            |  |     |                       |  |  +--pseudoalteromonas_atlantica
+            |  |     |                       |  +--| (100)
+            |  |     |                       |     |  +--alteromonas_mediterranea
+            |  |     |                       |     +--| (70)
+            |  |     |                       |        +--glaciecola_punicea
+            |  |     |                    +--| (80)
+            |  |     |                    |  |        +--shewanella_halifaxensis
+            |  |     |                    |  |     +--| (100)
+            |  |     |                    |  |     |  +--shewanella_loihica
+            |  |     |                    |  |  +--| (100)
+            |  |     |                    |  |  |  +--shewanella_frigidimarina
+            |  |     |                    |  +--| (93)
+            |  |     |                    |     +--psychromonas_ingrahamii
+            |  |     |                 +--| (64)
+            |  |     |                 |  |        +--pseudomonas_syringae
+            |  |     |                 |  |     +--| (99)
+            |  |     |                 |  |     |  +--pseudomonas_entomophila
+            |  |     |                 |  |  +--| (67)
+            |  |     |                 |  |  |  +--neisseria_gonorrhoeae
+            |  |     |                 |  +--| (45)
+            |  |     |                 |     +--chlorobaculum_parvum
+            |  |     |              +--| (63)
+            |  |     |              |  |        +--polaromonas_naphthalenivorans
+            |  |     |              |  |     +--| (100)
+            |  |     |              |  |     |  +--verminephrobacter_aporrectodeae
+            |  |     |              |  |  +--| (97)
+            |  |     |              |  |  |  +--bordetella_petrii
+            |  |     |              |  +--| (83)
+            |  |     |              |     +--dissulfuribacter_thermophilus
+            |  |     |           +--| (43)
+            |  |     |           |  |  +--alkalilimnicola_ehrlichii
+            |  |     |           |  +--| (100)
+            |  |     |           |     +--halorhodospira_halophila
+            |  |     |        +--| (32)
+            |  |     |        |  |  +--cellvibrio_japonicus
+            |  |     |        |  +--| (51)
+            |  |     |        |     +--acinetobacter_baylyi
+            |  |     |     +--| (34)
+            |  |     |     |  |  +--kushneria_avicenniae
+            |  |     |     |  +--| (48)
+            |  |     |     |     |  +--legionella_pneumophila
+            |  |     |     |     +--| (100)
+            |  |     |     |        +--legionella_erythra
+            |  |     |  +--| (51)
+            |  |     |  |  |     +--marinobacter_nauticus
+            |  |     |  |  |  +--| (100)
+            |  |     |  |  |  |  +--oleiphilus_messinensis
+            |  |     |  |  +--| (66)
+            |  |     |  |     +---rickettsiella_massiliensis
+            |  |     +--| (100)
+            |  |        +--methylococcus_capsulatus
+            +--| (43)
+               |     +----anaeromyxobacter_dehalogenans
+               |  +--| (74)
+               |  |  |  +-------bryobacter_aggregatus
+               |  |  +--| (88)
+               |  |     +-----pyrinomonas_methylaliphatogenes
+               +--| (98)
+                  |   +--sorangium_cellulosum
+                  +---| (100)
+                      +--chondromyces_apiculatus
+
+Tree in newick format:
+
+(azorhizobium_caulinodans:0.3314643776,methylocella_silvestris:0.3790200262,(((bartonella_henselae:0.1101189574,bartonella_quintana:0.1121308861)100:0.4998655715,brucella_vulpis:0.1799008057)100:0.3867195238,(((paramagnetospirillum_magneticum:0.3197759534,(gemmobacter_aquatilis:0.2108251457,salipiger_mucosus:0.1856082592)100:0.3965411776)98:0.0830430130,sphingopyxis_alaskensis:0.6297313023)94:0.0465242078,((gluconacetobacter_diazotrophicus:0.5703951310,(pseudoroseomonas_rhizosphaerae:0.1588625122,(falsiroseomonas_stagni:0.1242242621,rubritepida_flocculans:0.1610437585)77:0.0297636117)89:0.1240103317)99:0.1285946655,((((((((xanthomonas_campestris:0.3430980157,rhodanobacter_fulvus:0.4027017403)100:0.3677278652,(pseudarthrobacter_chlorophenolicus:0.6867421192,((agromyces_subbeticus:0.2910737816,microbacterium_chocolatum:0.2635164385)100:0.4958167160,bombiscardovia_coagulans:0.6472765614)99:0.2270550085)99:0.2340612221)68:0.0852845299,(((leptospira_interrogans:0.7520522643,(((synechococcus_elongatus:0.4063871012,acaryochloris_marina:0.9399698447)100:0.2033551764,spirulina_subsalsa:0.9429370795)94:0.0064127281,desulfatibacillum_alkenivorans:2.1864215726)50:0.1948637459)18:0.1080966544,(desulfurobacterium_atlanticum:0.1198752940,desulfurobacterium_thermolithotrophum:0.1374739129)100:0.3711813706)15:0.0417803323,((((chitinophaga_pinensis:0.6080408859,porphyromonas_macacae:0.6635437977)72:0.2617017207,((flavobacterium_hydatis:0.4822989376,(mesonia_phycicola:0.1916884424,nonlabens_ulvanivorans:0.2671337993)100:0.1616083921)97:0.1303309313,pedobacter_hartonius:0.7627065426)100:0.2487649618)100:0.2590432190,(deinococcus_deserti:0.2451185777,deinococcus_proteolyticus:0.3392837088)100:0.6536263235)98:0.3330421842,(asanoa_hainanensis:0.2126024255,dactylosporangium_aurantiacum:0.3713715767)100:1.0847968150)32:0.0383776565)47:0.0358159289)75:0.0749401521,(acidimicrobium_ferrooxidans:0.2355836887,ferrimicrobium_acidiphilum:0.5047965773)100:0.5602839912)76:0.0644012470,((((corynebacterium_urealyticum:0.3844509537,dietzia_alimentaria:0.4365992205)100:0.2905258384,(((salinispora_arenicola:0.0744382158,micromonospora_viridifaciens:0.0246744149)100:0.1144503850,actinocatenispora_sera:0.2443428475)100:0.4171737352,((streptomyces_coelicolor:0.2072655549,streptomyces_subrutilus:0.1272320161)100:0.2550402198,streptomonospora_alba:0.3771243142)94:0.0532754585)86:0.0294679468)86:0.1645057625,((salinispira_pacifica:0.4188536911,sphaerochaeta_pleomorpha:0.4126387837)100:0.1834582222,treponema_putidum:0.6590865672)100:0.3024813569)83:0.1047638203,(patulibacter_medicamentivorans:0.8555729729,(rubrobacter_radiotolerans:0.7986055166,salinibacter_ruber:0.9044587851)97:0.1639575284)95:0.1508051572)60:0.0404430610)71:0.0659951084,((((((((((((thermotoga_neapolitana:0.0324206178,thermotoga_maritima:0.0553170766)100:0.6054607110,((pseudothermotoga_lettingae:0.7279413417,(thermosipho_melanesiensis:0.1382908032,thermosipho_africanus:0.1430412749)100:0.2252521582)62:0.0765321530,(fervidobacterium_nodosum:0.0920013481,fervidobacterium_islandicum:0.0374131244)100:0.2799950057)98:0.1461810512)97:0.0662203548,kosmotoga_olearia:0.4908954553)98:0.0857158642,petrotoga_mobilis:0.4928898878)100:0.1554337115,(thermococcus_sibiricus:0.3926280812,pyrococcus_furiosus:0.1547460911)100:1.1661701080)99:0.0936721561,archaeoglobus_fulgidus:0.1649520334)93:0.1254040861,((thermodesulfatator_atlanticus:0.2380960409,thermodesulfobacterium_commune:0.2375090959)99:0.1050994884,(brachyspira_pilosicoli:0.8627982199,elusimicrobium_minutum:0.9176244426)99:0.2224285656)94:0.0902205346)90:0.0591852237,(((((desulfurella_acetivorans:0.7041471284,(bdellovibrio_bacteriovorus:0.5942377331,pseudobdellovibrio_exovorus:1.0438483069)97:0.1814815029)90:0.1423748019,(((prochlorococcus_marinus:1.0932493358,((fibrobacter_intestinalis:1.3128579510,prosthecobacter_debontii:1.2388367599)100:0.7004497970,(helicobacter_acinonychis:0.4688642834,helicobacter_rodentium:0.3239872436)100:1.8130054880)91:0.4589297403)81:0.1428837385,(mycoplasma_mycoides:1.1250002454,((((mycoplasmopsis_arginini:0.7075652409,mycoplasma_mobile:0.9243176954)97:0.2402124860,mesomycoplasma_hyorhinis:0.9996324462)81:0.1575164947,(mesomycoplasma_flocculare:1.5378938169,mycoplasmoides_pneumoniae:1.4054928924)80:0.3379537540)57:0.0041627965,(lachnospira_multipara:3.7513533663,(capnocytophaga_ochracea:0.4144003281,faecalibaculum_rodentium:0.9037207178)100:4.4969143970)90:1.0645350880)90:0.1416846302)84:0.0730642066)99:0.1987789262,chlamydia_trachomatis:1.5436981385)95:0.1931337024)79:0.0641481178,hydrogenobacter_thermophilus:0.5603055452)80:0.1690788392,persephonella_hydrogeniphila:0.5915841760)83:0.0419938189,acetomicrobium_flavidum:0.8898052130)80:0.1352064704)78:0.1188943979,((methanosarcina_acetivorans:0.3874945482,methanococcoides_burtonii:0.4480977226)100:0.1044553636,methanocella_arvoryzae:0.5213763011)100:0.2050842412)50:0.0605842128,(((((((((lactobacillus_delbrueckii:0.0765385814,lactobacillus_crispatus:0.1622647742)100:0.5676180967,enterococcus_faecalis:0.2815227942)31:0.0000021859,(((streptococcus_pneumoniae:0.2233307241,streptococcus_thermophilus:0.1293363399)100:0.1552896095,lactococcus_lactis:0.2135048776)100:0.1827057998,limosilactobacillus_reuteri:0.2507119006)62:0.0474507918)90:0.1136390184,oenococcus_oeni:1.2150336129)94:0.1094701808,(((((bacillus_cereus:0.2804644417,(bacillus_subtilis:0.1594972887,bacillus_licheniformis:0.1368944408)100:0.0782330907)98:0.0499842606,(lysinibacillus_sphaericus:0.2131557478,jeotgalibacillus_marinus:0.1875650425)100:0.1398406806)74:0.0674696765,((geobacillus_kaustophilus:0.0624225151,geobacillus_thermodenitrificans:0.0496985464)100:0.0248764622,geobacillus_stearothermophilus:0.0155863570)100:0.1259218829)91:0.0958265581,effusibacillus_pohliae:0.3944476287)92:0.0709737376,virgibacillus_dokdonensis:0.4474071247)83:0.0873320641)93:0.0951536352,(paenibacillus_bovis:0.4818853159,eggerthia_catenaformis:0.8861285695)82:0.1191614084)82:0.0782590421,(symbiobacterium_thermophilum:0.4881988943,syntrophomonas_wolfei:0.7352446625)82:0.1276939898)72:0.0533098323,((heliomicrobium_modesticaldum:0.3939295258,desulfitobacterium_hafniense:0.3037190300)98:0.0762010662,((alkaliphilus_oremlandii:0.6461526913,((caldanaerobacter_subterraneus:0.3102292322,thermomicrobium_roseum:1.1251570706)100:0.1694570626,clostridium_botulinum:0.6194197345)64:0.0925246892)70:0.1512145855,moorella_thermoacetica:0.5219397320)93:0.1399110477)56:0.0729762803)62:0.0614627654,(((megasphaera_paucivorans:0.1896653484,veillonella_seminalis:0.2580244417)100:0.2166018878,sporolituus_thermophilus:0.3003092777)99:0.0909402543,(acetohalobium_arabaticum:0.5470667214,natranaerobius_thermophilus:0.5036915845)72:0.1497284914)60:0.0269740448)78:0.0894108754)42:0.0474225701,((adlercreutzia_mucosicola:0.4089268367,parafannyhessea_umbonata:0.4691873839)100:0.3610985114,(haloarcula_marismortui:0.5122584718,halobacterium_salinarum:0.3949855489)100:0.5597270262)92:0.1181029851)44:0.0472609540,chrysiogenes_arsenatis:0.7028927100)66:0.0948626247)51:0.0380767745,(thermodesulfovibrio_yellowstonii:0.2362884624,methylophaga_frappieri:0.6096124708)99:0.1722717103)76:0.0813907987,((geotalea_daltonii:0.4404676913,(trichlorobacter_lovleyi:0.4691922318,((((((((((((erwinia_tasmaniensis:0.1002097449,escherichia_coli:0.0584172191)100:0.1360441509,allofrancisella_guangzhouensis:0.8230993417)73:0.0799780075,((((vibrio_cholerae:0.0485464256,vibrio_parahaemolyticus:0.0450697247)100:0.0588759991,photobacterium_profundum:0.0605609652)94:0.0464359767,aliivibrio_salmonicida:0.0860979744)99:0.1369337010,(histophilus_somni:0.2811352334,actinobacillus_pleuropneumoniae:0.1288726254)100:0.0991477849)96:0.0491513543)75:0.0668979491,(pseudoalteromonas_atlantica:0.1852480146,(alteromonas_mediterranea:0.0886335753,glaciecola_punicea:0.2782032901)70:0.0506294039)100:0.0823240050)75:0.0569297418,(((shewanella_halifaxensis:0.0908393041,shewanella_loihica:0.0539108189)100:0.0687293076,shewanella_frigidimarina:0.0851011112)100:0.0823607381,psychromonas_ingrahamii:0.2569134149)93:0.0757909116)80:0.1818222847,(((pseudomonas_syringae:0.2252526781,pseudomonas_entomophila:0.1110451288)99:0.1176721756,neisseria_gonorrhoeae:0.3164730232)67:0.0646471853,chlorobaculum_parvum:0.3609811422)45:0.0210966635)64:0.0290956588,(((polaromonas_naphthalenivorans:0.1373567927,verminephrobacter_aporrectodeae:0.2586062529)100:0.1236816559,bordetella_petrii:0.2886559007)97:0.0998260555,dissulfuribacter_thermophilus:0.2489792261)83:0.0725315226)63:0.0593140950,(alkalilimnicola_ehrlichii:0.1908502539,halorhodospira_halophila:0.2304882812)100:0.1958933107)43:0.0240163549,(cellvibrio_japonicus:0.2581834076,acinetobacter_baylyi:0.4173704666)51:0.1017502902)32:0.0203622416,(kushneria_avicenniae:0.4338687965,(legionella_pneumophila:0.3849876560,legionella_erythra:0.3410191369)100:0.1897540793)48:0.0831640166)34:0.0436259499,((marinobacter_nauticus:0.2102250729,oleiphilus_messinensis:0.2262200950)100:0.0899388624,rickettsiella_massiliensis:0.6920814088)66:0.0580581532)51:0.0890052533,methylococcus_capsulatus:0.2569655978)100:0.4050123149)48:0.1282899359)47:0.1274527940,((anaeromyxobacter_dehalogenans:0.7905350542,(bryobacter_aggregatus:1.2512733024,pyrinomonas_methylaliphatogenes:0.9970244417)88:0.3313522931)74:0.1025138900,(sorangium_cellulosum:0.0919249324,chondromyces_apiculatus:0.4571193356)100:0.7278689738)98:0.2142140176)43:0.0673523248)100:0.3703042667)90:0.0794158579)100:0.2489247752)81:0.0999347407);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -47557.069912
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--azorhizobium_caulinodans
+|
++--methylocella_silvestris
+|
+|        +--bartonella_henselae
+|     +--| (100)
+|     |  +--bartonella_quintana
+|  +--| (100)
+|  |  +--brucella_vulpis
++--| (81)
+   |        +--paramagnetospirillum_magneticum
+   |     +--| (98)
+   |     |  |  +--gemmobacter_aquatilis
+   |     |  +--| (100)
+   |     |     +--salipiger_mucosus
+   |  +--| (94)
+   |  |  +---sphingopyxis_alaskensis
+   +--| (100)
+      |     +--gluconacetobacter_diazotrophicus
+      |  +--| (99)
+      |  |  |  +--pseudoroseomonas_rhizosphaerae
+      |  |  +--| (89)
+      |  |     |  +--falsiroseomonas_stagni
+      |  |     +--| (77)
+      |  |        +--rubritepida_flocculans
+      +--| (90)
+         |                       +--xanthomonas_campestris
+         |                    +--| (100)
+         |                    |  +--rhodanobacter_fulvus
+         |                 +--| (68)
+         |                 |  |  +---pseudarthrobacter_chlorophenolicus
+         |                 |  +--| (99)
+         |                 |     |     +--agromyces_subbeticus
+         |                 |     |  +--| (100)
+         |                 |     |  |  +--microbacterium_chocolatum
+         |                 |     +--| (99)
+         |                 |        +---bombiscardovia_coagulans
+         |              +--| (75)
+         |              |  |        +----leptospira_interrogans
+         |              |  |     +--| (18)
+         |              |  |     |  |        +--synechococcus_elongatus
+         |              |  |     |  |     +--| (100)
+         |              |  |     |  |     |  +-----acaryochloris_marina
+         |              |  |     |  |  +--| (94)
+         |              |  |     |  |  |  +-----spirulina_subsalsa
+         |              |  |     |  +--| (50)
+         |              |  |     |     +-------------desulfatibacillum_alkenivorans
+         |              |  |  +--| (31)
+         |              |  |  |  |           +---chitinophaga_pinensis
+         |              |  |  |  |        +--| (72)
+         |              |  |  |  |        |  +---porphyromonas_macacae
+         |              |  |  |  |     +--| (100)
+         |              |  |  |  |     |  |     +--flavobacterium_hydatis
+         |              |  |  |  |     |  |  +--| (97)
+         |              |  |  |  |     |  |  |  |  +--mesonia_phycicola
+         |              |  |  |  |     |  |  |  +--| (100)
+         |              |  |  |  |     |  |  |     +--nonlabens_ulvanivorans
+         |              |  |  |  |     |  +--| (100)
+         |              |  |  |  |     |     +----pedobacter_hartonius
+         |              |  |  |  |  +--| (98)
+         |              |  |  |  |  |  |   +--deinococcus_deserti
+         |              |  |  |  |  |  +---| (100)
+         |              |  |  |  |  |      +--deinococcus_proteolyticus
+         |              |  |  |  +--| (32)
+         |              |  |  |     |      +--asanoa_hainanensis
+         |              |  |  |     +------| (100)
+         |              |  |  |            +--dactylosporangium_aurantiacum
+         |              |  +--| (47)
+         |              |     |  +--desulfurobacterium_atlanticum
+         |              |     +--| (100)
+         |              |        +--desulfurobacterium_thermolithotrophum
+         |           +--| (76)
+         |           |  |  +--acidimicrobium_ferrooxidans
+         |           |  +--| (100)
+         |           |     +--ferrimicrobium_acidiphilum
+         |        +--| (71)
+         |        |  |           +--corynebacterium_urealyticum
+         |        |  |        +--| (100)
+         |        |  |        |  +--dietzia_alimentaria
+         |        |  |     +--| (86)
+         |        |  |     |  |        +--salinispora_arenicola
+         |        |  |     |  |     +--| (100)
+         |        |  |     |  |     |  +--micromonospora_viridifaciens
+         |        |  |     |  |  +--| (100)
+         |        |  |     |  |  |  +--actinocatenispora_sera
+         |        |  |     |  +--| (86)
+         |        |  |     |     |     +--streptomyces_coelicolor
+         |        |  |     |     |  +--| (100)
+         |        |  |     |     |  |  +--streptomyces_subrutilus
+         |        |  |     |     +--| (94)
+         |        |  |     |        +--streptomonospora_alba
+         |        |  |  +--| (83)
+         |        |  |  |  |     +--salinispira_pacifica
+         |        |  |  |  |  +--| (100)
+         |        |  |  |  |  |  +--sphaerochaeta_pleomorpha
+         |        |  |  |  +--| (100)
+         |        |  |  |     +---treponema_putidum
+         |        |  +--| (60)
+         |        |     |  +----patulibacter_medicamentivorans
+         |        |     +--| (95)
+         |        |        |  +----rubrobacter_radiotolerans
+         |        |        +--| (97)
+         |        |           +-----salinibacter_ruber
+         |     +--| (51)
+         |     |  |                                    +--thermotoga_neapolitana
+         |     |  |                                +---| (100)
+         |     |  |                                |   +--thermotoga_maritima
+         |     |  |                             +--| (97)
+         |     |  |                             |  |     +---pseudothermotoga_lettingae
+         |     |  |                             |  |  +--| (62)
+         |     |  |                             |  |  |  |  +--thermosipho_melanesiensis
+         |     |  |                             |  |  |  +--| (100)
+         |     |  |                             |  |  |     +--thermosipho_africanus
+         |     |  |                             |  +--| (98)
+         |     |  |                             |     |  +--fervidobacterium_nodosum
+         |     |  |                             |     +--| (100)
+         |     |  |                             |        +--fervidobacterium_islandicum
+         |     |  |                          +--| (98)
+         |     |  |                          |  +--kosmotoga_olearia
+         |     |  |                       +--| (100)
+         |     |  |                       |  +--petrotoga_mobilis
+         |     |  |                    +--| (99)
+         |     |  |                    |  |      +--thermococcus_sibiricus
+         |     |  |                    |  +------| (100)
+         |     |  |                    |         +--pyrococcus_furiosus
+         |     |  |                 +--| (93)
+         |     |  |                 |  +--archaeoglobus_fulgidus
+         |     |  |              +--| (90)
+         |     |  |              |  |     +--thermodesulfatator_atlanticus
+         |     |  |              |  |  +--| (99)
+         |     |  |              |  |  |  +--thermodesulfobacterium_commune
+         |     |  |              |  +--| (94)
+         |     |  |              |     |  +----brachyspira_pilosicoli
+         |     |  |              |     +--| (99)
+         |     |  |              |        +-----elusimicrobium_minutum
+         |     |  |           +--| (78)
+         |     |  |           |  |              +---desulfurella_acetivorans
+         |     |  |           |  |           +--| (90)
+         |     |  |           |  |           |  |  +---bdellovibrio_bacteriovorus
+         |     |  |           |  |           |  +--| (97)
+         |     |  |           |  |           |     +------pseudobdellovibrio_exovorus
+         |     |  |           |  |        +--| (79)
+         |     |  |           |  |        |  |        +------prochlorococcus_marinus
+         |     |  |           |  |        |  |     +--| (81)
+         |     |  |           |  |        |  |     |  |      +-------fibrobacter_intestinalis
+         |     |  |           |  |        |  |     |  |  +---| (100)
+         |     |  |           |  |        |  |     |  |  |   +-------prosthecobacter_debontii
+         |     |  |           |  |        |  |     |  +--| (91)
+         |     |  |           |  |        |  |     |     |           +--helicobacter_acinonychis
+         |     |  |           |  |        |  |     |     +-----------| (100)
+         |     |  |           |  |        |  |     |                 +--helicobacter_rodentium
+         |     |  |           |  |        |  |  +--| (99)
+         |     |  |           |  |        |  |  |  |  +------mycoplasma_mycoides
+         |     |  |           |  |        |  |  |  +--| (84)
+         |     |  |           |  |        |  |  |     |           +---mycoplasmopsis_arginini
+         |     |  |           |  |        |  |  |     |        +--| (97)
+         |     |  |           |  |        |  |  |     |        |  +-----mycoplasma_mobile
+         |     |  |           |  |        |  |  |     |     +--| (81)
+         |     |  |           |  |        |  |  |     |     |  +-----mesomycoplasma_hyorhinis
+         |     |  |           |  |        |  |  |     |  +--| (57)
+         |     |  |           |  |        |  |  |     |  |  |  +---------mesomycoplasma_flocculare
+         |     |  |           |  |        |  |  |     |  |  +--| (80)
+         |     |  |           |  |        |  |  |     |  |     +--------mycoplasmoides_pneumoniae
+         |     |  |           |  |        |  |  |     +--| (90)
+         |     |  |           |  |        |  |  |        |      +------------------------lachnospira_multipara
+         |     |  |           |  |        |  |  |        +------| (90)
+         |     |  |           |  |        |  |  |               |                             +--capnocytophaga_ochracea
+         |     |  |           |  |        |  |  |               +-----------------------------| (100)
+         |     |  |           |  |        |  |  |                                             +-----faecalibaculum_rodentium
+         |     |  |           |  |        |  +--| (95)
+         |     |  |           |  |        |     +---------chlamydia_trachomatis
+         |     |  |           |  |     +--| (80)
+         |     |  |           |  |     |  +--hydrogenobacter_thermophilus
+         |     |  |           |  |  +--| (83)
+         |     |  |           |  |  |  +---persephonella_hydrogeniphila
+         |     |  |           |  +--| (80)
+         |     |  |           |     +-----acetomicrobium_flavidum
+         |     |  |        +--| (50)
+         |     |  |        |  |     +--methanosarcina_acetivorans
+         |     |  |        |  |  +--| (100)
+         |     |  |        |  |  |  +--methanococcoides_burtonii
+         |     |  |        |  +--| (100)
+         |     |  |        |     +--methanocella_arvoryzae
+         |     |  |     +--| (42)
+         |     |  |     |  |                          +--lactobacillus_delbrueckii
+         |     |  |     |  |                       +--| (100)
+         |     |  |     |  |                       |  +--lactobacillus_crispatus
+         |     |  |     |  |                    +--| (31)
+         |     |  |     |  |                    |  +--enterococcus_faecalis
+         |     |  |     |  |                 +--| (90)
+         |     |  |     |  |                 |  |        +--streptococcus_pneumoniae
+         |     |  |     |  |                 |  |     +--| (100)
+         |     |  |     |  |                 |  |     |  +--streptococcus_thermophilus
+         |     |  |     |  |                 |  |  +--| (100)
+         |     |  |     |  |                 |  |  |  +--lactococcus_lactis
+         |     |  |     |  |                 |  +--| (62)
+         |     |  |     |  |                 |     +--limosilactobacillus_reuteri
+         |     |  |     |  |              +--| (94)
+         |     |  |     |  |              |  +-------oenococcus_oeni
+         |     |  |     |  |           +--| (93)
+         |     |  |     |  |           |  |              +--bacillus_cereus
+         |     |  |     |  |           |  |           +--| (98)
+         |     |  |     |  |           |  |           |  |  +--bacillus_subtilis
+         |     |  |     |  |           |  |           |  +--| (100)
+         |     |  |     |  |           |  |           |     +--bacillus_licheniformis
+         |     |  |     |  |           |  |        +--| (74)
+         |     |  |     |  |           |  |        |  |  +--lysinibacillus_sphaericus
+         |     |  |     |  |           |  |        |  +--| (100)
+         |     |  |     |  |           |  |        |     +--jeotgalibacillus_marinus
+         |     |  |     |  |           |  |     +--| (91)
+         |     |  |     |  |           |  |     |  |     +--geobacillus_kaustophilus
+         |     |  |     |  |           |  |     |  |  +--| (100)
+         |     |  |     |  |           |  |     |  |  |  +--geobacillus_thermodenitrificans
+         |     |  |     |  |           |  |     |  +--| (100)
+         |     |  |     |  |           |  |     |     +--geobacillus_stearothermophilus
+         |     |  |     |  |           |  |  +--| (92)
+         |     |  |     |  |           |  |  |  +--effusibacillus_pohliae
+         |     |  |     |  |           |  +--| (83)
+         |     |  |     |  |           |     +--virgibacillus_dokdonensis
+         |     |  |     |  |        +--| (82)
+         |     |  |     |  |        |  |  +--paenibacillus_bovis
+         |     |  |     |  |        |  +--| (82)
+         |     |  |     |  |        |     +-----eggerthia_catenaformis
+         |     |  |     |  |     +--| (72)
+         |     |  |     |  |     |  |  +--symbiobacterium_thermophilum
+         |     |  |     |  |     |  +--| (82)
+         |     |  |     |  |     |     +----syntrophomonas_wolfei
+         |     |  |     |  |  +--| (62)
+         |     |  |     |  |  |  |     +--heliomicrobium_modesticaldum
+         |     |  |     |  |  |  |  +--| (98)
+         |     |  |     |  |  |  |  |  +--desulfitobacterium_hafniense
+         |     |  |     |  |  |  +--| (56)
+         |     |  |     |  |  |     |     +---alkaliphilus_oremlandii
+         |     |  |     |  |  |     |  +--| (70)
+         |     |  |     |  |  |     |  |  |     +--caldanaerobacter_subterraneus
+         |     |  |     |  |  |     |  |  |  +--| (100)
+         |     |  |     |  |  |     |  |  |  |  +------thermomicrobium_roseum
+         |     |  |     |  |  |     |  |  +--| (64)
+         |     |  |     |  |  |     |  |     +---clostridium_botulinum
+         |     |  |     |  |  |     +--| (93)
+         |     |  |     |  |  |        +--moorella_thermoacetica
+         |     |  |     |  +--| (78)
+         |     |  |     |     |        +--megasphaera_paucivorans
+         |     |  |     |     |     +--| (100)
+         |     |  |     |     |     |  +--veillonella_seminalis
+         |     |  |     |     |  +--| (99)
+         |     |  |     |     |  |  +--sporolituus_thermophilus
+         |     |  |     |     +--| (60)
+         |     |  |     |        |  +--acetohalobium_arabaticum
+         |     |  |     |        +--| (72)
+         |     |  |     |           +--natranaerobius_thermophilus
+         |     |  |  +--| (44)
+         |     |  |  |  |     +--adlercreutzia_mucosicola
+         |     |  |  |  |  +--| (100)
+         |     |  |  |  |  |  +--parafannyhessea_umbonata
+         |     |  |  |  +--| (92)
+         |     |  |  |     |  +--haloarcula_marismortui
+         |     |  |  |     +--| (100)
+         |     |  |  |        +--halobacterium_salinarum
+         |     |  +--| (66)
+         |     |     +---chrysiogenes_arsenatis
+         |  +--| (76)
+         |  |  |  +--thermodesulfovibrio_yellowstonii
+         |  |  +--| (99)
+         |  |     +---methylophaga_frappieri
+         +--| (100)
+            |     +--geotalea_daltonii
+            |  +--| (47)
+            |  |  |  +--trichlorobacter_lovleyi
+            |  |  +--| (48)
+            |  |     |                                   +--erwinia_tasmaniensis
+            |  |     |                                +--| (100)
+            |  |     |                                |  +--escherichia_coli
+            |  |     |                             +--| (73)
+            |  |     |                             |  +----allofrancisella_guangzhouensis
+            |  |     |                          +--| (75)
+            |  |     |                          |  |           +--vibrio_cholerae
+            |  |     |                          |  |        +--| (100)
+            |  |     |                          |  |        |  +--vibrio_parahaemolyticus
+            |  |     |                          |  |     +--| (94)
+            |  |     |                          |  |     |  +--photobacterium_profundum
+            |  |     |                          |  |  +--| (99)
+            |  |     |                          |  |  |  +--aliivibrio_salmonicida
+            |  |     |                          |  +--| (96)
+            |  |     |                          |     |  +--histophilus_somni
+            |  |     |                          |     +--| (100)
+            |  |     |                          |        +--actinobacillus_pleuropneumoniae
+            |  |     |                       +--| (75)
+            |  |     |                       |  |  +--pseudoalteromonas_atlantica
+            |  |     |                       |  +--| (100)
+            |  |     |                       |     |  +--alteromonas_mediterranea
+            |  |     |                       |     +--| (70)
+            |  |     |                       |        +--glaciecola_punicea
+            |  |     |                    +--| (80)
+            |  |     |                    |  |        +--shewanella_halifaxensis
+            |  |     |                    |  |     +--| (100)
+            |  |     |                    |  |     |  +--shewanella_loihica
+            |  |     |                    |  |  +--| (100)
+            |  |     |                    |  |  |  +--shewanella_frigidimarina
+            |  |     |                    |  +--| (93)
+            |  |     |                    |     +--psychromonas_ingrahamii
+            |  |     |                 +--| (64)
+            |  |     |                 |  |        +--pseudomonas_syringae
+            |  |     |                 |  |     +--| (99)
+            |  |     |                 |  |     |  +--pseudomonas_entomophila
+            |  |     |                 |  |  +--| (67)
+            |  |     |                 |  |  |  +--neisseria_gonorrhoeae
+            |  |     |                 |  +--| (45)
+            |  |     |                 |     +--chlorobaculum_parvum
+            |  |     |              +--| (63)
+            |  |     |              |  |        +--polaromonas_naphthalenivorans
+            |  |     |              |  |     +--| (100)
+            |  |     |              |  |     |  +--verminephrobacter_aporrectodeae
+            |  |     |              |  |  +--| (97)
+            |  |     |              |  |  |  +--bordetella_petrii
+            |  |     |              |  +--| (83)
+            |  |     |              |     +--dissulfuribacter_thermophilus
+            |  |     |           +--| (43)
+            |  |     |           |  |  +--alkalilimnicola_ehrlichii
+            |  |     |           |  +--| (100)
+            |  |     |           |     +--halorhodospira_halophila
+            |  |     |        +--| (32)
+            |  |     |        |  |  +--cellvibrio_japonicus
+            |  |     |        |  +--| (51)
+            |  |     |        |     +--acinetobacter_baylyi
+            |  |     |     +--| (34)
+            |  |     |     |  |  +--kushneria_avicenniae
+            |  |     |     |  +--| (48)
+            |  |     |     |     |  +--legionella_pneumophila
+            |  |     |     |     +--| (100)
+            |  |     |     |        +--legionella_erythra
+            |  |     |  +--| (51)
+            |  |     |  |  |     +--marinobacter_nauticus
+            |  |     |  |  |  +--| (100)
+            |  |     |  |  |  |  +--oleiphilus_messinensis
+            |  |     |  |  +--| (66)
+            |  |     |  |     +---rickettsiella_massiliensis
+            |  |     +--| (100)
+            |  |        +--methylococcus_capsulatus
+            +--| (43)
+               |     +----anaeromyxobacter_dehalogenans
+               |  +--| (74)
+               |  |  |  +-------bryobacter_aggregatus
+               |  |  +--| (88)
+               |  |     +-----pyrinomonas_methylaliphatogenes
+               +--| (98)
+                  |   +--sorangium_cellulosum
+                  +---| (100)
+                      +--chondromyces_apiculatus
+
+
+Consensus tree in newick format: 
+
+(azorhizobium_caulinodans:0.3320617170,methylocella_silvestris:0.3795239445,(((bartonella_henselae:0.1103236234,bartonella_quintana:0.1122969990)100:0.5006730407,brucella_vulpis:0.1801491756)100:0.3871793676,(((paramagnetospirillum_magneticum:0.3205126578,(gemmobacter_aquatilis:0.2111269253,salipiger_mucosus:0.1859398096)100:0.3969120688)98:0.0833529812,sphingopyxis_alaskensis:0.6303576325)94:0.0464698039,((gluconacetobacter_diazotrophicus:0.5712962556,(pseudoroseomonas_rhizosphaerae:0.1591502683,(falsiroseomonas_stagni:0.1243431681,rubritepida_flocculans:0.1613616135)77:0.0297920585)89:0.1240047918)99:0.1287536488,((((((((xanthomonas_campestris:0.3436503651,rhodanobacter_fulvus:0.4033427286)100:0.3681210180,(pseudarthrobacter_chlorophenolicus:0.6901887532,((agromyces_subbeticus:0.2916488630,microbacterium_chocolatum:0.2637929140)100:0.4977315636,bombiscardovia_coagulans:0.6466982335)99:0.2252072867)99:0.2337703193)68:0.0848985087,(((leptospira_interrogans:0.7656573551,(((synechococcus_elongatus:0.4084339121,acaryochloris_marina:0.9320272061)100:0.2048821913,spirulina_subsalsa:0.9453850024)94:0.0120115791,desulfatibacillum_alkenivorans:2.1837767299)50:0.1880181527)18:0.0885090418,((((chitinophaga_pinensis:0.6004413992,porphyromonas_macacae:0.6728346701)72:0.2583996292,((flavobacterium_hydatis:0.4842417749,(mesonia_phycicola:0.1875466452,nonlabens_ulvanivorans:0.2710132431)100:0.1619441051)97:0.1316048220,pedobacter_hartonius:0.7598947389)100:0.2479051790)100:0.2842226422,(deinococcus_deserti:0.2575845998,deinococcus_proteolyticus:0.3279332901)100:0.6279976999)98:0.3131191780,(asanoa_hainanensis:0.2162514234,dactylosporangium_aurantiacum:0.3684410305)100:1.0776893878)32:0.0345830627)31:0.0387033274,(desulfurobacterium_atlanticum:0.1222053875,desulfurobacterium_thermolithotrophum:0.1353423940)100:0.3990095893)47:0.0505354751)75:0.0724513336,(acidimicrobium_ferrooxidans:0.2355177893,ferrimicrobium_acidiphilum:0.5058007306)100:0.5599495585)76:0.0645630428,((((corynebacterium_urealyticum:0.3857538151,dietzia_alimentaria:0.4366013977)100:0.2911494315,(((salinispora_arenicola:0.0745580144,micromonospora_viridifaciens:0.0247093690)100:0.1147333226,actinocatenispora_sera:0.2446467341)100:0.4176938294,((streptomyces_coelicolor:0.2074320967,streptomyces_subrutilus:0.1275482478)100:0.2560122344,streptomonospora_alba:0.3768364866)94:0.0533803061)86:0.0295802936)86:0.1650640617,((salinispira_pacifica:0.4188465772,sphaerochaeta_pleomorpha:0.4136508329)100:0.1835740873,treponema_putidum:0.6596427861)100:0.3023021150)83:0.1046186898,(patulibacter_medicamentivorans:0.8570745378,(rubrobacter_radiotolerans:0.7992440695,salinibacter_ruber:0.9055842020)97:0.1641398158)95:0.1514077578)60:0.0409838533)71:0.0658282000,((((((((((((thermotoga_neapolitana:0.0326434370,thermotoga_maritima:0.0552681721)100:0.6060697224,((pseudothermotoga_lettingae:0.7289663360,(thermosipho_melanesiensis:0.1384883796,thermosipho_africanus:0.1433196618)100:0.2254145472)62:0.0767189147,(fervidobacterium_nodosum:0.0921022003,fervidobacterium_islandicum:0.0374977465)100:0.2802743890)98:0.1462291384)97:0.0662550683,kosmotoga_olearia:0.4917412856)98:0.0858277318,petrotoga_mobilis:0.4932981425)100:0.1557849517,(thermococcus_sibiricus:0.3933036709,pyrococcus_furiosus:0.1549173631)100:1.1676492454)99:0.0937217272,archaeoglobus_fulgidus:0.1651786806)93:0.1257712939,((thermodesulfatator_atlanticus:0.2383864940,thermodesulfobacterium_commune:0.2379510442)99:0.1052483719,(brachyspira_pilosicoli:0.8632993794,elusimicrobium_minutum:0.9180297077)99:0.2235824919)94:0.0901399160)90:0.0593217063,(((((desulfurella_acetivorans:0.7048585948,(bdellovibrio_bacteriovorus:0.5948185625,pseudobdellovibrio_exovorus:1.0448629974)97:0.1816814693)90:0.1426209448,(((prochlorococcus_marinus:1.0930591088,((fibrobacter_intestinalis:1.3136957724,prosthecobacter_debontii:1.2412471261)100:0.7009403966,(helicobacter_acinonychis:0.4697349409,helicobacter_rodentium:0.3242978714)100:1.8147462903)91:0.4594255813)81:0.1436767575,(mycoplasma_mycoides:1.1254862515,((((mycoplasmopsis_arginini:0.7077994250,mycoplasma_mobile:0.9252113809)97:0.2409249916,mesomycoplasma_hyorhinis:1.0009924182)81:0.1575904334,(mesomycoplasma_flocculare:1.5395943497,mycoplasmoides_pneumoniae:1.4077240217)80:0.3383437269)57:0.0042531779,(lachnospira_multipara:3.7537006579,(capnocytophaga_ochracea:0.4113687621,faecalibaculum_rodentium:0.9096907820)100:4.5069162645)90:1.0653368233)90:0.1418262715)84:0.0730518123)99:0.1995186775,chlamydia_trachomatis:1.5449477644)95:0.1935344821)79:0.0642361800,hydrogenobacter_thermophilus:0.5610636661)80:0.1692057227,persephonella_hydrogeniphila:0.5921505088)83:0.0420264837,acetomicrobium_flavidum:0.8905475848)80:0.1354335650)78:0.1195309155,((methanosarcina_acetivorans:0.3881506345,methanococcoides_burtonii:0.4486659708)100:0.1045127544,methanocella_arvoryzae:0.5218631311)100:0.2053749552)50:0.0605464537,(((((((((lactobacillus_delbrueckii:0.0767253662,lactobacillus_crispatus:0.1624795275)100:0.5682407431,enterococcus_faecalis:0.2819272938)31:0.0000026456,(((streptococcus_pneumoniae:0.2237173944,streptococcus_thermophilus:0.1295075736)100:0.1555803527,lactococcus_lactis:0.2138120976)100:0.1828593022,limosilactobacillus_reuteri:0.2512202593)62:0.0474718298)90:0.1135592015,oenococcus_oeni:1.2168712170)94:0.1097056695,(((((bacillus_cereus:0.2808480838,(bacillus_subtilis:0.1597797740,bacillus_licheniformis:0.1370863180)100:0.0783044499)98:0.0500908171,(lysinibacillus_sphaericus:0.2133658287,jeotgalibacillus_marinus:0.1878289442)100:0.1399739801)74:0.0675418327,((geobacillus_kaustophilus:0.0625138788,geobacillus_thermodenitrificans:0.0497688718)100:0.0249108149,geobacillus_stearothermophilus:0.0156058657)100:0.1260731907)91:0.0958129495,effusibacillus_pohliae:0.3950127171)92:0.0708841456,virgibacillus_dokdonensis:0.4483661116)83:0.0875604395)93:0.0950764842,(paenibacillus_bovis:0.4819307698,eggerthia_catenaformis:0.8871221333)82:0.1197544853)82:0.0783314360,(symbiobacterium_thermophilum:0.4886384452,syntrophomonas_wolfei:0.7364858337)82:0.1281070252)72:0.0534461225,((heliomicrobium_modesticaldum:0.3940268352,desulfitobacterium_hafniense:0.3043356879)98:0.0764506956,((alkaliphilus_oremlandii:0.6467718475,((caldanaerobacter_subterraneus:0.3107226904,thermomicrobium_roseum:1.1264124482)100:0.1693191562,clostridium_botulinum:0.6197329414)64:0.0935627363)70:0.1512180626,moorella_thermoacetica:0.5227722693)93:0.1396043355)56:0.0730311321)62:0.0615262136,(((megasphaera_paucivorans:0.1899585117,veillonella_seminalis:0.2583705941)100:0.2170611548,sporolituus_thermophilus:0.3004928089)99:0.0911539951,(acetohalobium_arabaticum:0.5477019006,natranaerobius_thermophilus:0.5043827674)72:0.1499862036)60:0.0272057905)78:0.0895750103)42:0.0473602154,((adlercreutzia_mucosicola:0.4096117897,parafannyhessea_umbonata:0.4695900653)100:0.3610014862,(haloarcula_marismortui:0.5128598939,halobacterium_salinarum:0.3956654022)100:0.5612076642)92:0.1182577727)44:0.0475112091,chrysiogenes_arsenatis:0.7042572813)66:0.0948362238)51:0.0382014845,(thermodesulfovibrio_yellowstonii:0.2370365749,methylophaga_frappieri:0.6100274859)99:0.1722481517)76:0.0822059159,((geotalea_daltonii:0.4410147832,(trichlorobacter_lovleyi:0.4698964759,((((((((((((erwinia_tasmaniensis:0.1003777299,escherichia_coli:0.0584620576)100:0.1361886908,allofrancisella_guangzhouensis:0.8242514262)73:0.0802025686,((((vibrio_cholerae:0.0486225044,vibrio_parahaemolyticus:0.0451433330)100:0.0589734985,photobacterium_profundum:0.0606635642)94:0.0464970142,aliivibrio_salmonicida:0.0862496507)99:0.1371516012,(histophilus_somni:0.2815382405,actinobacillus_pleuropneumoniae:0.1291241283)100:0.0993147804)96:0.0492118631)75:0.0670106775,(pseudoalteromonas_atlantica:0.1854984216,(alteromonas_mediterranea:0.0887951441,glaciecola_punicea:0.2785193998)70:0.0507149344)100:0.0824501596)75:0.0569967005,(((shewanella_halifaxensis:0.0909901142,shewanella_loihica:0.0539873730)100:0.0688267290,shewanella_frigidimarina:0.0852215003)100:0.0824722802,psychromonas_ingrahamii:0.2573376049)93:0.0759093377)80:0.1821569373,(((pseudomonas_syringae:0.2256186553,pseudomonas_entomophila:0.1112194136)99:0.1178369270,neisseria_gonorrhoeae:0.3170028820)67:0.0647489948,chlorobaculum_parvum:0.3614069431)45:0.0211564707)64:0.0291298987,(((polaromonas_naphthalenivorans:0.1375512902,verminephrobacter_aporrectodeae:0.2590065279)100:0.1238465578,bordetella_petrii:0.2890865571)97:0.0999784742,dissulfuribacter_thermophilus:0.2494078440)83:0.0726351740)63:0.0593363004,(alkalilimnicola_ehrlichii:0.1912195547,halorhodospira_halophila:0.2307571326)100:0.1962603462)43:0.0240491936,(cellvibrio_japonicus:0.2585144583,acinetobacter_baylyi:0.4179261329)51:0.1019450785)32:0.0203914706,(kushneria_avicenniae:0.4344014112,(legionella_pneumophila:0.3855325044,legionella_erythra:0.3415889210)100:0.1900475490)48:0.0832978792)34:0.0436380029,((marinobacter_nauticus:0.2105367594,oleiphilus_messinensis:0.2264319041)100:0.0901516576,rickettsiella_massiliensis:0.6929741826)66:0.0582022550)51:0.0890987745,methylococcus_capsulatus:0.2573378793)100:0.4057851621)48:0.1285431624)47:0.1279958553,((anaeromyxobacter_dehalogenans:0.7909324507,(bryobacter_aggregatus:1.2532960766,pyrinomonas_methylaliphatogenes:0.9983191762)88:0.3317845578)74:0.1033642887,(sorangium_cellulosum:0.0916951674,chondromyces_apiculatus:0.4581668939)100:0.7289344079)98:0.2138958621)43:0.0672160721)100:0.3704689807)90:0.0795519478)100:0.2495471570)81:0.1000320309);
+
+TIME STAMP
+----------
+
+Date and time: Mon Dec 16 11:29:51 2024
+Total CPU time used: 28895.05279 seconds (8h:1m:35s)
+Total wall-clock time used: 1538.136912 seconds (0h:25m:38s)
+

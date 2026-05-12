@@ -1,0 +1,1847 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    bioinfr (AVX2, FMA3, 216 GB RAM)
+Command: iqtree2 -s lanmodulin.aln --rate -B 1000 -mset LG,WAG,JTT,Dayhoff -m MFP -v -T AUTO --cmax 15
+Seed:    272546 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jan 28 10:14:02 2026
+Kernel:  AVX+FMA - auto-detect threads (56 CPU cores detected)
+
+Reading alignment file lanmodulin.aln ... Fasta format detected
+Name shortening took 0.000129 seconds.
+Duplicate sequence name check took 0.000259 seconds.
+Alignment most likely contains protein sequences
+Alignment has 616 sequences with 172 columns, 166 distinct patterns
+129 parsimony-informative, 19 singleton sites, 24 constant sites
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+                Gap/Ambiguity  Composition  p-value
+   1  WP_216758941.1   43.60%    failed      0.00%
+   2  WP_183735476.1   43.60%    failed      0.00%
+   3  WP_007818348.1   43.60%    failed      0.01%
+   4  WP_192729354.1   43.60%    failed      0.00%
+   5  WP_092586475.1   43.60%    failed      0.00%
+   6  WP_028740194.1   43.60%    failed      0.00%
+   7  MBB4277965.1     43.60%    failed      0.00%
+   8  WP_074062259.1   43.60%    failed      0.00%
+   9  WP_194730219.1   43.60%    failed      0.00%
+  10  WP_074070393.1   43.60%    failed      0.01%
+  11  WP_239599415.1   43.60%    failed      0.01%
+  12  WP_132564953.1   43.60%    failed      0.04%
+  13  WP_086999852.1   43.60%    failed      0.02%
+  14  WP_027511153.1   43.60%    failed      0.00%
+  15  WP_225106888.1   43.60%    failed      0.00%
+  16  WP_225169660.1   43.60%    failed      0.00%
+  17  WP_136509072.1   43.60%    failed      0.00%
+  18  WP_173510180.1   43.60%    failed      0.00%
+  19  MCA1367502.1     43.60%    failed      0.00%
+  20  WP_026617703.1   43.60%    failed      0.00%
+  21  WP_153493080.1   43.60%    failed      0.02%
+  22  WP_011976119.1   43.60%    failed      0.00%
+  23  WP_018011911.1   43.60%    failed      0.00%
+  24  WP_024324795.1   43.60%    failed      0.00%
+  25  WP_153317729.1   43.60%    failed      0.00%
+  26  WP_100671634.1   43.60%    failed      0.03%
+  27  WP_018095374.1   43.60%    failed      0.01%
+  28  WP_027990079.1   43.60%    failed      0.00%
+  29  WP_003533820.1   43.60%    failed      0.00%
+  30  UIJ93868.1       43.60%    failed      0.01%
+  31  WP_028000883.1   43.60%    failed      0.00%
+  32  WP_180941508.1   43.60%    failed      0.26%
+  33  WP_064243090.1   43.60%    failed      0.02%
+  34  WP_097587830.1   44.77%    failed      0.00%
+  35  WP_040960809.1   44.77%    failed      0.01%
+  36  WP_037400952.1   44.77%    failed      0.00%
+  37  WP_082912157.1   44.77%    failed      0.01%
+  38  WP_083541600.1   44.77%    failed      0.01%
+  39  WP_037415758.1   44.77%    failed      0.01%
+  40  WP_097538595.1   44.77%    failed      0.04%
+  41  WP_066879886.1   43.60%    failed      0.01%
+  42  WP_234939477.1   45.93%    failed      0.53%
+  43  WP_034851158.1   45.93%    failed      0.12%
+  44  WP_069461588.1   45.93%    failed      0.00%
+  45  WP_168833374.1   44.19%    failed      0.08%
+  46  WP_053248237.1   43.60%    failed      1.18%
+  47  WP_176353279.1   43.60%    failed      0.76%
+  48  WP_025427927.1   43.60%    failed      0.81%
+  49  WP_173421067.1   43.60%    failed      0.34%
+  50  MBP1874105.1     43.60%    failed      0.48%
+  51  WP_077504804.1   43.60%    failed      0.93%
+  52  WP_223726334.1   44.19%    failed      3.33%
+  53  MBK5566907.1     44.19%    passed     22.62%
+  54  WP_034797198.1   44.19%    failed      1.82%
+  55  WP_060581847.1   44.19%    failed      0.96%
+  56  WP_090295034.1   44.19%    failed      0.44%
+  57  WP_192442719.1   44.19%    failed      0.50%
+  58  WP_077962497.1   44.19%    failed      0.39%
+  59  WP_043618826.1   44.19%    failed      3.21%
+  60  WP_192447950.1   43.60%    failed      0.13%
+  61  WP_065773499.1   43.60%    failed      0.24%
+  62  PLT99482.1       43.60%    failed      0.06%
+  63  WP_176948893.1   43.60%    failed      0.03%
+  64  WP_097142523.1   43.60%    failed      0.02%
+  65  WP_183801115.1   43.60%    failed      0.00%
+  66  WP_165028717.1   44.19%    failed      0.07%
+  67  WP_180155707.1   43.02%    failed      0.00%
+  68  WP_084563696.1   39.53%    failed      0.00%
+  69  WP_230660867.1   43.02%    failed      0.00%
+  70  WP_051911054.1   43.02%    failed      0.03%
+  71  QDQ86838.1       41.28%    failed      0.02%
+  72  WP_109060240.1   41.28%    failed      0.02%
+  73  RUP13001.1       35.47%    passed     94.47%
+  74  WP_043346265.1   35.47%    passed     97.93%
+  75  WP_182592662.1   35.47%    passed     94.97%
+  76  MBE7249430.1     35.47%    passed     98.95%
+  77  WP_210031178.1   35.47%    passed     99.73%
+  78  MBP1828068.1     35.47%    passed     98.92%
+  79  EBC78536.1       35.47%    passed     97.13%
+  80  WP_238195950.1   35.47%    passed     97.80%
+  81  WP_010685236.1   35.47%    passed     99.80%
+  82  WP_170862988.1   35.47%    passed     99.93%
+  83  KQS53152.1       35.47%    passed     99.94%
+  84  WP_175556313.1   35.47%    passed     99.93%
+  85  WP_020094044.1   35.47%    passed     99.99%
+  86  WP_012321222.1   35.47%    passed     99.95%
+  87  WP_043074545.1   35.47%    passed     99.89%
+  88  KZC02975.1       35.47%    passed     99.72%
+  89  WP_170855175.1   35.47%    passed     99.96%
+  90  WP_170868125.1   35.47%    passed     99.81%
+  91  WP_139174061.1   35.47%    passed     97.75%
+  92  KAA0121378.1     35.47%    passed     99.12%
+  93  WP_091716384.1   35.47%    passed     99.84%
+  94  MBE7247691.1     35.47%    passed     99.33%
+  95  WP_243973018.1   35.47%    passed     95.75%
+  96  WP_243923039.1   35.47%    passed     98.17%
+  97  WP_244044660.1   35.47%    passed     82.73%
+  98  WP_244005007.1   35.47%    passed     94.24%
+  99  WP_243907592.1   35.47%    passed     96.54%
+ 100  WP_243947655.1   35.47%    passed     96.58%
+ 101  WP_244024857.1   35.47%    passed     96.53%
+ 102  WP_244001208.1   35.47%    passed     86.94%
+ 103  WP_243985805.1   35.47%    passed     88.73%
+ 104  WP_243920772.1   35.47%    passed     78.40%
+ 105  WP_244027711.1   35.47%    passed     53.64%
+ 106  WP_243933544.1   35.47%    passed     52.85%
+ 107  GJE62343.1       35.47%    passed     84.23%
+ 108  WP_183506314.1   35.47%    passed     97.12%
+ 109  WP_147048881.1   35.47%    passed     94.94%
+ 110  WP_238201318.1   35.47%    passed     99.36%
+ 111  WP_026190475.1   31.98%    failed      0.44%
+ 112  ACA18767.1       31.98%    failed      0.33%
+ 113  ACL59039.1       35.47%    passed     86.87%
+ 114  WP_060845500.1   34.88%    passed     99.71%
+ 115  WP_091751985.1   34.88%    passed     99.00%
+ 116  WP_048428313.1   34.88%    passed     99.73%
+ 117  WP_207179657.1   34.88%    passed     99.62%
+ 118  WP_048464134.1   34.88%    passed     91.51%
+ 119  WP_139038663.1   34.88%    passed     99.19%
+ 120  WP_109958570.1   34.88%    passed     99.13%
+ 121  WP_099954642.1   34.88%    passed     99.90%
+ 122  WP_109971873.1   34.88%    passed     99.70%
+ 123  WP_236990760.1   34.88%    passed     99.88%
+ 124  WP_093570315.1   34.88%    passed     99.69%
+ 125  WP_099908472.1   34.88%    passed     99.90%
+ 126  WP_203154092.1   34.88%    passed     99.54%
+ 127  WP_135413028.1   36.05%    passed     99.96%
+ 128  WP_165083170.1   34.88%    passed     96.69%
+ 129  WP_128562293.1   36.05%    passed     97.06%
+ 130  WP_048452653.1   36.05%    passed     94.01%
+ 131  WP_048445733.1   36.05%    passed     98.66%
+ 132  WP_238246025.1   36.63%    passed     83.08%
+ 133  WP_247636734.1   35.47%    passed     94.10%
+ 134  WP_056481197.1   35.47%    passed     90.83%
+ 135  WP_244027838.1   35.47%    passed     90.27%
+ 136  WP_056478000.1   35.47%    passed     89.65%
+ 137  WP_056349262.1   35.47%    passed     87.20%
+ 138  WP_056212916.1   35.47%    passed     94.94%
+ 139  WP_055959175.1   35.47%    passed     93.84%
+ 140  WP_056271859.1   35.47%    passed     93.84%
+ 141  WP_244012571.1   35.47%    passed     89.03%
+ 142  WP_147710611.1   35.47%    passed     98.43%
+ 143  WP_056305224.1   35.47%    passed     87.05%
+ 144  WP_056170849.1   35.47%    passed     86.13%
+ 145  WP_056261319.1   35.47%    passed     90.52%
+ 146  WP_163643186.1   35.47%    passed     84.59%
+ 147  WP_238227663.1   35.47%    passed     99.29%
+ 148  WP_243975068.1   37.21%    passed     52.56%
+ 149  CAA2106626.1     37.21%    passed     45.79%
+ 150  WP_207411967.1   37.21%    passed     55.01%
+ 151  WP_018043413.1   37.21%    passed     17.26%
+ 152  WP_027173715.1   37.21%    passed     17.26%
+ 153  WP_227441276.1   37.21%    passed     11.03%
+ 154  WP_019903757.1   37.21%    passed     25.85%
+ 155  WP_238209273.1   37.21%    passed     66.76%
+ 156  MBX9930026.1     35.47%    passed     51.00%
+ 157  WP_144763426.1   35.47%    passed     95.92%
+ 158  WP_142586013.1   35.47%    passed     95.75%
+ 159  WP_109952393.1   35.47%    passed     99.45%
+ 160  WP_066921034.1   35.47%    passed     99.95%
+ 161  WP_238301579.1   35.47%    passed     99.93%
+ 162  WP_243906849.1   35.47%    passed     84.76%
+ 163  WP_244004386.1   35.47%    passed     77.97%
+ 164  WP_243968379.1   35.47%    passed     91.83%
+ 165  WP_243923704.1   35.47%    passed     96.75%
+ 166  WP_244007521.1   35.47%    passed     92.54%
+ 167  WP_238286702.1   35.47%    passed     97.84%
+ 168  WP_091718805.1   35.47%    passed     96.55%
+ 169  MBE7198988.1     35.47%    passed     95.27%
+ 170  WP_042675620.1   35.47%    passed     97.12%
+ 171  WP_100251418.1   35.47%    passed     94.00%
+ 172  WP_020092595.1   35.47%    passed     97.18%
+ 173  WP_056526017.1   35.47%    passed     99.00%
+ 174  WP_160532695.1   35.47%    passed     98.33%
+ 175  WP_149310179.1   35.47%    passed     97.74%
+ 176  MBE7203409.1     35.47%    passed     98.32%
+ 177  WP_010683639.1   35.47%    passed     99.30%
+ 178  WP_043349950.1   35.47%    passed     93.77%
+ 179  WP_238194742.1   35.47%    passed     99.84%
+ 180  WP_210032200.1   35.47%    passed     99.85%
+ 181  WP_092036464.1   35.47%    passed     96.68%
+ 182  WP_007568786.1   35.47%    passed     98.57%
+ 183  WP_050734843.1   35.47%    passed     97.61%
+ 184  WP_091858554.1   35.47%    passed     97.61%
+ 185  WP_058194090.1   35.47%    passed     92.92%
+ 186  WP_244023816.1   35.47%    passed     95.90%
+ 187  WP_243943056.1   35.47%    passed     95.90%
+ 188  WP_243969199.1   35.47%    passed     97.15%
+ 189  WP_147856287.1   35.47%    passed     96.13%
+ 190  WP_147906398.1   35.47%    passed     95.98%
+ 191  WP_012320541.1   35.47%    passed     97.92%
+ 192  PJI54718.1       35.47%    passed     99.33%
+ 193  WP_243930616.1   35.47%    passed     66.66%
+ 194  WP_238248443.1   35.47%    passed     44.33%
+ 195  WP_244046185.1   35.47%    passed     93.85%
+ 196  WP_132254401.1   35.47%    passed     89.96%
+ 197  WP_109894740.1   35.47%    passed     82.23%
+ 198  WP_147026372.1   35.47%    passed     86.84%
+ 199  WP_150962736.1   35.47%    passed     97.05%
+ 200  WP_150999666.1   35.47%    passed     99.55%
+ 201  MBE7202413.1     35.47%    passed     87.17%
+ 202  WP_238201056.1   35.47%    passed     94.93%
+ 203  RZK76654.1       35.47%    passed     88.33%
+ 204  WP_147763725.1   35.47%    passed     82.23%
+ 205  WP_147752526.1   35.47%    passed     81.69%
+ 206  WP_147726351.1   35.47%    passed     75.63%
+ 207  WP_238275116.1   35.47%    passed     89.27%
+ 208  WP_233385312.1   35.47%    passed     72.86%
+ 209  WP_147813585.1   35.47%    passed     21.89%
+ 210  WP_147080767.1   35.47%    passed     70.18%
+ 211  WP_241099638.1   36.05%    passed     33.18%
+ 212  WP_243910531.1   38.95%    passed     79.40%
+ 213  WP_238277815.1   38.95%    passed     86.48%
+ 214  WP_244011233.1   38.95%    passed     80.13%
+ 215  WP_056220352.1   38.95%    passed     81.33%
+ 216  WP_056469137.1   38.95%    passed     90.51%
+ 217  WP_056168372.1   37.79%    passed     71.71%
+ 218  WP_056096160.1   37.79%    passed     69.42%
+ 219  WP_244026402.1   37.79%    passed     62.96%
+ 220  WP_091973554.1   37.79%    passed     48.00%
+ 221  WP_238228006.1   37.79%    passed     85.75%
+ 222  WP_018042885.1   37.79%    passed     14.45%
+ 223  WP_147763045.1   37.79%    passed     17.60%
+ 224  WP_247637186.1   37.79%    passed     16.89%
+ 225  WP_056188172.1   37.79%    passed     30.88%
+ 226  WP_056483056.1   37.79%    passed     29.63%
+ 227  WP_147044974.1   35.47%    passed     95.74%
+ 228  WP_233383166.1   35.47%    passed     80.97%
+ 229  WP_183504693.1   35.47%    passed     62.12%
+ 230  WP_147081983.1   35.47%    passed     18.48%
+ 231  WP_232629746.1   35.47%    passed     34.94%
+ 232  WP_091948391.1   35.47%    passed     69.51%
+ 233  WP_183572136.1   35.47%    passed     23.40%
+ 234  KQT53354.1       35.47%    passed     74.09%
+ 235  WP_137829608.1   35.47%    passed     28.11%
+ 236  WP_009864975.1   35.47%    passed     76.13%
+ 237  HJE23294.1       35.47%    passed     76.13%
+ 238  WP_231346494.1   34.88%    passed     46.68%
+ 239  KQQ27110.1       34.88%    passed     78.46%
+ 240  MCJ2031403.1     34.88%    passed     87.67%
+ 241  WP_012453714.1   34.88%    passed     93.59%
+ 242  AWI88669.1       34.88%    passed     54.40%
+ 243  WP_238223010.1   34.88%    passed     56.50%
+ 244  WP_183434331.1   34.88%    passed     78.27%
+ 245  WP_238256066.1   34.88%    passed     85.71%
+ 246  WP_003601797.1   34.30%    passed     92.69%
+ 247  WP_110353709.1   35.47%    passed     74.64%
+ 248  WP_238311161.1   35.47%    passed     68.67%
+ 249  WP_056285770.1   36.05%    passed     37.73%
+ 250  WP_127730925.1   35.47%    passed     60.31%
+ 251  WP_012631221.1   36.63%    passed     84.36%
+ 252  MBY0299962.1     36.63%    passed     98.78%
+ 253  WP_232630168.1   37.21%    passed     91.34%
+ 254  KQT61367.1       37.21%    passed     25.63%
+ 255  WP_091941328.1   37.21%    passed     38.69%
+ 256  WP_137831829.1   37.21%    passed     13.25%
+ 257  WP_172114205.1   38.95%    passed     99.41%
+ 258  WP_009027727.1   38.95%    passed     99.17%
+ 259  WP_011925014.1   38.95%    passed     95.92%
+ 260  WP_008964302.1   38.95%    passed     99.89%
+ 261  WP_231326895.1   37.79%    passed     97.85%
+ 262  BAM91615.1       37.79%    passed     99.67%
+ 263  WP_012042442.1   37.79%    passed     99.93%
+ 264  WP_231327943.1   34.30%    passed     95.08%
+ 265  TMJ90498.1       38.37%    passed     94.04%
+ 266  TMK20926.1       38.37%    passed     95.79%
+ 267  TMJ65499.1       38.37%    passed     99.67%
+ 268  OLB71496.1       38.37%    passed     99.11%
+ 269  TMJ92523.1       38.37%    passed     86.17%
+ 270  TMK09117.1       20.35%    failed      0.00%
+ 271  MBC7576810.1     38.37%    passed     96.02%
+ 272  WP_184513836.1   38.37%    passed     89.71%
+ 273  SFL26237.1       38.37%    passed     91.99%
+ 274  WP_184256547.1   38.37%    passed     98.77%
+ 275  WP_044418006.1   38.37%    passed     97.25%
+ 276  WP_231077921.1   38.37%    passed     98.56%
+ 277  WP_176454466.1   38.37%    passed     99.91%
+ 278  SEI14621.1       38.37%    passed     99.90%
+ 279  WP_149531852.1   38.37%    passed     99.98%
+ 280  WP_068731183.1   38.37%    passed     99.19%
+ 281  WP_146089935.1   38.37%    passed     90.49%
+ 282  WP_088520414.1   38.37%    passed     89.92%
+ 283  WP_155445196.1   38.37%    passed     91.06%
+ 284  WP_074125485.1   36.05%    passed     98.16%
+ 285  WP_050405229.1   36.05%    passed     96.06%
+ 286  WP_050419331.1   36.05%    passed     98.06%
+ 287  WP_095735760.1   36.05%    passed     96.81%
+ 288  WP_097675455.1   36.05%    passed     98.77%
+ 289  WP_244067402.1   36.05%    passed     97.59%
+ 290  WP_146987503.1   36.05%    passed     97.56%
+ 291  WP_050628687.1   36.05%    passed     96.74%
+ 292  WP_076859038.1   36.05%    passed     99.71%
+ 293  WP_212016363.1   36.05%    passed     98.84%
+ 294  WP_176529971.1   36.05%    passed     97.36%
+ 295  WP_207831543.1   36.05%    passed     97.82%
+ 296  WP_173637821.1   36.05%    passed     52.94%
+ 297  WP_212310313.1   36.05%    passed     99.42%
+ 298  WP_092115662.1   36.05%    passed     98.81%
+ 299  WP_057020575.1   36.63%    passed     92.03%
+ 300  WP_225647642.1   36.63%    passed     94.29%
+ 301  WP_139863556.1   36.05%    passed     98.76%
+ 302  WP_139485493.1   36.05%    passed     97.26%
+ 303  WP_028340086.1   36.05%    passed     92.96%
+ 304  WP_137478651.1   36.05%    passed     95.21%
+ 305  WP_076834179.1   36.05%    passed     96.61%
+ 306  WP_028336943.1   36.05%    passed     95.44%
+ 307  WP_092083082.1   36.05%    passed     96.07%
+ 308  WP_141339827.1   36.05%    passed     97.43%
+ 309  WP_038375811.1   36.05%    passed     97.43%
+ 310  WP_026193097.1   36.05%    passed     96.03%
+ 311  WP_038383444.1   36.05%    passed     96.24%
+ 312  WP_024580216.1   36.05%    passed     98.06%
+ 313  WP_100955424.1   36.05%    passed     98.68%
+ 314  WP_166305354.1   36.05%    passed     97.81%
+ 315  WP_029080072.1   36.05%    passed     97.23%
+ 316  WP_229195815.1   36.05%    passed     89.57%
+ 317  WP_163160116.1   36.05%    passed     84.87%
+ 318  WP_229181265.1   36.05%    passed     93.55%
+ 319  WP_211982803.1   36.05%    passed     98.47%
+ 320  WP_225712291.1   36.05%    passed     97.30%
+ 321  WP_195785013.1   36.05%    passed     96.82%
+ 322  WP_044540402.1   36.05%    passed     85.23%
+ 323  WP_066512377.1   36.05%    passed     84.15%
+ 324  WP_212492645.1   36.05%    passed     76.77%
+ 325  WP_212396281.1   36.05%    passed     80.39%
+ 326  WP_212501448.1   36.05%    passed     95.75%
+ 327  WP_247968485.1   37.21%    passed     93.40%
+ 328  WP_246918073.1   37.21%    passed     93.40%
+ 329  WP_097661979.1   37.21%    passed     96.48%
+ 330  WP_212379271.1   37.21%    passed     97.52%
+ 331  WP_194403578.1   37.21%    passed     98.69%
+ 332  WP_211416524.1   37.21%    passed     97.45%
+ 333  WP_063202730.1   37.21%    passed     96.26%
+ 334  RTM13511.1       37.21%    passed     95.57%
+ 335  WP_247559499.1   37.21%    passed     96.48%
+ 336  WP_212473160.1   37.21%    passed     98.00%
+ 337  WP_063981985.1   37.21%    passed     97.83%
+ 338  WP_028151284.1   37.21%    passed     93.89%
+ 339  WP_014493625.1   37.21%    passed     98.39%
+ 340  WP_038934564.1   37.21%    passed     99.43%
+ 341  WP_028174364.1   37.21%    passed     98.47%
+ 342  WP_027546467.1   37.21%    passed     99.64%
+ 343  WP_092188056.1   37.21%    passed     99.12%
+ 344  WP_161533967.1   37.21%    passed     98.00%
+ 345  WP_211388572.1   37.21%    passed     98.20%
+ 346  WP_166100493.1   37.21%    passed     94.47%
+ 347  WP_220014110.1   37.21%    passed     96.02%
+ 348  WP_128919776.1   37.21%    passed     96.48%
+ 349  WP_162496350.1   37.21%    passed     97.06%
+ 350  OSI24565.1       37.21%    passed     97.28%
+ 351  WP_027566543.1   37.21%    passed     99.31%
+ 352  WP_247436620.1   37.21%    passed     99.62%
+ 353  WP_106946455.1   37.21%    passed     99.11%
+ 354  WP_247402763.1   37.21%    passed     99.71%
+ 355  WP_247459591.1   37.21%    passed     95.86%
+ 356  WP_197959052.1   37.21%    passed     95.11%
+ 357  WP_197949706.1   37.21%    passed     97.76%
+ 358  WP_174718775.1   37.21%    passed     98.22%
+ 359  WP_212250393.1   37.21%    passed     97.28%
+ 360  WP_181770129.1   37.21%    passed     98.40%
+ 361  WP_162406692.1   37.21%    passed     98.88%
+ 362  WP_162307661.1   37.21%    passed     99.78%
+ 363  WP_162308672.1   37.21%    passed     98.83%
+ 364  WP_247328266.1   37.21%    passed     93.78%
+ 365  WP_212436204.1   37.21%    passed     96.47%
+ 366  WP_249756897.1   37.21%    passed     99.65%
+ 367  WP_128932460.1   37.21%    passed     98.83%
+ 368  WP_091896411.1   37.21%    passed     98.68%
+ 369  WP_247280489.1   37.21%    passed     99.74%
+ 370  WP_130211755.1   37.21%    passed     99.35%
+ 371  WP_247302097.1   37.21%    passed     99.51%
+ 372  WP_247473966.1   37.21%    passed     99.69%
+ 373  WP_247349580.1   37.21%    passed     99.36%
+ 374  WP_143841061.1   37.21%    passed     97.44%
+ 375  WP_247443909.1   37.21%    passed     98.54%
+ 376  WP_212298685.1   37.21%    passed     98.63%
+ 377  WP_148771108.1   37.21%    passed     97.31%
+ 378  WP_071911675.1   37.21%    passed     96.64%
+ 379  WP_041959045.1   37.21%    passed     97.41%
+ 380  BCE24060.1       37.21%    passed     96.87%
+ 381  WP_028156722.1   37.21%    passed     97.15%
+ 382  WP_247505865.1   37.21%    passed     99.21%
+ 383  WP_200294917.1   37.21%    passed     98.81%
+ 384  WP_234679747.1   37.21%    passed     94.21%
+ 385  WP_200472908.1   37.21%    passed     98.35%
+ 386  WP_027562366.1   37.21%    passed     99.14%
+ 387  WP_237864762.1   37.21%    passed     96.43%
+ 388  WP_212235234.1   37.21%    passed     98.36%
+ 389  WP_195803164.1   37.21%    passed     98.26%
+ 390  WP_100232960.1   37.21%    passed     96.51%
+ 391  WP_165637881.1   37.21%    passed     95.21%
+ 392  WP_158670195.1   37.21%    passed     93.05%
+ 393  WP_007612972.1   37.21%    passed     96.85%
+ 394  WP_027519374.1   37.21%    passed     99.84%
+ 395  WP_007601381.1   37.21%    passed     98.87%
+ 396  WP_247433479.1   37.21%    passed     98.01%
+ 397  WP_247801338.1   37.21%    passed     99.39%
+ 398  WP_028181803.1   37.21%    passed     99.52%
+ 399  WP_131870916.1   37.21%    passed     99.07%
+ 400  WP_239625637.1   37.21%    passed     98.38%
+ 401  WP_025037731.1   37.21%    passed     91.90%
+ 402  WP_036007934.1   37.21%    passed     94.47%
+ 403  WP_057026632.1   37.21%    passed     94.72%
+ 404  WP_225182849.1   37.21%    passed     94.28%
+ 405  WP_225148095.1   37.21%    passed     94.62%
+ 406  WP_183708190.1   37.21%    passed     92.40%
+ 407  WP_018320726.1   37.21%    passed     94.86%
+ 408  WP_179735811.1   37.21%    passed     98.43%
+ 409  WP_126255572.1   37.21%    passed     93.48%
+ 410  WP_135161825.1   37.21%    passed     93.07%
+ 411  WP_028137794.1   37.21%    passed     92.88%
+ 412  WP_135176694.1   37.21%    passed     99.64%
+ 413  WP_074121026.1   37.21%    passed     97.10%
+ 414  WP_084807016.1   37.21%    passed     99.28%
+ 415  WP_122402182.1   37.21%    passed     87.75%
+ 416  WP_209296140.1   37.21%    passed     87.74%
+ 417  WP_247989824.1   37.21%    passed     99.18%
+ 418  WP_128927017.1   37.21%    passed     95.05%
+ 419  WP_008139562.1   37.21%    passed     97.96%
+ 420  WP_247525626.1   37.21%    passed     96.40%
+ 421  WP_092022522.1   37.21%    passed     99.52%
+ 422  MCF3092937.1     37.21%    passed     99.28%
+ 423  WP_200499084.1   37.21%    passed     98.49%
+ 424  WP_212071027.1   37.21%    passed     99.05%
+ 425  WP_212488793.1   37.21%    passed     99.84%
+ 426  WP_247326340.1   37.21%    passed     99.92%
+ 427  WP_194481180.1   37.21%    passed     87.96%
+ 428  WP_212328908.1   37.21%    passed     97.99%
+ 429  WP_057751392.1   37.21%    passed     98.32%
+ 430  WP_220001071.1   37.21%    passed     94.84%
+ 431  WP_026311941.1   38.37%    passed     99.52%
+ 432  WP_211405822.1   38.37%    passed     99.14%
+ 433  WP_063690681.1   38.37%    passed     98.01%
+ 434  MCE2024026.1     38.37%    passed     98.57%
+ 435  WP_080136558.1   38.37%    passed     98.99%
+ 436  WP_172785576.1   37.21%    passed     99.56%
+ 437  WP_199581264.1   37.21%    passed     97.65%
+ 438  WP_212284395.1   37.21%    passed     96.59%
+ 439  WP_183257410.1   37.21%    passed     96.41%
+ 440  WP_200456310.1   37.21%    passed     94.56%
+ 441  WP_008569482.1   37.21%    passed     95.68%
+ 442  WP_145629325.1   37.21%    passed     95.96%
+ 443  WP_166814769.1   37.21%    passed     97.39%
+ 444  WP_212291358.1   37.21%    passed     97.59%
+ 445  WP_157283946.1   37.21%    passed     95.91%
+ 446  WP_024342555.1   37.21%    passed     92.58%
+ 447  WP_061029676.1   37.21%    passed     98.26%
+ 448  WP_148756035.1   37.21%    passed     95.37%
+ 449  WP_128960324.1   37.21%    passed     97.32%
+ 450  WP_128950522.1   37.21%    passed     89.90%
+ 451  WP_027534085.1   37.21%    passed     96.88%
+ 452  MBP1797803.1     37.21%    passed     99.36%
+ 453  WP_092299138.1   37.21%    passed     97.90%
+ 454  WP_188104820.1   37.21%    passed     85.89%
+ 455  WP_128945316.1   37.21%    passed     98.46%
+ 456  WP_247500718.1   37.21%    passed     98.01%
+ 457  WP_151648932.1   37.21%    passed     92.86%
+ 458  WP_157327002.1   37.21%    passed     99.07%
+ 459  WP_027525762.1   37.21%    passed     98.49%
+ 460  WP_063677517.1   37.21%    passed     99.14%
+ 461  WP_027551125.1   37.21%    passed     99.62%
+ 462  WP_063698532.1   37.21%    passed     93.22%
+ 463  WP_027574619.1   38.95%    passed     90.97%
+ 464  WP_200512125.1   37.21%    passed     99.16%
+ 465  WP_045006748.1   37.21%    passed     99.83%
+ 466  WP_045014522.1   37.21%    passed     99.81%
+ 467  WP_211387066.1   37.21%    passed     85.64%
+ 468  WP_199751885.1   37.21%    passed     97.55%
+ 469  MBJ7405103.1     37.21%    passed     94.88%
+ 470  WP_212081000.1   37.21%    passed     93.99%
+ 471  WP_212402844.1   37.21%    passed     99.84%
+ 472  WP_212461706.1   37.21%    passed     99.78%
+ 473  TPQ41916.1       37.21%    passed     99.40%
+ 474  WP_128964869.1   37.21%    passed     95.52%
+ 475  WP_130225907.1   36.05%    passed     95.05%
+ 476  WP_208821226.1   36.05%    passed     93.02%
+ 477  WP_051396578.1   36.05%    passed     99.13%
+ 478  WP_043159183.1   36.05%    passed     97.90%
+ 479  WP_130580678.1   36.05%    passed     99.45%
+ 480  MCA1455690.1     36.05%    passed     97.16%
+ 481  WP_214491735.1   36.05%    passed     96.26%
+ 482  WP_212419141.1   36.63%    passed     99.73%
+ 483  WP_060912640.1   50.58%    passed     99.54%
+ 484  WP_212017892.1   36.05%    passed     98.69%
+ 485  WP_024580287.1   36.63%    passed     96.33%
+ 486  WP_076866244.1   36.63%    passed     99.44%
+ 487  WP_079545054.1   36.05%    passed     90.21%
+ 488  WP_079587042.1   36.05%    passed     15.41%
+ 489  SIO63612.1       36.05%    passed     59.08%
+ 490  WP_247388182.1   36.05%    passed     55.28%
+ 491  TMK40006.1       36.05%    passed     99.91%
+ 492  TMJ84888.1       36.05%    passed     45.87%
+ 493  WP_057196962.1   36.63%    passed     83.91%
+ 494  WP_131870936.1   36.63%    passed     35.29%
+ 495  WP_085966161.1   36.63%    passed     26.71%
+ 496  WP_246790065.1   36.63%    passed     34.55%
+ 497  MBH5391860.1     36.63%    passed     40.69%
+ 498  WP_239625597.1   36.63%    passed     26.08%
+ 499  WP_124161803.1   36.63%    passed     17.26%
+ 500  GIQ74173.1       43.60%    passed     11.72%
+ 501  MBS0252975.1     37.79%    passed     91.32%
+ 502  WP_013946143.1   37.79%    passed     94.19%
+ 503  MBN9281324.1     33.14%    failed      2.28%
+ 504  ADJ23120.1       33.14%    passed     98.72%
+ 505  MBS0235305.1     37.79%    passed     97.32%
+ 506  WP_092869117.1   37.79%    passed     93.93%
+ 507  MBY0561954.1     37.79%    passed     89.38%
+ 508  RUP11231.1       37.79%    passed     81.49%
+ 509  MBS0237178.1     37.79%    passed     82.66%
+ 510  WP_181335629.1   37.79%    passed     83.79%
+ 511  RUO98509.1       37.79%    passed     84.96%
+ 512  KAB2941217.1     35.47%    passed     83.38%
+ 513  MBC7833051.1     35.47%    passed     91.67%
+ 514  MBX9864705.1     34.30%    failed      0.04%
+ 515  WP_072369073.1   37.21%    passed     58.47%
+ 516  WP_084143555.1   38.37%    passed     93.77%
+ 517  WP_012589863.1   37.79%    passed     52.45%
+ 518  WP_102844174.1   37.79%    passed     46.86%
+ 519  WP_174512097.1   37.79%    passed     28.58%
+ 520  WP_134491966.1   37.79%    passed     20.57%
+ 521  WP_091684378.1   37.79%    passed     86.25%
+ 522  PZR84535.1       38.37%    passed     99.83%
+ 523  QBR72077.1       37.21%    passed     86.29%
+ 524  WP_196407746.1   37.79%    passed     73.52%
+ 525  WP_108915665.1   37.79%    passed     54.32%
+ 526  WP_166141150.1   37.79%    passed     56.98%
+ 527  WP_036293838.1   37.79%    passed     87.12%
+ 528  WP_018267140.1   37.79%    passed     82.70%
+ 529  WP_036291307.1   37.79%    passed     93.49%
+ 530  WP_064033039.1   37.79%    passed     93.60%
+ 531  WP_161912438.1   37.79%    passed     93.33%
+ 532  WP_159731795.1   37.79%    passed     92.47%
+ 533  PWB79981.1       37.79%    passed     95.47%
+ 534  WP_222577430.1   37.79%    passed     99.59%
+ 535  WP_003612551.1   37.79%    passed     51.32%
+ 536  ARN83387.1       37.79%    passed     99.38%
+ 537  QGM48028.1       37.79%    passed     80.69%
+ 538  KAF0210231.1     37.21%    passed     74.82%
+ 539  WP_124738604.1   37.21%    passed     69.65%
+ 540  WP_196405293.1   37.21%    passed     68.15%
+ 541  WP_014890079.1   37.21%    passed     51.00%
+ 542  WP_123175872.1   37.21%    passed     85.94%
+ 543  PWB90889.1       37.21%    passed     81.20%
+ 544  WP_018408757.1   37.21%    passed     77.97%
+ 545  WP_154453488.1   37.21%    passed     59.29%
+ 546  WP_196393046.1   37.21%    passed     75.78%
+ 547  MBM3576295.1     37.21%    passed     73.49%
+ 548  MBI5011768.1     36.63%    passed     73.20%
+ 549  WP_196402109.1   36.63%    passed     66.37%
+ 550  MBM3552938.1     37.21%    passed     65.37%
+ 551  MBI1981207.1     37.21%    passed     93.15%
+ 552  WP_165051830.1   37.21%    passed     84.66%
+ 553  WP_202073638.1   37.21%    passed     81.62%
+ 554  WP_026016174.1   37.21%    passed     82.20%
+ 555  NBS35359.1       36.63%    passed      5.85%
+ 556  MBM3574717.1     36.63%    failed      3.51%
+ 557  NDB69831.1       36.63%    passed     12.12%
+ 558  WP_246810018.1   36.63%    passed     19.10%
+ 559  TAL81953.1       37.21%    passed     22.21%
+ 560  MCC0001432.1     38.95%    passed     20.31%
+ 561  MCC2109192.1     38.95%    passed     30.04%
+ 562  TMJ31690.1       33.14%    passed     51.85%
+ 563  QAY95691.1       40.70%    passed     90.03%
+ 564  MBV8427531.1     37.21%    passed     16.50%
+ 565  MBV9434168.1     37.21%    failed      3.44%
+ 566  MBW0003899.1     37.21%    passed      5.17%
+ 567  MBV9520790.1     37.21%    failed      4.94%
+ 568  MBV9568150.1     37.21%    failed      0.27%
+ 569  MBV8448326.1     37.21%    failed      0.16%
+ 570  OYW54388.1       35.47%    failed      0.00%
+ 571  MBY0224843.1     35.47%    failed      0.00%
+ 572  MBV8613776.1     31.40%    passed     30.20%
+ 573  MBV9777948.1     31.40%    passed      8.16%
+ 574  WP_025318492.1   32.56%    failed      1.04%
+ 575  WP_198355877.1   32.56%    failed      0.89%
+ 576  WP_216634451.1   32.56%    failed      0.62%
+ 577  WP_103121657.1   33.14%    failed      0.13%
+ 578  WP_020187336.1   34.30%    failed      0.06%
+ 579  WP_020181142.1   34.30%    failed      0.01%
+ 580  PZQ11333.1       34.30%    failed      0.00%
+ 581  WP_183395182.1   35.47%    failed      0.00%
+ 582  WP_131004249.1   36.05%    failed      0.02%
+ 583  WP_128777683.1   34.88%    failed      0.00%
+ 584  WP_183396054.1   32.56%    failed      0.00%
+ 585  WP_126540840.1   36.05%    failed      0.00%
+ 586  WP_138400988.1   35.47%    failed      0.04%
+ 587  WP_149577835.1   35.47%    passed     28.23%
+ 588  ABS68055.1       35.47%    passed     46.10%
+ 589  WP_237344988.1   35.47%    failed      0.02%
+ 590  WP_234050446.1   34.30%    failed      0.00%
+ 591  WP_247027912.1   36.05%    failed      0.04%
+ 592  WP_213335360.1   36.05%    passed      7.95%
+ 593  WP_209484725.1   36.05%    failed      0.00%
+ 594  WP_024280438.1   36.05%    failed      0.00%
+ 595  WP_169124009.1   36.05%    failed      0.00%
+ 596  MCB1513794.1     32.56%    failed      0.00%
+ 597  MBL8567026.1     30.81%    failed      0.00%
+ 598  KUO57634.1       35.47%    failed      0.00%
+ 599  MCH9806346.1     35.47%    failed      0.00%
+ 600  EDA34492.1       42.44%    failed      0.13%
+ 601  ECZ60733.1       42.44%    failed      0.03%
+ 602  EDC84703.1       44.19%    failed      0.02%
+ 603  EBE86558.1       44.19%    failed      0.02%
+ 604  EDB46400.1       42.44%    failed      0.00%
+ 605  EDD92622.1       43.02%    failed      0.00%
+ 606  EBS30196.1       43.02%    failed      0.00%
+ 607  EBA98960.1       46.51%    failed      0.02%
+ 608  EDB59377.1       37.21%    failed      0.00%
+ 609  ECI18950.1       42.44%    failed      0.00%
+ 610  ECA15697.1       42.44%    failed      0.00%
+ 611  ECY98703.1       43.02%    failed      0.00%
+ 612  MAA77126.1       52.91%    failed      0.02%
+ 613  ECV43991.1       41.86%    failed      0.00%
+ 614  EDF24632.1       41.86%    failed      0.00%
+ 615  EBQ49083.1       40.12%    failed      0.00%
+ 616  MQM39930.1       25.00%    failed      0.00%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL            37.48%  123 sequences failed composition chi2 test (p-value<5%; df=19)
+Hashing sequences took 0.052 wall-clock seconds
+Checking for duplicate sequences took 0.001 wall-clock seconds
+
+NOTE: Restoring information from model checkpoint file lanmodulin.aln.model.gz
+
+CHECKPOINT: Initial tree restored
+Measuring multi-threading efficiency up to 56 CPU cores
+Increase to 10 rounds for branch lengths
+18 trees examined
+Threads: 1 / Time: 57.029 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -78137
+Threads: 2 / Time: 42.409 sec / Speedup: 1.345 / Efficiency: 67% / LogL: -78137
+Threads: 3 / Time: 35.555 sec / Speedup: 1.604 / Efficiency: 53% / LogL: -78137
+Threads: 4 / Time: 32.672 sec / Speedup: 1.745 / Efficiency: 44% / LogL: -78137
+BEST NUMBER OF THREADS: 3
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+1. Initial log-likelihood: -25895.407
+Optimizing +I+G4 model parameters by EM algorithm...
+Proportion of invariable sites: 0.016
+Gamma shape alpha: 1.209
+Optimizing +I+G4 model parameters by EM algorithm...
+Proportion of invariable sites: 0.008
+Gamma shape alpha: 1.491
+Optimizing +I+G4 model parameters by EM algorithm...
+Proportion of invariable sites: 0.007
+Gamma shape alpha: 1.581
+Optimal log-likelihood: -25623.906
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -25524.826
+Optimizing +I+G4 model parameters by EM algorithm...
+Proportion of invariable sites: 0.007
+Gamma shape alpha: 1.581
+Optimal log-likelihood: -25524.825
+Parameters optimization took 1 rounds (0.381 sec)
+Time for fast ML tree search: 6.311 seconds
+
+NOTE: ModelFinder requires 269 MB RAM!
+ModelFinder will test up to 144 protein models (sample size: 172) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+Optimizing model LG
+1. Initial log-likelihood: -26386.279
+Optimal log-likelihood: -26364.769
+  1  LG            26364.769    1229 55187.537    3078527.537  59055.808
+Optimizing model LG+I
+1. Initial log-likelihood: -26341.696
+Proportion of invariable sites: 0.043
+Proportion of invariable sites: 0.022
+Proportion of invariable sites: 0.011
+Proportion of invariable sites: 0.008
+Proportion of invariable sites: 0.007
+Optimal log-likelihood: -26325.722
+  2  LG+I          26325.722    1230 55111.444    3083371.444  58982.862
+Optimizing model LG+G4
+1. Initial log-likelihood: -25569.247
+Gamma shape alpha: 1.421
+Gamma shape alpha: 1.450
+Gamma shape alpha: 1.456
+Optimal log-likelihood: -25530.630
+  3  LG+G4         25530.630    1230 53521.261    3081781.261  57392.679
+Optimizing model LG+I+G4
+1. Initial log-likelihood: -25525.061
+Optimizing +I+G4 model parameters by EM algorithm...
+Proportion of invariable sites: 0.007
+Gamma shape alpha: 1.571
+Optimizing +I+G4 model parameters by EM algorithm...
+Proportion of invariable sites: 0.007
+Gamma shape alpha: 1.574
+Optimal log-likelihood: -25524.828
+  4  LG+I+G4       25524.828    1231 53511.656    3086695.656  57386.222
+Optimizing model LG+R2
+1. Initial log-likelihood: -25729.334
+Optimizing +R2 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.332,0.387) (0.668,1.641)
+Optimizing +R2 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.329,0.389) (0.671,1.639)
+Optimizing +R2 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.329,0.389) (0.671,1.639)
+Optimal log-likelihood: -25686.194
+  5  LG+R2         25686.194    1231 53834.389    3087018.389  57708.954
+Optimizing model LG+R3
+1. Initial log-likelihood: -25619.256
+Optimizing +R3 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.224,0.235) (0.407,0.924) (0.369,1.899)
+Optimizing +R3 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.250,0.250) (0.418,0.947) (0.333,1.863)
+Optimizing +R3 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.251,0.251) (0.419,0.948) (0.330,1.860)
+Optimal log-likelihood: -25547.041
+  6  LG+R3         25547.041    1233 53560.082    3096604.082  57440.943
+Optimizing model LG+R4
+1. Initial log-likelihood: -25547.040
+Optimizing +R4 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.114,0.137) (0.196,0.494) (0.378,1.171) (0.312,2.168)
+Optimizing +R4 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.114,0.137) (0.202,0.503) (0.383,1.189) (0.301,2.173)
+Optimizing +R4 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.114,0.137) (0.204,0.505) (0.385,1.195) (0.297,2.181)
+Optimal log-likelihood: -25503.382
+  7  LG+R4         25503.382    1235 53476.765    3106396.765  57363.920
+Optimizing model LG+R5
+1. Initial log-likelihood: -25523.089
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.109,0.107) (0.155,0.352) (0.239,0.773) (0.341,1.281) (0.156,2.111)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.108,0.107) (0.155,0.355) (0.243,0.782) (0.330,1.284) (0.163,2.094)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.108,0.107) (0.156,0.357) (0.245,0.786) (0.327,1.288) (0.164,2.097)
+Optimal log-likelihood: -25487.622
+  8  LG+R5         25487.622    1237 53449.245    3116261.245  57342.695
+Optimizing model LG+R6
+1. Initial log-likelihood: -25508.954
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.104,0.088) (0.146,0.309) (0.140,0.600) (0.288,0.937) (0.241,1.458) (0.081,2.228)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.104,0.088) (0.148,0.310) (0.146,0.609) (0.286,0.944) (0.234,1.457) (0.081,2.204)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.104,0.088) (0.149,0.310) (0.148,0.611) (0.284,0.946) (0.233,1.457) (0.082,2.199)
+Optimal log-likelihood: -25478.335
+  9  LG+R6         25478.335    1239 53434.669    3126154.669  57334.415
+Optimizing model LG+R7
+1. Initial log-likelihood: -25500.245
+Optimizing +R7 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.094,0.084) (0.111,0.276) (0.089,0.449) (0.161,0.718) (0.265,1.041) (0.223,1.587) (0.057,2.462)
+Optimizing +R7 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.099,0.087) (0.119,0.293) (0.070,0.460) (0.156,0.702) (0.276,1.034) (0.223,1.586) (0.057,2.449)
+Optimizing +R7 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.101,0.088) (0.128,0.302) (0.057,0.474) (0.151,0.691) (0.280,1.025) (0.225,1.576) (0.059,2.427)
+Optimizing +R7 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.102,0.089) (0.135,0.308) (0.048,0.492) (0.145,0.683) (0.281,1.015) (0.227,1.562) (0.063,2.393)
+Optimizing +R7 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.103,0.090) (0.140,0.313) (0.041,0.513) (0.139,0.675) (0.281,1.006) (0.229,1.546) (0.068,2.355)
+Optimizing +R7 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.103,0.090) (0.144,0.317) (0.037,0.536) (0.133,0.668) (0.280,0.998) (0.230,1.532) (0.073,2.326)
+Optimizing +R7 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.103,0.090) (0.147,0.319) (0.034,0.558) (0.128,0.661) (0.281,0.992) (0.231,1.523) (0.077,2.306)
+Optimal log-likelihood: -25478.394
+ 10  LG+R7         25478.394    1241 53438.787    3136082.787  57344.828
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+Optimizing model LG+F+R5
+1. Initial log-likelihood: -25663.1528404575
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1138349192,0.1047809801) (0.1513007948,0.3606436045) (0.2410263248,0.7866315204) (0.3308550439,1.2377401460) (0.1629829174,1.9906458590)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1134673260,0.1047809801) (0.1507261011,0.3656005938) (0.2306034633,0.7905124451) (0.3317581520,1.2402104715) (0.1734449575,1.9988997732)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1133114377,0.1047809801) (0.1506378981,0.3674830816) (0.2278351473,0.7931986451) (0.3321860389,1.2431360612) (0.1760294780,2.0056006586)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1131573230,0.1047809801) (0.1504876550,0.3692764520) (0.2261445374,0.7965740799) (0.3327356141,1.2478948740) (0.1774748705,2.0146352308)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1130155957,0.1047809801) (0.1504019182,0.3710981805) (0.2252773293,0.7998293880) (0.3332865646,1.2542140530) (0.1780185922,2.0238452811)
+Optimal log-likelihood: -25645.8592641397
+ 26  LG+F+R5       25645.859    1256 53803.719    3211387.719  57756.972
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+Optimizing model LG+F+R6
+1. Initial log-likelihood: -25655.4746765308
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1105686657,0.0946603826) (0.1404340106,0.3358521350) (0.1611634843,0.6823704598) (0.3053385875,1.0307050893) (0.2133149183,1.5712209798) (0.0691803336,2.2785092280)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1108167011,0.0946603826) (0.1424976810,0.3396094369) (0.1679501797,0.6953867952) (0.3014609231,1.0457647501) (0.2075056243,1.5825578638) (0.0697688908,2.2810485818)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1109314153,0.0946603826) (0.1437535238,0.3417621031) (0.1723040542,0.7035553360) (0.2989654640,1.0555190769) (0.2055145417,1.5931869890) (0.0685310011,2.2944788283)
+Optimal log-likelihood: -25639.6562750952
+ 27  LG+F+R6       25639.656    1258 53795.313    3221439.313  57754.861
+Optimizing model WAG+R5
+1. Initial log-likelihood: -25507.269
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.108,0.105) (0.142,0.334) (0.276,0.781) (0.331,1.236) (0.143,2.025)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.107,0.105) (0.142,0.336) (0.274,0.786) (0.332,1.244) (0.146,2.039)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.107,0.105) (0.142,0.338) (0.274,0.790) (0.332,1.251) (0.146,2.049)
+Optimal log-likelihood: -25496.302
+ 44  WAG+R5        25496.302    1237 53466.603    3116278.603  57360.054
+Optimizing model WAG+R6
+1. Initial log-likelihood: -25500.103
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.105,0.095) (0.136,0.312) (0.171,0.672) (0.342,1.028) (0.176,1.562) (0.069,2.276)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.105,0.095) (0.136,0.314) (0.178,0.681) (0.339,1.040) (0.167,1.559) (0.075,2.251)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.105,0.095) (0.137,0.316) (0.183,0.689) (0.332,1.047) (0.163,1.553) (0.080,2.236)
+Optimal log-likelihood: -25490.836
+ 45  WAG+R6        25490.836    1239 53459.672    3126179.672  57359.418
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+Optimizing model WAG+F+R5
+1. Initial log-likelihood: -25850.3871832637
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1125210102,0.1047809801) (0.1334871248,0.3352736175) (0.3032299496,0.8130732303) (0.2891498730,1.2611332601) (0.1616120425,1.9854971286)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1123509635,0.1047809801) (0.1347897591,0.3411455598) (0.3174486770,0.8335071599) (0.2731074410,1.2923938690) (0.1623031593,2.0111760257)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1125707636,0.1047809801) (0.1365417092,0.3454908391) (0.3324623125,0.8488388390) (0.2631549671,1.3255726437) (0.1552702476,2.0384030236)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1126700371,0.1047809801) (0.1378725433,0.3492561558) (0.3433765528,0.8613911683) (0.2574105202,1.3545100241) (0.1486703466,2.0663250272)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1126527785,0.1047809801) (0.1387836483,0.3525896093) (0.3500417528,0.8716852841) (0.2545237511,1.3773289555) (0.1439980693,2.0917463001)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1123762792,0.1047809801) (0.1392113525,0.3564873889) (0.3523016029,0.8828988166) (0.2536876250,1.3973614902) (0.1424231405,2.1196237530)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1122658030,0.1047809801) (0.1397324235,0.3594101817) (0.3550711237,0.8911542611) (0.2527414297,1.4136086879) (0.1401892200,2.1404638045)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1120908080,0.1047809801) (0.1400473693,0.3621471388) (0.3565261583,0.8988826459) (0.2523297144,1.4274940457) (0.1390059499,2.1597554814)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1117124815,0.1047809801) (0.1401236870,0.3656226799) (0.3559665337,0.9086256202) (0.2526205401,1.4425149581) (0.1395767577,2.1837483010)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1115663691,0.1047809801) (0.1404618175,0.3682770670) (0.3572560784,0.9150663405) (0.2522190883,1.4555203339) (0.1384966468,2.2018153283)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1113793231,0.1047809801) (0.1406682350,0.3706519368) (0.3579248074,0.9218464948) (0.2521206628,1.4671018520) (0.1379069717,2.2168173237)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1111853984,0.1047809801) (0.1407651521,0.3725751761) (0.3582131144,0.9285646231) (0.2520742071,1.4774568259) (0.1377621280,2.2333960076)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1109803746,0.1047809801) (0.1409078862,0.3747836157) (0.3584437727,0.9348340227) (0.2520756735,1.4863673968) (0.1375922929,2.2489449727)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1107778829,0.1047809801) (0.1410370907,0.3769192023) (0.3584855977,0.9408334735) (0.2521086689,1.4959987423) (0.1375907599,2.2636476371)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1105786016,0.1047809801) (0.1411699117,0.3790026302) (0.3585910982,0.9467316120) (0.2521212059,1.5055714912) (0.1375391826,2.2781287521)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1103825278,0.1047809801) (0.1413051725,0.3810422269) (0.3587232919,0.9525235539) (0.2521271490,1.5150203656) (0.1374618587,2.2923747835)
+Optimal log-likelihood: -25825.7477968271
+ 62  WAG+F+R5      25825.748    1256 54163.496    3211747.496  58116.749
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+Optimizing model WAG+F+R6
+1. Initial log-likelihood: -25840.6968440614
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1055674674,0.0946603826) (0.1198970844,0.3048339232) (0.1502026054,0.6547265336) (0.3329092044,1.0087031529) (0.2185997814,1.5817636858) (0.0728238571,2.3118819653)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1030432573,0.0946603826) (0.1171818783,0.3033886112) (0.1439585716,0.6501470657) (0.3380749482,1.0182894922) (0.2167827483,1.5901700122) (0.0809585963,2.3101603386)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1011939305,0.0946603826) (0.1164377084,0.3040304573) (0.1400624109,0.6521311480) (0.3372545888,1.0281877759) (0.2151554004,1.5941937476) (0.0898959610,2.3078968007)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0999404897,0.0946603826) (0.1164012797,0.3057320704) (0.1378080680,0.6553180195) (0.3345985667,1.0349809164) (0.2140479500,1.5941937476) (0.0972036460,2.3061380681)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0992779921,0.0946603826) (0.1164864225,0.3064152889) (0.1369176089,0.6582779231) (0.3328424296,1.0398877633) (0.2133670253,1.5941937476) (0.1011085215,2.3076618217)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0979533308,0.0946603826) (0.1165145018,0.3077572588) (0.1348643396,0.6610922205) (0.3301836826,1.0462160223) (0.2137842702,1.5959928054) (0.1066998749,2.3154448917)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0972707982,0.0946603826) (0.1166068169,0.3084087259) (0.1342700593,0.6632954927) (0.3293656541,1.0509730459) (0.2135073450,1.6007855737) (0.1089793264,2.3226207338)
+Optimal log-likelihood: -25818.7594602207
+ 63  WAG+F+R6      25818.759    1258 54153.519    3221797.519  58113.067
+Optimizing model JTT+R5
+1. Initial log-likelihood: -25630.742
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.116,0.105) (0.139,0.329) (0.246,0.741) (0.363,1.270) (0.136,2.083)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.115,0.105) (0.137,0.329) (0.237,0.735) (0.375,1.272) (0.136,2.100)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.115,0.105) (0.137,0.330) (0.234,0.735) (0.378,1.274) (0.136,2.107)
+Optimal log-likelihood: -25619.066
+ 80  JTT+R5        25619.066    1237 53712.132    3116524.132  57605.583
+Optimizing model JTT+R6
+1. Initial log-likelihood: -25624.861
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.113,0.095) (0.131,0.316) (0.173,0.654) (0.267,1.052) (0.226,1.497) (0.090,2.246)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.113,0.095) (0.131,0.318) (0.175,0.659) (0.253,1.052) (0.228,1.478) (0.100,2.225)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.113,0.095) (0.130,0.319) (0.174,0.660) (0.246,1.047) (0.233,1.469) (0.104,2.220)
+Optimal log-likelihood: -25612.518
+ 81  JTT+R6        25612.518    1239 53703.036    3126423.036  57602.782
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+Optimizing model JTT+F+R5
+1. Initial log-likelihood: -25909.9986210789
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1190800701,0.1047809801) (0.1599190121,0.3577362334) (0.2277848506,0.8144187309) (0.3334851129,1.3076409047) (0.1597309543,2.0570447174)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1198714167,0.1047809801) (0.1726532162,0.3696426595) (0.2525513223,0.8609246485) (0.3204541233,1.3695080262) (0.1344699215,2.1303936939)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1213424000,0.1047809801) (0.1835925875,0.3733138899) (0.3023383172,0.9003331992) (0.3015484853,1.4593302668) (0.0911782100,2.2986495024)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1217968702,0.1047809801) (0.1871728999,0.3756454307) (0.3292999797,0.9198239672) (0.2883193074,1.5075293958) (0.0734109429,2.3982736767)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1214403939,0.1047809801) (0.1881781863,0.3794686414) (0.3351066136,0.9335769478) (0.2843779194,1.5327107275) (0.0708968868,2.4382726052)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1209738255,0.1047809801) (0.1886445838,0.3839688723) (0.3361569886,0.9461443903) (0.2836359309,1.5538814763) (0.0705886713,2.4698419122)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1205468623,0.1047809801) (0.1889992781,0.3884433243) (0.3364727180,0.9582440211) (0.2834518202,1.5739484795) (0.0705293214,2.5016781105)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1201638958,0.1047809801) (0.1892754997,0.3927882758) (0.3366107861,0.9698975842) (0.2834471449,1.5933480352) (0.0705026736,2.5326886858)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1198112783,0.1047809801) (0.1895239412,0.3971909613) (0.3368815823,0.9804294803) (0.2833192546,1.6124041279) (0.0704639436,2.5628940162)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1195200721,0.1047809801) (0.1897495764,0.4013026240) (0.3370288423,0.9913081053) (0.2832745486,1.6288730110) (0.0704269607,2.5918665259)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1193411787,0.1047809801) (0.1900295159,0.4038874403) (0.3375957311,0.9993667413) (0.2827176680,1.6421248619) (0.0703159062,2.6124933574)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1190952018,0.1047809801) (0.1900973004,0.4080794698) (0.3373200011,1.0091777369) (0.2830672743,1.6584830865) (0.0704202224,2.6395149641)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1189408690,0.1047809801) (0.1902601819,0.4106001740) (0.3375251972,1.0169217657) (0.2829232686,1.6712160373) (0.0703504832,2.6561522665)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1187901374,0.1047809801) (0.1903865558,0.4133910223) (0.3376628739,1.0232189998) (0.2828243611,1.6833274080) (0.0703360718,2.6750838522)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1186531272,0.1047809801) (0.1904830058,0.4160245339) (0.3377263579,1.0300889743) (0.2828219284,1.6947757946) (0.0703155808,2.6935294193)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1185259733,0.1047809801) (0.1905835689,0.4186352313) (0.3378013630,1.0368532859) (0.2827932227,1.7042961807) (0.0702958721,2.7114865711)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1184108959,0.1047809801) (0.1906639533,0.4211749990) (0.3378340873,1.0432046538) (0.2827960115,1.7147528782) (0.0702950521,2.7282111660)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1183025320,0.1047809801) (0.1907489391,0.4235855026) (0.3378934800,1.0494478650) (0.2827726800,1.7250737335) (0.0702823689,2.7446935777)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1182006488,0.1047809801) (0.1908291929,0.4259467940) (0.3379635118,1.0555666644) (0.2827257510,1.7352019212) (0.0702808955,2.7613327888)
+Optimal log-likelihood: -25878.3494708213
+ 98  JTT+F+R5      25878.349    1256 54268.699    3211852.699  58221.952
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+Optimizing model JTT+F+R6
+1. Initial log-likelihood: -25891.8682809638
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1133465724,0.0946603826) (0.1107959145,0.2968251465) (0.1352245178,0.5813244848) (0.3083952725,1.0218088357) (0.2626435511,1.5967606409) (0.0695941718,2.5061411321)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1121087509,0.0946603826) (0.1054549089,0.2930017967) (0.1362101697,0.5741754154) (0.3127466731,1.0283092526) (0.2648497554,1.6160278395) (0.0686297419,2.5403700150)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1117334863,0.0946603826) (0.1045887930,0.2932947986) (0.1364974016,0.5753243406) (0.3135086098,1.0337835025) (0.2650901537,1.6262800188) (0.0685815557,2.5579384785)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1115453945,0.0946603826) (0.1044537481,0.2947593149) (0.1366026979,0.5787095388) (0.3137237042,1.0406139271) (0.2650985731,1.6378948795) (0.0685758823,2.5746128349)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1113331782,0.0946603826) (0.1045134521,0.2962041884) (0.1367179502,0.5822100792) (0.3138479305,1.0473053458) (0.2650380158,1.6470322072) (0.0685494731,2.5913161402)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1111423482,0.0946603826) (0.1045933831,0.2976727269) (0.1368077572,0.5855806587) (0.3138720695,1.0536233040) (0.2650348194,1.6569604749) (0.0685496226,2.6070266989)
+Optimal log-likelihood: -25867.4541952578
+ 99  JTT+F+R6      25867.454    1258 54250.908    3221894.908  58210.456
+Optimizing model Dayhoff+R5
+1. Initial log-likelihood: -25776.110
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.134,0.105) (0.109,0.300) (0.301,0.783) (0.310,1.310) (0.145,1.996)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.130,0.105) (0.111,0.295) (0.308,0.791) (0.309,1.330) (0.142,2.023)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.129,0.105) (0.111,0.296) (0.310,0.796) (0.310,1.343) (0.139,2.042)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.128,0.105) (0.112,0.297) (0.311,0.803) (0.311,1.353) (0.138,2.058)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.127,0.105) (0.113,0.298) (0.311,0.808) (0.311,1.363) (0.138,2.073)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.127,0.105) (0.113,0.299) (0.311,0.814) (0.311,1.373) (0.138,2.088)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.126,0.105) (0.114,0.300) (0.311,0.819) (0.311,1.382) (0.138,2.103)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.125,0.105) (0.114,0.301) (0.311,0.825) (0.311,1.392) (0.138,2.118)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.125,0.105) (0.115,0.302) (0.311,0.830) (0.311,1.401) (0.138,2.133)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.124,0.105) (0.115,0.304) (0.311,0.836) (0.311,1.411) (0.138,2.148)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.123,0.105) (0.116,0.305) (0.311,0.841) (0.311,1.420) (0.138,2.162)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.123,0.105) (0.116,0.306) (0.312,0.846) (0.311,1.430) (0.138,2.176)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.122,0.105) (0.117,0.307) (0.312,0.852) (0.311,1.439) (0.138,2.191)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.121,0.105) (0.117,0.309) (0.311,0.859) (0.311,1.452) (0.139,2.211)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.121,0.105) (0.118,0.310) (0.312,0.864) (0.312,1.461) (0.138,2.224)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.120,0.105) (0.118,0.311) (0.312,0.869) (0.312,1.470) (0.138,2.238)
+Optimal log-likelihood: -25758.955
+116  Dayhoff+R5    25758.955    1237 53991.910    3116803.910  57885.360
+Optimizing model Dayhoff+R6
+1. Initial log-likelihood: -25769.127
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.116,0.095) (0.102,0.276) (0.136,0.604) (0.284,0.992) (0.277,1.541) (0.085,2.294)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.113,0.095) (0.101,0.276) (0.125,0.604) (0.279,1.000) (0.281,1.552) (0.102,2.301)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.111,0.095) (0.101,0.276) (0.124,0.611) (0.276,1.012) (0.279,1.565) (0.108,2.314)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.110,0.095) (0.101,0.276) (0.124,0.617) (0.275,1.025) (0.278,1.581) (0.111,2.336)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.110,0.095) (0.102,0.276) (0.125,0.622) (0.275,1.033) (0.278,1.595) (0.111,2.357)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.109,0.095) (0.102,0.276) (0.125,0.625) (0.276,1.041) (0.278,1.606) (0.110,2.374)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.108,0.095) (0.102,0.276) (0.125,0.628) (0.276,1.048) (0.278,1.618) (0.110,2.392)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.108,0.095) (0.102,0.276) (0.126,0.631) (0.276,1.055) (0.278,1.629) (0.110,2.409)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.107,0.095) (0.102,0.276) (0.126,0.635) (0.277,1.061) (0.278,1.640) (0.110,2.423)
+Optimal log-likelihood: -25747.073
+117  Dayhoff+R6    25747.073    1239 53972.147    3126692.147  57871.892
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+Optimizing model Dayhoff+F+R5
+1. Initial log-likelihood: -26234.5019210326
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1306495546,0.1047809801) (0.0953293217,0.2923494144) (0.2393704552,0.7824462963) (0.2887008815,1.2944553617) (0.2459497869,2.0209087029)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1183837534,0.1047809801) (0.1015400298,0.2821010844) (0.2257932516,0.7830847487) (0.2869225430,1.2915326023) (0.2673604221,2.0559884279)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1123053432,0.1047809801) (0.0992206917,0.2821010844) (0.1912441173,0.7482397352) (0.3056472641,1.2633755488) (0.2915825837,2.1028867886)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1069405579,0.1047809801) (0.0967618512,0.2821010844) (0.1601762580,0.7165778889) (0.3174436848,1.2534316696) (0.3186776481,2.1658544118)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1039945346,0.1047809801) (0.0967004646,0.2821010844) (0.1507978224,0.7171687005) (0.3205252846,1.2688408985) (0.3279818938,2.2173454180)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1017284777,0.1047809801) (0.0971346938,0.2821010844) (0.1479078067,0.7237312365) (0.3223737684,1.2900226042) (0.3308552534,2.2672702391)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0999426399,0.1047809801) (0.0976750536,0.2821010844) (0.1474184402,0.7319209295) (0.3236171881,1.3113299935) (0.3313466783,2.3090317193)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0982754485,0.1047809801) (0.0982121656,0.2821010844) (0.1471978269,0.7401190382) (0.3245741349,1.3320854143) (0.3317404242,2.3467333222)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0967671730,0.1047809801) (0.0987459296,0.2821010844) (0.1471631802,0.7479786995) (0.3253443720,1.3514897295) (0.3319793452,2.3836094332)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0953412554,0.1047809801) (0.0992847158,0.2821010844) (0.1471274984,0.7555473594) (0.3260588804,1.3700556129) (0.3321876500,2.4188857420)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0939812187,0.1047809801) (0.0998489132,0.2821010844) (0.1470954440,0.7629045883) (0.3267160884,1.3878761622) (0.3323583357,2.4527591152)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0926739861,0.1047809801) (0.1004478567,0.2821010844) (0.1470722673,0.7701072989) (0.3273054887,1.4050244961) (0.3325004012,2.4852355785)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0914119906,0.1047809801) (0.1010818665,0.2821010844) (0.1470592592,0.7771734998) (0.3276294298,1.4211917441) (0.3328174539,2.5170131661)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0901772637,0.1047809801) (0.1017531018,0.2823831855) (0.1470235832,0.7841080379) (0.3280934546,1.4371746389) (0.3329525967,2.5469995619)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0894069080,0.1047809801) (0.1023299726,0.2845174051) (0.1468754304,0.7919409046) (0.3283820995,1.4528331264) (0.3330055896,2.5757496486)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0890239553,0.1047809801) (0.1027558209,0.2864801486) (0.1475373140,0.7990714644) (0.3284339673,1.4655204625) (0.3322489425,2.5949345295)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0886139969,0.1047809801) (0.1031588633,0.2883404131) (0.1478256297,0.8054970416) (0.3283815922,1.4771499995) (0.3320199178,2.6148671906)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0881907084,0.1047809801) (0.1035476179,0.2898238556) (0.1479675154,0.8115794698) (0.3283899027,1.4884215168) (0.3319042555,2.6345946516)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0877074071,0.1047809801) (0.1039448617,0.2915149276) (0.1480798040,0.8173460783) (0.3284311579,1.4995032099) (0.3318367693,2.6540717213)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0872665389,0.1047809801) (0.1043260047,0.2931103657) (0.1481375619,0.8230881298) (0.3284781739,1.5104204617) (0.3317917206,2.6733427660)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0868263318,0.1047809801) (0.1047045262,0.2946716098) (0.1481863837,0.8287487918) (0.3285266165,1.5212054573) (0.3317561417,2.6924179778)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0863876854,0.1047809801) (0.1050807184,0.2962023458) (0.1482293179,0.8343374481) (0.3285759391,1.5303386254) (0.3317263392,2.7113021712)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0859501139,0.1047809801) (0.1054459272,0.2974357533) (0.1481835415,0.8395781494) (0.3286326666,1.5404061953) (0.3317877508,2.7295436627)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0855064615,0.1047809801) (0.1058018321,0.2990141988) (0.1481214679,0.8446401703) (0.3287398242,1.5518190888) (0.3318304143,2.7475215594)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0850797871,0.1047809801) (0.1061774392,0.3002747745) (0.1480994566,0.8492068859) (0.3287338803,1.5613703282) (0.3319094368,2.7658230913)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0846410338,0.1047809801) (0.1065390949,0.3018274603) (0.1481821394,0.8552203692) (0.3288484343,1.5705671504) (0.3317892976,2.7836040815)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0842274696,0.1047809801) (0.1068971275,0.3030133763) (0.1480739006,0.8594290462) (0.3288362328,1.5809785080) (0.3319652694,2.8011075024)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0837934018,0.1047809801) (0.1072548286,0.3045338963) (0.1480498713,0.8644428770) (0.3289322974,1.5906649137) (0.3319696008,2.8186296186)
+Optimizing +R5 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0833683780,0.1047809801) (0.1076166427,0.3056217977) (0.1480508144,0.8694157773) (0.3289939580,1.6003281551) (0.3319702069,2.8359979939)
+Optimal log-likelihood: -26191.0319913069
+134  Dayhoff+F+R5  26191.032    1256 54894.064    3212478.064  58847.317
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+Optimizing model Dayhoff+F+R6
+1. Initial log-likelihood: -26220.8912193958
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1185581279,0.0946603826) (0.0909672551,0.2720821413) (0.1395327632,0.6087978120) (0.2702941819,1.0069851466) (0.3031568385,1.6291662481) (0.0774908334,2.5180451693)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1129478393,0.0946603826) (0.0917962280,0.2720821413) (0.1289625349,0.6077082108) (0.2743265559,1.0267816938) (0.3146682026,1.6840407482) (0.0772986393,2.6178364199)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1090201176,0.0946603826) (0.0935565077,0.2720821413) (0.1270949207,0.6192060680) (0.2759736711,1.0550802794) (0.3169807041,1.7369734761) (0.0773740787,2.7046906049)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1058644320,0.0946603826) (0.0950082856,0.2720821413) (0.1273232299,0.6320167988) (0.2771226612,1.0842914945) (0.3173962272,1.7877001367) (0.0772851640,2.7850560941)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1031728123,0.0946603826) (0.0961460741,0.2720821413) (0.1278966382,0.6443557140) (0.2782149124,1.1124010679) (0.3174128502,1.8359569117) (0.0771567128,2.8609270064)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1007961366,0.0946603826) (0.0970756753,0.2720821413) (0.1284958704,0.6559093642) (0.2792481786,1.1390359235) (0.3173549508,1.8816470953) (0.0770291883,2.9326636761)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0989002853,0.0946603826) (0.0978326139,0.2720821413) (0.1292541760,0.6658742918) (0.2802225325,1.1617435423) (0.3169807479,1.9200965275) (0.0768096443,2.9926001910)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0971258306,0.0946603826) (0.0985237638,0.2720821413) (0.1297498066,0.6751250681) (0.2810960179,1.1831909653) (0.3168321274,1.9568550818) (0.0766724538,3.0474972606)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0954656568,0.0946603826) (0.0992072159,0.2720821413) (0.1301686760,0.6839263850) (0.2817921827,1.2034047649) (0.3167672840,1.9916060220) (0.0765989845,3.1018909882)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0938932342,0.0946603826) (0.0999096041,0.2720821413) (0.1305378414,0.6924065051) (0.2823989991,1.2226446107) (0.3167298809,2.0246922724) (0.0765304404,3.1537430863)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0923920821,0.0946603826) (0.1006429368,0.2720821413) (0.1308712724,0.7006171624) (0.2829346920,1.2409980159) (0.3166946505,2.0541414899) (0.0764643661,3.2032592424)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0909901300,0.0946603826) (0.1013909223,0.2720821413) (0.1311772336,0.7083927806) (0.2833746382,1.2580383148) (0.3166600976,2.0832471281) (0.0764069783,3.2491452352)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0896386247,0.0946603826) (0.1021641668,0.2720821413) (0.1314425390,0.7159336459) (0.2837877011,1.2743631788) (0.3165578369,2.1111100904) (0.0764091315,3.2934721028)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0883239387,0.0946603826) (0.1029660796,0.2720821413) (0.1316807964,0.7225347878) (0.2841648296,1.2900595334) (0.3165107516,2.1378669346) (0.0763536041,3.3352239574)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0870494931,0.0946603826) (0.1037834943,0.2720821413) (0.1318753328,0.7295596331) (0.2843166198,1.3037318805) (0.3165841001,2.1637063628) (0.0763909599,3.3714742754)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0862161647,0.0946603826) (0.1043312581,0.2720821413) (0.1321512405,0.7341214165) (0.2848533337,1.3146778104) (0.3162146640,2.1798487542) (0.0762333391,3.3999893413)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0853715434,0.0946603826) (0.1049165296,0.2720821413) (0.1323108162,0.7388599127) (0.2850776881,1.3245537362) (0.3161340559,2.1964055008) (0.0761893669,3.4258077788)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0845358246,0.0946603826) (0.1055089720,0.2720821413) (0.1324427638,0.7434700478) (0.2852607913,1.3328171206) (0.3160901126,2.2125007080) (0.0761615358,3.4509560239)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0837287578,0.0946603826) (0.1060903756,0.2720821413) (0.1325179764,0.7477795859) (0.2854078486,1.3417781736) (0.3161140734,2.2278048007) (0.0761409683,3.4750266425)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0829358383,0.0946603826) (0.1066745837,0.2720821413) (0.1326125878,0.7520462511) (0.2855631115,1.3505999448) (0.3160993301,2.2427589827) (0.0761145486,3.4985452711)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0824106385,0.0946603826) (0.1071189345,0.2731721039) (0.1326187070,0.7563959514) (0.2857028976,1.3592509085) (0.3160678306,2.2574423026) (0.0760809917,3.5215543188)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0819462478,0.0946603826) (0.1075251376,0.2742664328) (0.1326527348,0.7610318097) (0.2857753888,1.3678573119) (0.3160448331,2.2719201155) (0.0760556579,3.5406748452)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.0814820429,0.0946603826) (0.1079293002,0.2753651456) (0.1326903878,0.7655734847) (0.2856315594,1.3763469471) (0.3161191947,2.2860490550) (0.0761475150,3.5623076282)
+Optimal log-likelihood: -26176.7924426628
+135  Dayhoff+F+R6  26176.792    1258 54869.585    3222513.585  58829.133
+Akaike Information Criterion:           LG+R6
+Corrected Akaike Information Criterion: LG
+Bayesian Information Criterion:         LG+R6
+Best-fit model: LG+R6 chosen according to BIC
+
+All model information printed to lanmodulin.aln.model.gz
+CPU time for ModelFinder: 1485.577 seconds (0h:24m:45s)
+Wall-clock time for ModelFinder: 565.655 seconds (0h:9m:25s)
+Empirical state frequencies: 0.1473632269 0.0564881655 0.0349992769 0.1435905989 0.0003363715 0.0225948763 0.0578312210 0.0688774756 0.0079570799 0.0146270861 0.1231127746 0.0941088111 0.0146270861 0.0286763525 0.0294912401 0.0416240115 0.0630374476 0.0009852635 0.0090435968 0.0406280377 
+Generating 1000 samples for ultrafast bootstrap (seed: 272546)...
+
+ML-TREE SEARCH START WITH THE FOLLOWING PARAMETERS:
+Model of evolution: LG+R6 with user-defined frequencies (1239 free parameters)
+Fixed branch lengths: No
+Tree search algorithm: Stochastic nearest neighbor interchange
+Termination condition: min 0.9900000000 correlation coefficient
+NNI assessed on: 5 branches
+Phylogenetic likelihood library: No
+Branch length optimization method: Newton
+Number of Newton-Raphson steps in NNI evaluation and branch length optimization: 10 / 10
+SSE instructions: Yes
+
+NOTE: 108 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.1000000000)
+1. Initial log-likelihood: -25478.3346873197
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.1041574933,0.0946603826) (0.1487214182,0.3321854528) (0.1481914080,0.6544446326) (0.2843136129,1.0126300610) (0.2327339695,1.5598921320) (0.0818820982,2.3551975540)
+Optimal log-likelihood: -25478.3344458525
+Parameters optimization took 1 rounds (0.7243120670 sec)
+Best tree printed to lanmodulin.aln.treefile
+Computing ML distances based on estimated model parameters...
+0.000333s Decided on visit order
+24.733098s Longest distance was 6.512083
+Distance calculation time: 24.733339 seconds
+Computing ML distances took 24.734186 sec (of wall-clock time) 65.056376 sec(of CPU time)
+Computing RapidNJ tree took 0.045010 sec (of wall-clock time) 0.168693 sec (of CPU time)
+Computing RapidNJ tree (from in-memory) distance matrix took 0.048 sec.
+Time taken to write distance file: 0.136 seconds 
+Loading tree (from file lanmodulin.aln.bionj) took 0.016 sec.
+Wall-clock time spent creating initial tree was 0.152 seconds
+Log-likelihood of RapidNJ tree: -25921.832
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 27.013 second
+Computing log-likelihood of 98 initial trees ... 23.331 seconds
+Current best score: -25478.334
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25473.051
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.106,0.095) (0.148,0.333) (0.150,0.655) (0.286,1.016) (0.231,1.560) (0.079,2.376)
+Optimal log-likelihood: -25473.029
+BETTER TREE FOUND at iteration 1: -25473.029
+Iteration 1 / LogL: -25473.029 / Time: 0h:1m:25s
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25418.044
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.104,0.095) (0.144,0.324) (0.158,0.641) (0.308,1.041) (0.214,1.575) (0.072,2.451)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.104,0.095) (0.143,0.323) (0.160,0.641) (0.313,1.046) (0.209,1.585) (0.071,2.461)
+Optimal log-likelihood: -25417.481
+BETTER TREE FOUND at iteration 2: -25417.481
+Iteration 2 / LogL: -25417.481 / Time: 0h:1m:49s
+Iteration 3 / LogL: -25458.132 / Time: 0h:2m:14s
+Iteration 4 / LogL: -25440.592 / Time: 0h:2m:37s
+Iteration 5 / LogL: -25425.160 / Time: 0h:3m:3s
+Iteration 6 / LogL: -25460.167 / Time: 0h:3m:23s
+Iteration 7 / LogL: -25445.847 / Time: 0h:3m:48s
+Iteration 8 / LogL: -25461.779 / Time: 0h:4m:12s
+Iteration 9 / LogL: -25485.110 / Time: 0h:4m:34s
+Iteration 10 / LogL: -25467.211 / Time: 0h:4m:59s
+Iteration 11 / LogL: -25457.013 / Time: 0h:5m:30s
+Iteration 12 / LogL: -25470.536 / Time: 0h:5m:56s
+Iteration 13 / LogL: -25494.665 / Time: 0h:6m:14s
+Iteration 14 / LogL: -25502.065 / Time: 0h:6m:37s
+Iteration 15 / LogL: -25456.965 / Time: 0h:6m:53s
+Iteration 16 / LogL: -25475.037 / Time: 0h:7m:14s
+Iteration 17 / LogL: -25508.986 / Time: 0h:7m:37s
+Iteration 18 / LogL: -25487.619 / Time: 0h:7m:55s
+Iteration 19 / LogL: -25454.818 / Time: 0h:8m:19s
+Iteration 20 / LogL: -25510.724 / Time: 0h:8m:41s
+Best tree printed to lanmodulin.aln.treefile
+Finish initializing candidate tree set (20)
+Current best tree score: -25417.481 / CPU time: 493.436
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 21 / LogL: -25429.372 / Time: 0h:8m:54s (0h:36m:5s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25400.084
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.104,0.096) (0.139,0.323) (0.166,0.631) (0.328,1.057) (0.195,1.632) (0.068,2.498)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.104,0.096) (0.138,0.322) (0.166,0.630) (0.331,1.059) (0.193,1.637) (0.067,2.506)
+Optimal log-likelihood: -25399.822
+BETTER TREE FOUND at iteration 22: -25399.822
+Iteration 22 / LogL: -25399.822 / Time: 0h:9m:14s (0h:44m:1s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 23 / LogL: -25454.823 / Time: 0h:9m:32s (0h:42m:54s left)
+Iteration 24 / LogL: -25499.332 / Time: 0h:9m:43s (0h:41m:25s left)
+Iteration 25 / LogL: -25519.807 / Time: 0h:9m:52s (0h:39m:55s left)
+Iteration 26 / LogL: -25432.425 / Time: 0h:10m:5s (0h:38m:43s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25397.659
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.104,0.096) (0.138,0.326) (0.162,0.629) (0.334,1.058) (0.200,1.666) (0.062,2.555)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.104,0.096) (0.138,0.326) (0.161,0.628) (0.335,1.058) (0.201,1.667) (0.061,2.563)
+Optimal log-likelihood: -25397.550
+BETTER TREE FOUND at iteration 27: -25397.550
+Iteration 27 / LogL: -25397.550 / Time: 0h:10m:22s (0h:39m:54s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 28 / LogL: -25445.100 / Time: 0h:10m:35s (0h:38m:50s left)
+Iteration 29 / LogL: -25478.393 / Time: 0h:10m:50s (0h:37m:55s left)
+Iteration 30 / LogL: -25443.502 / Time: 0h:11m:7s (0h:37m:13s left)
+Iteration 31 / LogL: -25429.971 / Time: 0h:11m:19s (0h:36m:14s left)
+Iteration 32 / LogL: -25590.582 / Time: 0h:11m:29s (0h:35m:13s left)
+Iteration 33 / LogL: -25422.605 / Time: 0h:11m:51s (0h:34m:50s left)
+Iteration 34 / LogL: -25456.646 / Time: 0h:12m:0s (0h:33m:51s left)
+Iteration 35 / LogL: -25445.851 / Time: 0h:12m:12s (0h:33m:3s left)
+Iteration 36 / LogL: -25416.980 / Time: 0h:12m:27s (0h:32m:24s left)
+Iteration 37 / LogL: -25459.261 / Time: 0h:12m:46s (0h:31m:55s left)
+Iteration 38 / LogL: -25431.570 / Time: 0h:13m:2s (0h:31m:21s left)
+Iteration 39 / LogL: -25421.766 / Time: 0h:13m:15s (0h:30m:43s left)
+Iteration 40 / LogL: -25413.077 / Time: 0h:13m:29s (0h:30m:5s left)
+Iteration 41 / LogL: -25436.651 / Time: 0h:13m:38s (0h:29m:19s left)
+Iteration 42 / LogL: -25411.939 / Time: 0h:13m:55s (0h:28m:53s left)
+Iteration 43 / LogL: -25427.075 / Time: 0h:14m:3s (0h:28m:6s left)
+Iteration 44 / LogL: -25413.410 / Time: 0h:14m:18s (0h:27m:36s left)
+Iteration 45 / LogL: -25407.119 / Time: 0h:14m:36s (0h:27m:14s left)
+Iteration 46 / LogL: -25455.791 / Time: 0h:14m:50s (0h:26m:43s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25386.674
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.105,0.096) (0.141,0.329) (0.161,0.650) (0.323,1.063) (0.198,1.644) (0.072,2.496)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.105,0.096) (0.142,0.331) (0.162,0.655) (0.318,1.065) (0.198,1.640) (0.074,2.485)
+Optimal log-likelihood: -25386.354
+BETTER TREE FOUND at iteration 47: -25386.354
+Iteration 47 / LogL: -25386.354 / Time: 0h:15m:16s (0h:33m:13s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 48 / LogL: -25417.114 / Time: 0h:15m:28s (0h:32m:36s left)
+Iteration 49 / LogL: -25410.682 / Time: 0h:15m:40s (0h:32m:0s left)
+Iteration 50 / LogL: -25399.360 / Time: 0h:15m:56s (0h:31m:32s left)
+1000 tree(s) converted
+Using hash_map
+Converting collection of tree(s) into split system...
+Log-likelihood cutoff on original alignment: -25514.532
+Iteration 51 / LogL: -25400.915 / Time: 0h:16m:14s (0h:31m:11s left)
+Iteration 52 / LogL: -25443.157 / Time: 0h:16m:31s (0h:30m:46s left)
+Iteration 53 / LogL: -25405.128 / Time: 0h:16m:45s (0h:30m:16s left)
+Iteration 54 / LogL: -25434.932 / Time: 0h:17m:5s (0h:30m:0s left)
+Iteration 55 / LogL: -25399.286 / Time: 0h:17m:19s (0h:29m:30s left)
+Iteration 56 / LogL: -25441.227 / Time: 0h:17m:29s (0h:28m:56s left)
+Iteration 57 / LogL: -25406.645 / Time: 0h:17m:52s (0h:28m:43s left)
+Iteration 58 / LogL: -25398.831 / Time: 0h:18m:6s (0h:28m:16s left)
+Iteration 59 / LogL: -25391.053 / Time: 0h:18m:23s (0h:27m:54s left)
+Iteration 60 / LogL: -25427.236 / Time: 0h:18m:43s (0h:27m:36s left)
+Iteration 61 / LogL: -25405.517 / Time: 0h:18m:56s (0h:27m:9s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25382.932
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.105,0.095) (0.145,0.332) (0.157,0.654) (0.310,1.061) (0.195,1.604) (0.088,2.377)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.105,0.095) (0.145,0.333) (0.157,0.656) (0.306,1.060) (0.194,1.589) (0.094,2.352)
+Optimal log-likelihood: -25382.558
+BETTER TREE FOUND at iteration 62: -25382.558
+Iteration 62 / LogL: -25382.558 / Time: 0h:19m:17s (0h:31m:37s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 63 / LogL: -25416.627 / Time: 0h:19m:29s (0h:31m:7s left)
+Iteration 64 / LogL: -25404.064 / Time: 0h:19m:42s (0h:30m:38s left)
+Iteration 65 / LogL: -25401.239 / Time: 0h:19m:55s (0h:30m:11s left)
+Iteration 66 / LogL: -25455.639 / Time: 0h:20m:9s (0h:29m:46s left)
+Iteration 67 / LogL: -25440.436 / Time: 0h:20m:19s (0h:29m:15s left)
+Iteration 68 / LogL: -25409.425 / Time: 0h:20m:33s (0h:28m:51s left)
+Iteration 69 / LogL: -25413.553 / Time: 0h:20m:50s (0h:28m:30s left)
+Iteration 70 / LogL: -25456.229 / Time: 0h:21m:3s (0h:28m:4s left)
+Iteration 71 / LogL: -25407.262 / Time: 0h:21m:17s (0h:27m:40s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25378.690
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.103,0.094) (0.144,0.329) (0.140,0.637) (0.304,1.030) (0.218,1.578) (0.091,2.345)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.102,0.094) (0.143,0.329) (0.136,0.631) (0.307,1.026) (0.222,1.579) (0.090,2.351)
+Optimal log-likelihood: -25378.391
+BETTER TREE FOUND at iteration 72: -25378.391
+Iteration 72 / LogL: -25378.391 / Time: 0h:21m:37s (0h:30m:27s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 73 / LogL: -25425.802 / Time: 0h:21m:54s (0h:30m:7s left)
+Iteration 74 / LogL: -25402.940 / Time: 0h:22m:11s (0h:29m:48s left)
+Iteration 75 / LogL: -25409.116 / Time: 0h:22m:27s (0h:29m:26s left)
+Iteration 76 / LogL: -25461.476 / Time: 0h:22m:40s (0h:29m:2s left)
+Iteration 77 / LogL: -25412.686 / Time: 0h:22m:54s (0h:28m:38s left)
+Iteration 78 / LogL: -25416.056 / Time: 0h:23m:8s (0h:28m:15s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25374.289
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.100,0.092) (0.146,0.320) (0.137,0.623) (0.302,1.008) (0.227,1.565) (0.089,2.310)
+Optimal log-likelihood: -25374.232
+BETTER TREE FOUND at iteration 79: -25374.232
+Iteration 79 / LogL: -25374.232 / Time: 0h:23m:22s (0h:29m:58s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 80 / LogL: -25597.413 / Time: 0h:23m:32s (0h:29m:30s left)
+Iteration 81 / LogL: -25382.573 / Time: 0h:23m:45s (0h:29m:5s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25369.067
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.102,0.091) (0.142,0.316) (0.134,0.613) (0.313,1.003) (0.228,1.569) (0.082,2.357)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.102,0.091) (0.142,0.316) (0.133,0.611) (0.315,1.003) (0.230,1.576) (0.079,2.380)
+Optimal log-likelihood: -25368.918
+BETTER TREE FOUND at iteration 82: -25368.918
+Iteration 82 / LogL: -25368.918 / Time: 0h:24m:2s (0h:29m:41s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 83 / LogL: -25377.087 / Time: 0h:24m:18s (0h:29m:20s left)
+Iteration 84 / LogL: -25426.585 / Time: 0h:24m:34s (0h:29m:0s left)
+Iteration 85 / LogL: -25386.423 / Time: 0h:24m:45s (0h:28m:34s left)
+Iteration 86 / LogL: -25399.503 / Time: 0h:24m:58s (0h:28m:11s left)
+Iteration 87 / LogL: -25389.671 / Time: 0h:25m:19s (0h:27m:58s left)
+Iteration 88 / LogL: -25473.816 / Time: 0h:25m:33s (0h:27m:37s left)
+Iteration 89 / LogL: -25387.151 / Time: 0h:25m:45s (0h:27m:13s left)
+Iteration 90 / LogL: -25379.811 / Time: 0h:25m:59s (0h:26m:52s left)
+Iteration 91 / LogL: -25409.995 / Time: 0h:26m:11s (0h:26m:29s left)
+Iteration 92 / LogL: -25368.981 / Time: 0h:26m:26s (0h:26m:9s left)
+Iteration 93 / LogL: -25379.063 / Time: 0h:26m:39s (0h:25m:47s left)
+Iteration 94 / LogL: -25383.804 / Time: 0h:26m:50s (0h:25m:23s left)
+Iteration 95 / LogL: -25423.199 / Time: 0h:27m:4s (0h:25m:3s left)
+Iteration 96 / LogL: -25393.264 / Time: 0h:27m:18s (0h:24m:43s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25368.547
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.102,0.091) (0.143,0.322) (0.134,0.620) (0.312,1.010) (0.227,1.565) (0.082,2.329)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.102,0.091) (0.145,0.323) (0.135,0.625) (0.309,1.012) (0.224,1.559) (0.086,2.312)
+Optimal log-likelihood: -25368.399
+BETTER TREE FOUND at iteration 97: -25368.399
+Iteration 97 / LogL: -25368.399 / Time: 0h:27m:41s (0h:28m:50s left)
+Best tree printed to lanmodulin.aln.treefile
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25364.529
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.101,0.091) (0.149,0.321) (0.141,0.622) (0.305,1.008) (0.234,1.573) (0.069,2.415)
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.101,0.091) (0.149,0.321) (0.142,0.622) (0.306,1.010) (0.235,1.578) (0.067,2.428)
+Optimal log-likelihood: -25364.151
+BETTER TREE FOUND at iteration 98: -25364.151
+Iteration 98 / LogL: -25364.151 / Time: 0h:28m:0s (0h:28m:52s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 99 / LogL: -25400.751 / Time: 0h:28m:13s (0h:28m:30s left)
+Iteration 100 / LogL: -25390.581 / Time: 0h:28m:32s (0h:28m:14s left)
+1000 tree(s) converted
+Using hash_map
+Converting collection of tree(s) into split system...
+Log-likelihood cutoff on original alignment: -25506.137
+1360 new splits compared to old boot_splits
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.961
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 101 / LogL: -25396.559 / Time: 0h:28m:50s (0h:28m:33s left)
+Iteration 102 / LogL: -25479.446 / Time: 0h:29m:1s (0h:28m:10s left)
+Iteration 103 / LogL: -25409.184 / Time: 0h:29m:13s (0h:27m:47s left)
+Iteration 104 / LogL: -25376.471 / Time: 0h:29m:29s (0h:27m:28s left)
+Iteration 105 / LogL: -25370.554 / Time: 0h:29m:43s (0h:27m:9s left)
+Iteration 106 / LogL: -25380.286 / Time: 0h:29m:56s (0h:26m:48s left)
+Iteration 107 / LogL: -25438.588 / Time: 0h:30m:9s (0h:26m:27s left)
+Iteration 108 / LogL: -25463.565 / Time: 0h:30m:22s (0h:26m:7s left)
+Iteration 109 / LogL: -25382.067 / Time: 0h:30m:38s (0h:25m:48s left)
+Iteration 110 / LogL: -25390.145 / Time: 0h:30m:51s (0h:25m:28s left)
+Iteration 111 / LogL: -25376.989 / Time: 0h:31m:6s (0h:25m:10s left)
+Iteration 112 / LogL: -25382.915 / Time: 0h:31m:24s (0h:24m:53s left)
+Iteration 113 / LogL: -25391.876 / Time: 0h:31m:41s (0h:24m:36s left)
+Iteration 114 / LogL: -25413.934 / Time: 0h:31m:53s (0h:24m:15s left)
+Iteration 115 / LogL: -25373.272 / Time: 0h:32m:12s (0h:24m:0s left)
+Iteration 116 / LogL: -25374.770 / Time: 0h:32m:26s (0h:23m:41s left)
+Iteration 117 / LogL: -25414.461 / Time: 0h:32m:42s (0h:23m:24s left)
+Iteration 118 / LogL: -25388.382 / Time: 0h:33m:0s (0h:23m:8s left)
+Iteration 119 / LogL: -25401.400 / Time: 0h:33m:15s (0h:22m:49s left)
+Iteration 120 / LogL: -25368.614 / Time: 0h:33m:25s (0h:22m:28s left)
+Iteration 121 / LogL: -25417.199 / Time: 0h:33m:51s (0h:22m:17s left)
+Iteration 122 / LogL: -25409.967 / Time: 0h:34m:13s (0h:22m:3s left)
+Iteration 123 / LogL: -25399.219 / Time: 0h:34m:29s (0h:21m:46s left)
+Iteration 124 / LogL: -25437.988 / Time: 0h:34m:41s (0h:21m:25s left)
+Iteration 125 / LogL: -25408.596 / Time: 0h:34m:59s (0h:21m:9s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25359.280
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.103,0.092) (0.149,0.325) (0.146,0.634) (0.311,1.034) (0.226,1.602) (0.066,2.470)
+Optimal log-likelihood: -25359.221
+BETTER TREE FOUND at iteration 126: -25359.221
+Iteration 126 / LogL: -25359.221 / Time: 0h:35m:17s (0h:28m:13s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 127 / LogL: -25401.508 / Time: 0h:35m:43s (0h:28m:4s left)
+Iteration 128 / LogL: -25433.115 / Time: 0h:35m:59s (0h:27m:46s left)
+Iteration 129 / LogL: -25449.884 / Time: 0h:36m:14s (0h:27m:27s left)
+Iteration 130 / LogL: -25371.960 / Time: 0h:36m:33s (0h:27m:12s left)
+Iteration 131 / LogL: -25399.530 / Time: 0h:36m:45s (0h:26m:52s left)
+Iteration 132 / LogL: -25381.261 / Time: 0h:37m:0s (0h:26m:33s left)
+Iteration 133 / LogL: -25396.854 / Time: 0h:37m:20s (0h:26m:18s left)
+Iteration 134 / LogL: -25436.457 / Time: 0h:37m:30s (0h:25m:56s left)
+Iteration 135 / LogL: -25388.821 / Time: 0h:37m:53s (0h:25m:43s left)
+Iteration 136 / LogL: -25402.226 / Time: 0h:38m:14s (0h:25m:29s left)
+Iteration 137 / LogL: -25400.118 / Time: 0h:38m:29s (0h:25m:11s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25352.102
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.102,0.093) (0.146,0.322) (0.153,0.643) (0.311,1.049) (0.220,1.615) (0.068,2.462)
+Optimal log-likelihood: -25352.026
+BETTER TREE FOUND at iteration 138: -25352.026
+Iteration 138 / LogL: -25352.026 / Time: 0h:38m:53s (0h:28m:23s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 139 / LogL: -25376.615 / Time: 0h:39m:6s (0h:28m:3s left)
+Iteration 140 / LogL: -25360.397 / Time: 0h:39m:19s (0h:27m:43s left)
+Iteration 141 / LogL: -25398.541 / Time: 0h:39m:37s (0h:27m:27s left)
+Iteration 142 / LogL: -25399.568 / Time: 0h:39m:57s (0h:27m:12s left)
+Iteration 143 / LogL: -25382.917 / Time: 0h:40m:14s (0h:26m:55s left)
+Iteration 144 / LogL: -25518.106 / Time: 0h:40m:20s (0h:26m:31s left)
+Iteration 145 / LogL: -25400.107 / Time: 0h:40m:38s (0h:26m:14s left)
+Iteration 146 / LogL: -25376.658 / Time: 0h:40m:54s (0h:25m:57s left)
+Iteration 147 / LogL: -25370.798 / Time: 0h:41m:16s (0h:25m:43s left)
+Iteration 148 / LogL: -25522.812 / Time: 0h:41m:24s (0h:25m:21s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25351.687
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.101,0.092) (0.144,0.321) (0.151,0.639) (0.310,1.045) (0.219,1.609) (0.074,2.465)
+Optimal log-likelihood: -25351.646
+BETTER TREE FOUND at iteration 149: -25351.646
+Iteration 149 / LogL: -25351.646 / Time: 0h:41m:48s (0h:28m:15s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 150 / LogL: -25372.358 / Time: 0h:42m:9s (0h:28m:0s left)
+1000 tree(s) converted
+Using hash_map
+Converting collection of tree(s) into split system...
+Log-likelihood cutoff on original alignment: -25506.137
+Iteration 151 / LogL: -25396.005 / Time: 0h:42m:34s (0h:27m:49s left)
+Iteration 152 / LogL: -25377.034 / Time: 0h:42m:49s (0h:27m:30s left)
+Iteration 153 / LogL: -25373.399 / Time: 0h:43m:8s (0h:27m:14s left)
+Iteration 154 / LogL: -25379.890 / Time: 0h:43m:24s (0h:26m:56s left)
+Iteration 155 / LogL: -25425.074 / Time: 0h:43m:36s (0h:26m:36s left)
+Iteration 156 / LogL: -25391.985 / Time: 0h:43m:50s (0h:26m:18s left)
+Iteration 157 / LogL: -25459.644 / Time: 0h:44m:5s (0h:26m:0s left)
+Iteration 158 / LogL: -25355.059 / Time: 0h:44m:21s (0h:25m:42s left)
+Iteration 159 / LogL: -25419.353 / Time: 0h:44m:31s (0h:25m:21s left)
+Iteration 160 / LogL: -25459.044 / Time: 0h:44m:46s (0h:25m:3s left)
+Iteration 161 / LogL: -25381.501 / Time: 0h:45m:2s (0h:24m:46s left)
+Iteration 162 / LogL: -25465.004 / Time: 0h:45m:15s (0h:24m:27s left)
+Iteration 163 / LogL: -25370.993 / Time: 0h:45m:29s (0h:24m:9s left)
+Iteration 164 / LogL: -25402.903 / Time: 0h:45m:45s (0h:23m:51s left)
+Iteration 165 / LogL: -25446.582 / Time: 0h:45m:56s (0h:23m:31s left)
+Iteration 166 / LogL: -25368.138 / Time: 0h:46m:14s (0h:23m:15s left)
+Iteration 167 / LogL: -25363.854 / Time: 0h:46m:32s (0h:22m:59s left)
+Iteration 168 / LogL: -25354.624 / Time: 0h:46m:46s (0h:22m:41s left)
+Iteration 169 / LogL: -25417.528 / Time: 0h:47m:0s (0h:22m:23s left)
+Iteration 170 / LogL: -25409.073 / Time: 0h:47m:9s (0h:22m:2s left)
+Iteration 171 / LogL: -25409.445 / Time: 0h:47m:21s (0h:21m:43s left)
+Iteration 172 / LogL: -25382.569 / Time: 0h:47m:35s (0h:21m:25s left)
+Iteration 173 / LogL: -25357.415 / Time: 0h:47m:48s (0h:21m:7s left)
+Iteration 174 / LogL: -25454.300 / Time: 0h:48m:3s (0h:20m:49s left)
+Iteration 175 / LogL: -25371.155 / Time: 0h:48m:14s (0h:20m:31s left)
+Iteration 176 / LogL: -25411.501 / Time: 0h:48m:30s (0h:20m:13s left)
+Iteration 177 / LogL: -25396.106 / Time: 0h:48m:42s (0h:19m:55s left)
+Iteration 178 / LogL: -25390.325 / Time: 0h:48m:54s (0h:19m:37s left)
+Iteration 179 / LogL: -25373.045 / Time: 0h:49m:8s (0h:19m:19s left)
+Iteration 180 / LogL: -25373.122 / Time: 0h:49m:24s (0h:19m:2s left)
+Iteration 181 / LogL: -25365.726 / Time: 0h:49m:37s (0h:18m:44s left)
+Iteration 182 / LogL: -25416.568 / Time: 0h:49m:55s (0h:18m:28s left)
+Iteration 183 / LogL: -25386.179 / Time: 0h:50m:12s (0h:18m:12s left)
+Iteration 184 / LogL: -25370.021 / Time: 0h:50m:32s (0h:17m:57s left)
+Iteration 185 / LogL: -25472.315 / Time: 0h:50m:45s (0h:17m:39s left)
+Iteration 186 / LogL: -25408.141 / Time: 0h:50m:55s (0h:17m:20s left)
+Iteration 187 / LogL: -25364.268 / Time: 0h:51m:10s (0h:17m:3s left)
+Iteration 188 / LogL: -25456.811 / Time: 0h:51m:22s (0h:16m:45s left)
+Iteration 189 / LogL: -25398.372 / Time: 0h:51m:38s (0h:16m:28s left)
+Iteration 190 / LogL: -25384.183 / Time: 0h:51m:50s (0h:16m:11s left)
+Iteration 191 / LogL: -25363.870 / Time: 0h:52m:2s (0h:15m:53s left)
+Iteration 192 / LogL: -25394.184 / Time: 0h:52m:18s (0h:15m:36s left)
+Iteration 193 / LogL: -25405.157 / Time: 0h:52m:36s (0h:15m:20s left)
+Iteration 194 / LogL: -25381.406 / Time: 0h:52m:46s (0h:15m:2s left)
+Iteration 195 / LogL: -25438.301 / Time: 0h:53m:4s (0h:14m:46s left)
+Iteration 196 / LogL: -25418.046 / Time: 0h:53m:12s (0h:14m:27s left)
+Iteration 197 / LogL: -25379.367 / Time: 0h:53m:26s (0h:14m:10s left)
+Iteration 198 / LogL: -25363.361 / Time: 0h:53m:41s (0h:13m:54s left)
+Iteration 199 / LogL: -25363.934 / Time: 0h:53m:55s (0h:13m:37s left)
+Iteration 200 / LogL: -25372.787 / Time: 0h:54m:4s (0h:13m:18s left)
+1000 tree(s) converted
+Using hash_map
+Converting collection of tree(s) into split system...
+Log-likelihood cutoff on original alignment: -25506.137
+1272 new splits compared to old boot_splits
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.988
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 201 / LogL: -25377.156 / Time: 0h:54m:22s (0h:26m:54s left)
+Iteration 202 / LogL: -25386.154 / Time: 0h:54m:38s (0h:26m:38s left)
+Iteration 203 / LogL: -25436.000 / Time: 0h:54m:51s (0h:26m:20s left)
+Iteration 204 / LogL: -25405.402 / Time: 0h:55m:9s (0h:26m:5s left)
+Iteration 205 / LogL: -25391.156 / Time: 0h:55m:25s (0h:25m:48s left)
+Iteration 206 / LogL: -25366.160 / Time: 0h:55m:41s (0h:25m:32s left)
+Iteration 207 / LogL: -25450.051 / Time: 0h:55m:56s (0h:25m:15s left)
+Iteration 208 / LogL: -25368.781 / Time: 0h:56m:9s (0h:24m:57s left)
+Iteration 209 / LogL: -25359.160 / Time: 0h:56m:24s (0h:24m:40s left)
+Iteration 210 / LogL: -25401.989 / Time: 0h:56m:39s (0h:24m:24s left)
+Iteration 211 / LogL: -25473.040 / Time: 0h:56m:55s (0h:24m:7s left)
+Iteration 212 / LogL: -25403.168 / Time: 0h:57m:9s (0h:23m:50s left)
+Iteration 213 / LogL: -25488.324 / Time: 0h:57m:22s (0h:23m:32s left)
+Iteration 214 / LogL: -25405.931 / Time: 0h:57m:36s (0h:23m:15s left)
+Iteration 215 / LogL: -25373.504 / Time: 0h:57m:53s (0h:22m:59s left)
+Iteration 216 / LogL: -25380.137 / Time: 0h:58m:8s (0h:22m:43s left)
+Iteration 217 / LogL: -25398.346 / Time: 0h:58m:20s (0h:22m:25s left)
+Iteration 218 / LogL: -25498.947 / Time: 0h:58m:29s (0h:22m:6s left)
+Iteration 219 / LogL: -25381.244 / Time: 0h:58m:46s (0h:21m:50s left)
+Iteration 220 / LogL: -25387.763 / Time: 0h:59m:1s (0h:21m:33s left)
+Iteration 221 / LogL: -25368.982 / Time: 0h:59m:18s (0h:21m:17s left)
+Iteration 222 / LogL: -25381.555 / Time: 0h:59m:28s (0h:20m:59s left)
+Iteration 223 / LogL: -25390.888 / Time: 0h:59m:40s (0h:20m:41s left)
+Iteration 224 / LogL: -25405.850 / Time: 0h:59m:51s (0h:20m:24s left)
+Iteration 225 / LogL: -25382.634 / Time: 1h:0m:5s (0h:20m:7s left)
+Iteration 226 / LogL: -25426.102 / Time: 1h:0m:16s (0h:19m:49s left)
+Iteration 227 / LogL: -25401.699 / Time: 1h:0m:29s (0h:19m:32s left)
+Iteration 228 / LogL: -25354.208 / Time: 1h:0m:43s (0h:19m:15s left)
+Iteration 229 / LogL: -25364.956 / Time: 1h:0m:58s (0h:18m:59s left)
+Iteration 230 / LogL: -25384.720 / Time: 1h:1m:11s (0h:18m:42s left)
+Iteration 231 / LogL: -25439.571 / Time: 1h:1m:26s (0h:18m:25s left)
+Iteration 232 / LogL: -25359.888 / Time: 1h:1m:43s (0h:18m:10s left)
+Iteration 233 / LogL: -25361.058 / Time: 1h:2m:0s (0h:17m:54s left)
+Iteration 234 / LogL: -25363.108 / Time: 1h:2m:17s (0h:17m:38s left)
+Iteration 235 / LogL: -25393.003 / Time: 1h:2m:32s (0h:17m:22s left)
+Iteration 236 / LogL: -25376.972 / Time: 1h:2m:45s (0h:17m:5s left)
+Iteration 237 / LogL: -25381.432 / Time: 1h:2m:56s (0h:16m:48s left)
+Iteration 238 / LogL: -25351.714 / Time: 1h:3m:12s (0h:16m:32s left)
+Iteration 239 / LogL: -25373.524 / Time: 1h:3m:29s (0h:16m:16s left)
+Iteration 240 / LogL: -25369.128 / Time: 1h:3m:42s (0h:15m:59s left)
+Iteration 241 / LogL: -25383.639 / Time: 1h:4m:0s (0h:15m:44s left)
+Iteration 242 / LogL: -25362.866 / Time: 1h:4m:11s (0h:15m:26s left)
+Iteration 243 / LogL: -25370.585 / Time: 1h:4m:28s (0h:15m:11s left)
+Iteration 244 / LogL: -25390.687 / Time: 1h:4m:44s (0h:14m:55s left)
+Iteration 245 / LogL: -25366.403 / Time: 1h:5m:4s (0h:14m:40s left)
+Iteration 246 / LogL: -25399.375 / Time: 1h:5m:17s (0h:14m:23s left)
+Iteration 247 / LogL: -25435.737 / Time: 1h:5m:39s (0h:14m:8s left)
+Iteration 248 / LogL: -25437.477 / Time: 1h:5m:53s (0h:13m:52s left)
+Iteration 249 / LogL: -25374.091 / Time: 1h:6m:7s (0h:13m:35s left)
+Iteration 250 / LogL: -25416.256 / Time: 1h:6m:24s (0h:13m:20s left)
+1000 tree(s) converted
+Using hash_map
+Converting collection of tree(s) into split system...
+Log-likelihood cutoff on original alignment: -25506.137
+Iteration 251 / LogL: -25377.106 / Time: 1h:6m:40s (0h:13m:4s left)
+Iteration 252 / LogL: -25357.358 / Time: 1h:6m:53s (0h:12m:47s left)
+Iteration 253 / LogL: -25367.014 / Time: 1h:7m:9s (0h:12m:31s left)
+Iteration 254 / LogL: -25377.935 / Time: 1h:7m:24s (0h:12m:15s left)
+Iteration 255 / LogL: -25373.131 / Time: 1h:7m:39s (0h:11m:59s left)
+Iteration 256 / LogL: -25390.404 / Time: 1h:7m:52s (0h:11m:42s left)
+Iteration 257 / LogL: -25400.793 / Time: 1h:8m:8s (0h:11m:26s left)
+Iteration 258 / LogL: -25388.875 / Time: 1h:8m:22s (0h:11m:10s left)
+Iteration 259 / LogL: -25375.133 / Time: 1h:8m:40s (0h:10m:54s left)
+Iteration 260 / LogL: -25366.585 / Time: 1h:8m:58s (0h:10m:39s left)
+Iteration 261 / LogL: -25381.862 / Time: 1h:9m:13s (0h:10m:22s left)
+Iteration 262 / LogL: -25379.520 / Time: 1h:9m:25s (0h:10m:6s left)
+Iteration 263 / LogL: -25371.514 / Time: 1h:9m:41s (0h:9m:50s left)
+Iteration 264 / LogL: -25403.747 / Time: 1h:9m:51s (0h:9m:33s left)
+Iteration 265 / LogL: -25402.362 / Time: 1h:10m:3s (0h:9m:17s left)
+Iteration 266 / LogL: -25372.151 / Time: 1h:10m:15s (0h:9m:0s left)
+Iteration 267 / LogL: -25353.174 / Time: 1h:10m:29s (0h:8m:44s left)
+Iteration 268 / LogL: -25397.140 / Time: 1h:10m:41s (0h:8m:28s left)
+Iteration 269 / LogL: -25392.933 / Time: 1h:10m:52s (0h:8m:11s left)
+Iteration 270 / LogL: -25379.112 / Time: 1h:11m:5s (0h:7m:55s left)
+Iteration 271 / LogL: -25379.221 / Time: 1h:11m:17s (0h:7m:39s left)
+Iteration 272 / LogL: -25368.344 / Time: 1h:11m:30s (0h:7m:23s left)
+Iteration 273 / LogL: -25371.445 / Time: 1h:11m:47s (0h:7m:7s left)
+Iteration 274 / LogL: -25374.135 / Time: 1h:12m:19s (0h:6m:53s left)
+Iteration 275 / LogL: -25367.270 / Time: 1h:12m:35s (0h:6m:37s left)
+Iteration 276 / LogL: -25359.785 / Time: 1h:12m:49s (0h:6m:21s left)
+Iteration 277 / LogL: -25354.049 / Time: 1h:13m:5s (0h:6m:5s left)
+Iteration 278 / LogL: -25389.153 / Time: 1h:13m:21s (0h:5m:49s left)
+Iteration 279 / LogL: -25410.655 / Time: 1h:13m:34s (0h:5m:33s left)
+Iteration 280 / LogL: -25369.394 / Time: 1h:13m:52s (0h:5m:17s left)
+Iteration 281 / LogL: -25431.286 / Time: 1h:14m:8s (0h:5m:1s left)
+Iteration 282 / LogL: -25382.719 / Time: 1h:14m:22s (0h:4m:45s left)
+Iteration 283 / LogL: -25379.280 / Time: 1h:14m:38s (0h:4m:29s left)
+Iteration 284 / LogL: -25363.045 / Time: 1h:14m:56s (0h:4m:14s left)
+Iteration 285 / LogL: -25391.012 / Time: 1h:15m:13s (0h:3m:58s left)
+Iteration 286 / LogL: -25376.060 / Time: 1h:15m:25s (0h:3m:42s left)
+Iteration 287 / LogL: -25378.519 / Time: 1h:15m:44s (0h:3m:26s left)
+Iteration 288 / LogL: -25412.974 / Time: 1h:15m:57s (0h:3m:10s left)
+Iteration 289 / LogL: -25384.462 / Time: 1h:16m:23s (0h:2m:55s left)
+Iteration 290 / LogL: -25392.672 / Time: 1h:16m:45s (0h:2m:39s left)
+Iteration 291 / LogL: -25359.547 / Time: 1h:17m:3s (0h:2m:23s left)
+Iteration 292 / LogL: -25365.707 / Time: 1h:17m:17s (0h:2m:7s left)
+Iteration 293 / LogL: -25358.930 / Time: 1h:17m:31s (0h:1m:51s left)
+Iteration 294 / LogL: -25412.641 / Time: 1h:17m:47s (0h:1m:35s left)
+Iteration 295 / LogL: -25361.836 / Time: 1h:18m:3s (0h:1m:19s left)
+Iteration 296 / LogL: -25386.311 / Time: 1h:18m:17s (0h:1m:3s left)
+Iteration 297 / LogL: -25376.401 / Time: 1h:18m:30s (0h:0m:47s left)
+Iteration 298 / LogL: -25380.294 / Time: 1h:18m:48s (0h:0m:31s left)
+Iteration 299 / LogL: -25412.356 / Time: 1h:19m:1s (0h:0m:15s left)
+Iteration 300 / LogL: -25381.481 / Time: 1h:19m:21s (0h:0m:0s left)
+1000 tree(s) converted
+Using hash_map
+Converting collection of tree(s) into split system...
+Log-likelihood cutoff on original alignment: -25506.137
+1191 new splits compared to old boot_splits
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.989
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 301 / LogL: -25364.891 / Time: 1h:19m:40s (0h:26m:17s left)
+Iteration 302 / LogL: -25380.005 / Time: 1h:19m:56s (0h:26m:1s left)
+Iteration 303 / LogL: -25381.693 / Time: 1h:20m:11s (0h:25m:45s left)
+Iteration 304 / LogL: -25360.701 / Time: 1h:20m:37s (0h:25m:32s left)
+Iteration 305 / LogL: -25392.045 / Time: 1h:20m:57s (0h:25m:17s left)
+Iteration 306 / LogL: -25393.370 / Time: 1h:21m:15s (0h:25m:2s left)
+Iteration 307 / LogL: -25395.284 / Time: 1h:21m:33s (0h:24m:47s left)
+Iteration 308 / LogL: -25412.300 / Time: 1h:21m:53s (0h:24m:32s left)
+Iteration 309 / LogL: -25368.576 / Time: 1h:22m:9s (0h:24m:16s left)
+Iteration 310 / LogL: -25399.639 / Time: 1h:22m:23s (0h:23m:59s left)
+Iteration 311 / LogL: -25377.855 / Time: 1h:22m:39s (0h:23m:43s left)
+Iteration 312 / LogL: -25363.519 / Time: 1h:23m:1s (0h:23m:29s left)
+Iteration 313 / LogL: -25376.463 / Time: 1h:23m:12s (0h:23m:12s left)
+Iteration 314 / LogL: -25359.632 / Time: 1h:23m:30s (0h:22m:56s left)
+Iteration 315 / LogL: -25396.651 / Time: 1h:23m:42s (0h:22m:39s left)
+Iteration 316 / LogL: -25359.393 / Time: 1h:23m:58s (0h:22m:23s left)
+Iteration 317 / LogL: -25372.696 / Time: 1h:24m:13s (0h:22m:7s left)
+Iteration 318 / LogL: -25375.538 / Time: 1h:24m:34s (0h:21m:52s left)
+Iteration 319 / LogL: -25366.229 / Time: 1h:24m:51s (0h:21m:36s left)
+Iteration 320 / LogL: -25388.218 / Time: 1h:25m:6s (0h:21m:20s left)
+Iteration 321 / LogL: -25395.435 / Time: 1h:25m:23s (0h:21m:4s left)
+Iteration 322 / LogL: -25371.293 / Time: 1h:25m:37s (0h:20m:48s left)
+Iteration 323 / LogL: -25362.961 / Time: 1h:25m:50s (0h:20m:31s left)
+Iteration 324 / LogL: -25353.736 / Time: 1h:26m:12s (0h:20m:17s left)
+Iteration 325 / LogL: -25463.465 / Time: 1h:26m:31s (0h:20m:1s left)
+Iteration 326 / LogL: -25374.284 / Time: 1h:26m:49s (0h:19m:46s left)
+Iteration 327 / LogL: -25370.466 / Time: 1h:27m:4s (0h:19m:29s left)
+Iteration 328 / LogL: -25356.553 / Time: 1h:27m:15s (0h:19m:12s left)
+Iteration 329 / LogL: -25357.229 / Time: 1h:27m:30s (0h:18m:56s left)
+Iteration 330 / LogL: -25362.855 / Time: 1h:27m:48s (0h:18m:40s left)
+Iteration 331 / LogL: -25415.878 / Time: 1h:28m:3s (0h:18m:24s left)
+Iteration 332 / LogL: -25418.511 / Time: 1h:28m:21s (0h:18m:9s left)
+Iteration 333 / LogL: -25374.557 / Time: 1h:28m:42s (0h:17m:54s left)
+Iteration 334 / LogL: -25359.612 / Time: 1h:28m:55s (0h:17m:37s left)
+Iteration 335 / LogL: -25377.007 / Time: 1h:29m:11s (0h:17m:21s left)
+Iteration 336 / LogL: -25435.752 / Time: 1h:29m:24s (0h:17m:4s left)
+Iteration 337 / LogL: -25368.220 / Time: 1h:29m:42s (0h:16m:49s left)
+Iteration 338 / LogL: -25381.031 / Time: 1h:29m:58s (0h:16m:33s left)
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25349.548
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.101,0.091) (0.145,0.320) (0.149,0.632) (0.309,1.034) (0.226,1.598) (0.070,2.447)
+Optimal log-likelihood: -25349.522
+BETTER TREE FOUND at iteration 339: -25349.522
+Iteration 339 / LogL: -25349.522 / Time: 1h:30m:19s (0h:26m:43s left)
+Best tree printed to lanmodulin.aln.treefile
+Iteration 340 / LogL: -25377.967 / Time: 1h:30m:33s (0h:26m:26s left)
+Iteration 341 / LogL: -25354.415 / Time: 1h:30m:52s (0h:26m:11s left)
+Iteration 342 / LogL: -25366.608 / Time: 1h:31m:12s (0h:25m:56s left)
+Iteration 343 / LogL: -25371.281 / Time: 1h:31m:28s (0h:25m:40s left)
+Iteration 344 / LogL: -25373.639 / Time: 1h:31m:44s (0h:25m:24s left)
+Iteration 345 / LogL: -25429.486 / Time: 1h:32m:2s (0h:25m:8s left)
+Iteration 346 / LogL: -25371.176 / Time: 1h:32m:15s (0h:24m:52s left)
+Iteration 347 / LogL: -25418.077 / Time: 1h:32m:29s (0h:24m:35s left)
+Iteration 348 / LogL: -25375.463 / Time: 1h:32m:44s (0h:24m:19s left)
+Iteration 349 / LogL: -25359.452 / Time: 1h:33m:1s (0h:24m:3s left)
+Iteration 350 / LogL: -25374.058 / Time: 1h:33m:12s (0h:23m:46s left)
+1000 tree(s) converted
+Using hash_map
+Converting collection of tree(s) into split system...
+Log-likelihood cutoff on original alignment: -25506.137
+Iteration 351 / LogL: -25377.004 / Time: 1h:33m:28s (0h:23m:30s left)
+Iteration 352 / LogL: -25379.983 / Time: 1h:33m:42s (0h:23m:13s left)
+Iteration 353 / LogL: -25369.630 / Time: 1h:33m:56s (0h:22m:57s left)
+Iteration 354 / LogL: -25374.327 / Time: 1h:34m:13s (0h:22m:41s left)
+Iteration 355 / LogL: -25423.434 / Time: 1h:34m:26s (0h:22m:24s left)
+Iteration 356 / LogL: -25393.493 / Time: 1h:34m:35s (0h:22m:6s left)
+Iteration 357 / LogL: -25407.894 / Time: 1h:34m:49s (0h:21m:50s left)
+Iteration 358 / LogL: -25398.663 / Time: 1h:35m:5s (0h:21m:34s left)
+Iteration 359 / LogL: -25368.602 / Time: 1h:35m:19s (0h:21m:18s left)
+Iteration 360 / LogL: -25386.501 / Time: 1h:35m:33s (0h:21m:1s left)
+Iteration 361 / LogL: -25399.706 / Time: 1h:35m:51s (0h:20m:46s left)
+Iteration 362 / LogL: -25370.004 / Time: 1h:36m:8s (0h:20m:30s left)
+Iteration 363 / LogL: -25395.084 / Time: 1h:36m:24s (0h:20m:14s left)
+Iteration 364 / LogL: -25379.991 / Time: 1h:36m:36s (0h:19m:57s left)
+Iteration 365 / LogL: -25454.290 / Time: 1h:36m:52s (0h:19m:41s left)
+Iteration 366 / LogL: -25437.531 / Time: 1h:37m:7s (0h:19m:25s left)
+Iteration 367 / LogL: -25383.926 / Time: 1h:37m:22s (0h:19m:9s left)
+Iteration 368 / LogL: -25397.021 / Time: 1h:37m:41s (0h:18m:54s left)
+Iteration 369 / LogL: -25388.205 / Time: 1h:38m:0s (0h:18m:38s left)
+Iteration 370 / LogL: -25414.896 / Time: 1h:38m:18s (0h:18m:22s left)
+Iteration 371 / LogL: -25369.677 / Time: 1h:38m:33s (0h:18m:6s left)
+Iteration 372 / LogL: -25355.426 / Time: 1h:38m:47s (0h:17m:50s left)
+Iteration 373 / LogL: -25366.748 / Time: 1h:38m:57s (0h:17m:33s left)
+Iteration 374 / LogL: -25369.784 / Time: 1h:39m:5s (0h:17m:16s left)
+Iteration 375 / LogL: -25404.971 / Time: 1h:39m:22s (0h:17m:0s left)
+Iteration 376 / LogL: -25358.535 / Time: 1h:39m:39s (0h:16m:44s left)
+Iteration 377 / LogL: -25374.478 / Time: 1h:39m:56s (0h:16m:28s left)
+Iteration 378 / LogL: -25377.260 / Time: 1h:40m:6s (0h:16m:11s left)
+Iteration 379 / LogL: -25419.728 / Time: 1h:40m:23s (0h:15m:56s left)
+Iteration 380 / LogL: -25435.877 / Time: 1h:40m:42s (0h:15m:40s left)
+Iteration 381 / LogL: -25391.515 / Time: 1h:40m:59s (0h:15m:24s left)
+Iteration 382 / LogL: -25387.638 / Time: 1h:41m:11s (0h:15m:8s left)
+Iteration 383 / LogL: -25365.505 / Time: 1h:41m:26s (0h:14m:52s left)
+Iteration 384 / LogL: -25368.127 / Time: 1h:41m:42s (0h:14m:36s left)
+Iteration 385 / LogL: -25434.865 / Time: 1h:41m:56s (0h:14m:20s left)
+Iteration 386 / LogL: -25369.437 / Time: 1h:42m:12s (0h:14m:4s left)
+Iteration 387 / LogL: -25368.134 / Time: 1h:42m:29s (0h:13m:48s left)
+Iteration 388 / LogL: -25409.079 / Time: 1h:42m:44s (0h:13m:32s left)
+Iteration 389 / LogL: -25358.964 / Time: 1h:43m:2s (0h:13m:16s left)
+Iteration 390 / LogL: -25365.368 / Time: 1h:43m:18s (0h:13m:0s left)
+Iteration 391 / LogL: -25378.769 / Time: 1h:43m:32s (0h:12m:44s left)
+Iteration 392 / LogL: -25375.166 / Time: 1h:43m:50s (0h:12m:28s left)
+Iteration 393 / LogL: -25353.522 / Time: 1h:44m:4s (0h:12m:12s left)
+Iteration 394 / LogL: -25364.880 / Time: 1h:44m:21s (0h:11m:56s left)
+Iteration 395 / LogL: -25452.506 / Time: 1h:44m:36s (0h:11m:40s left)
+Iteration 396 / LogL: -25369.115 / Time: 1h:44m:54s (0h:11m:25s left)
+Iteration 397 / LogL: -25382.918 / Time: 1h:45m:15s (0h:11m:9s left)
+Iteration 398 / LogL: -25388.510 / Time: 1h:45m:34s (0h:10m:54s left)
+Iteration 399 / LogL: -25373.574 / Time: 1h:45m:52s (0h:10m:38s left)
+Iteration 400 / LogL: -25448.216 / Time: 1h:46m:7s (0h:10m:22s left)
+1000 tree(s) converted
+Using hash_map
+Converting collection of tree(s) into split system...
+Log-likelihood cutoff on original alignment: -25506.137
+1134 new splits compared to old boot_splits
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.993
+Iteration 401 / LogL: -25382.712 / Time: 1h:46m:23s (0h:26m:19s left)
+Iteration 402 / LogL: -25364.228 / Time: 1h:46m:39s (0h:26m:3s left)
+Iteration 403 / LogL: -25403.356 / Time: 1h:46m:55s (0h:25m:48s left)
+Iteration 404 / LogL: -25393.504 / Time: 1h:47m:8s (0h:25m:31s left)
+Iteration 405 / LogL: -25366.410 / Time: 1h:47m:26s (0h:25m:15s left)
+Iteration 406 / LogL: -25368.015 / Time: 1h:47m:46s (0h:25m:0s left)
+Iteration 407 / LogL: -25362.067 / Time: 1h:48m:5s (0h:24m:45s left)
+Iteration 408 / LogL: -25395.100 / Time: 1h:48m:22s (0h:24m:29s left)
+Iteration 409 / LogL: -25364.660 / Time: 1h:48m:37s (0h:24m:13s left)
+Iteration 410 / LogL: -25372.550 / Time: 1h:48m:56s (0h:23m:58s left)
+Iteration 411 / LogL: -25372.275 / Time: 1h:49m:9s (0h:23m:41s left)
+Iteration 412 / LogL: -25425.218 / Time: 1h:49m:20s (0h:23m:24s left)
+Iteration 413 / LogL: -25407.495 / Time: 1h:49m:38s (0h:23m:9s left)
+Iteration 414 / LogL: -25377.298 / Time: 1h:49m:58s (0h:22m:54s left)
+Iteration 415 / LogL: -25368.476 / Time: 1h:50m:17s (0h:22m:38s left)
+Iteration 416 / LogL: -25408.023 / Time: 1h:50m:39s (0h:22m:23s left)
+Iteration 417 / LogL: -25433.434 / Time: 1h:50m:57s (0h:22m:8s left)
+Iteration 418 / LogL: -25382.458 / Time: 1h:51m:6s (0h:21m:50s left)
+Iteration 419 / LogL: -25368.146 / Time: 1h:51m:24s (0h:21m:35s left)
+Iteration 420 / LogL: -25427.395 / Time: 1h:51m:46s (0h:21m:20s left)
+Iteration 421 / LogL: -25420.211 / Time: 1h:52m:7s (0h:21m:5s left)
+Iteration 422 / LogL: -25380.630 / Time: 1h:52m:25s (0h:20m:49s left)
+Iteration 423 / LogL: -25373.990 / Time: 1h:52m:44s (0h:20m:34s left)
+Iteration 424 / LogL: -25377.068 / Time: 1h:52m:58s (0h:20m:17s left)
+Iteration 425 / LogL: -25388.664 / Time: 1h:53m:8s (0h:20m:0s left)
+Iteration 426 / LogL: -25444.793 / Time: 1h:53m:25s (0h:19m:44s left)
+Iteration 427 / LogL: -25372.239 / Time: 1h:53m:38s (0h:19m:28s left)
+Iteration 428 / LogL: -25420.295 / Time: 1h:53m:53s (0h:19m:12s left)
+Iteration 429 / LogL: -25358.570 / Time: 1h:54m:7s (0h:18m:55s left)
+Iteration 430 / LogL: -25372.167 / Time: 1h:54m:25s (0h:18m:40s left)
+Iteration 431 / LogL: -25380.604 / Time: 1h:54m:41s (0h:18m:24s left)
+Iteration 432 / LogL: -25388.614 / Time: 1h:54m:56s (0h:18m:8s left)
+Iteration 433 / LogL: -25427.668 / Time: 1h:55m:12s (0h:17m:52s left)
+Iteration 434 / LogL: -25358.939 / Time: 1h:55m:26s (0h:17m:35s left)
+Iteration 435 / LogL: -25381.093 / Time: 1h:55m:42s (0h:17m:19s left)
+Iteration 436 / LogL: -25396.658 / Time: 1h:55m:59s (0h:17m:3s left)
+Iteration 437 / LogL: -25382.872 / Time: 1h:56m:15s (0h:16m:47s left)
+Iteration 438 / LogL: -25386.419 / Time: 1h:56m:30s (0h:16m:31s left)
+Iteration 439 / LogL: -25359.748 / Time: 1h:56m:43s (0h:16m:15s left)
+Iteration 440 / LogL: -25382.009 / Time: 1h:56m:57s (0h:15m:59s left)
+1134 new splits compared to old boot_splits
+TREE SEARCH COMPLETED AFTER 440 ITERATIONS / Time: 1h:56m:57s
+
+Log-likelihoods of 5 best candidate trees: 
+-25349.522 -25351.646 -25351.714 -25352.026 -25353.174 
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -25349.522
+Optimizing +R6 model parameters by 2-BFGS,EM algorithm...
+Site proportion and rates:  (0.101,0.091) (0.145,0.320) (0.148,0.631) (0.309,1.032) (0.227,1.596) (0.070,2.448)
+Optimal log-likelihood: -25349.517
+Parameters optimization took 1 rounds (2.174 sec)
+BEST SCORE FOUND : -25349.517
+Empirical proportions for each category: 0.081 0.128 0.105 0.453 0.186 0.047
+Site rates printed to lanmodulin.aln.rate
+Creating bootstrap support values...
+1000 tree(s) converted
+max_tree_id = 1   max_weight = 1 (0.100%)
+Using hash_map
+Converting collection of tree(s) into split system...
+7861 splits found
+Split supports printed to NEXUS file lanmodulin.aln.splits.nex
+Total tree length: 64.217
+
+Total number of iterations: 440
+CPU time used for tree search: 19586.911 sec (5h:26m:26s)
+Wall-clock time used for tree search: 6989.731 sec (1h:56m:29s)
+Total CPU time used: 19669.846 sec (5h:27m:49s)
+Total wall-clock time used: 7022.003 sec (1h:57m:2s)
+
+Computing bootstrap consensus tree...
+Reading input file lanmodulin.aln.splits.nex...
+Reading "TAXA" block...
+Reading "SPLITS" block...
+616 taxa and 7861 splits.
+Rescaling split weights by 1.000
+Consensus tree written to lanmodulin.aln.contree
+Reading input trees file lanmodulin.aln.contree
+Log-likelihood of consensus tree: -25347.709
+Best tree printed to lanmodulin.aln.treefile
+Tree contains 616 taxa and 1228 branches
+
+Analysis results written to: 
+  IQ-TREE report:                lanmodulin.aln.iqtree
+  Maximum-likelihood tree:       lanmodulin.aln.treefile
+  Likelihood distances:          lanmodulin.aln.mldist
+  Site-specific rates:           lanmodulin.aln.rate
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          lanmodulin.aln.splits.nex
+  Consensus tree:                lanmodulin.aln.contree
+  Screen log file:               lanmodulin.aln.log
+
+Date and Time: Wed Jan 28 12:20:36 2026

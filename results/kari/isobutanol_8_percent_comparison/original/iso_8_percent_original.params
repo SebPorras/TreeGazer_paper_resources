@@ -1,0 +1,1 @@
+{"Condition":[["mean_retained_activity_1"],["mean_retained_activity_2"],["mean_retained_activity_3"]],"Pr":[[2.6974158083333335,0.005214488038316639],[0.5833300586678833,0.005214488038316639],[0.29734587056094725,0.005214488038316639]],"Variable":{"Domain":{"Predef":"Real"},"Name":"0_Real"},"Nodetype":"GDT","TieVariance":2,"Index":[0,1,2]}

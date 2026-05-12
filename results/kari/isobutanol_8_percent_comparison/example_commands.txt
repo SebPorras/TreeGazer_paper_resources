@@ -1,0 +1,14 @@
+
+LEARNING: 
+
+java -jar treegazer.jar -out iso_8_percent_expan_marg_preds -nwk enzonomy_kari.nwk -params enzonomy_nadh_kcat_km.params -latent 3 -in nadh_kcat_km_s-1_mM-1@isobutanol_stability_8percent_expansion_input_data.tsv -seed 42 -internal -learn -verbose
+
+MARGINAL INFERENCE:
+
+Kcat/Km marginal predictions:
+ 
+java -jar treegazer.jar  -out iso_8_percent_expan_marg_preds -nwk enzonomy_kari.nwk -params enzonomy_nadh_kcat_km.params -latent 3 -in nadh_kcat_km_s-1_mM-1@isobutanol_stability_8percent_expansion_input_data.tsv -seed 42 -internal -marg -verbose
+
+Kcat/Km marginal predictions visualisations:
+
+java -jar treegazer.jar  -out iso_8_percent_expan_marg_preds -nwk enzonomy_kari.nwk -params enzonomy_nadh_kcat_km.params -latent 3 -in nadh_kcat_km_s-1_mM-1@isobutanol_stability_8percent_expansion_input_data.tsv -seed 42 -internal -marg -verbose - format ITOL
